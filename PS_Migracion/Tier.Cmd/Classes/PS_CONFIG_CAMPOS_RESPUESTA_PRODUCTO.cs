@@ -1,14 +1,14 @@
 ﻿using System;
-
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Class1
+namespace Tier.Cmd
 {
-	public Class1()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    internal static class PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO
+    {
+
+        internal static void recolectarDatos()
+        {
+           
+
+        }
+    }
 }
+
