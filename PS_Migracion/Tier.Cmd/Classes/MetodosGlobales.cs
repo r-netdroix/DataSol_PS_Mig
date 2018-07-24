@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-namespace Tier.Cmd
+namespace Tier.Cmd.Classes
 {
     internal static class MetodosGlobales
     {

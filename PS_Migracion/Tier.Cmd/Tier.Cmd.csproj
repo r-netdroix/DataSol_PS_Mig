@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\MetodosGlobales.cs" />
+    <Compile Include="Classes\PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
