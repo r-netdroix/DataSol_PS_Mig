@@ -13,14 +13,15 @@ namespace Tier.Cmd
 {
     internal static class MetodosGlobales
     {
-        internal static DataTable ReadExcelFile(string[] sheetNames, string path)
+        internal static DataTable ReadExcelFile(string sheet, string path)
         {
-            foreach (string sheet in sheetNames)
-            {
-                
+            
+
+            
+                DataTable dt = new DataTable();
                 using (OleDbConnection conn = new OleDbConnection())
                 {
-                    DataTable dt = new DataTable();
+                    
                     
                     string Import_FileName = path;
                     string fileExtension = Path.GetExtension(Import_FileName);
@@ -38,15 +39,15 @@ namespace Tier.Cmd
                         {
                             da.SelectCommand = comm;
                             da.Fill(dt);
-                            
-                            
+                           return dt;
+
+
                         }
 
                     }
+                    
                 }
-            }
-            return dt;
-
+            
         }
     }
 }
