@@ -1,44 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-/// <summary>
-/// Summary description for Class1
-/// </summary>
+//using System.Text;
+//using System.Threading.Tasks;
+
 namespace Tier.Cmd.Classes
 {
     internal static class MetodosGlobales
     {
         internal static DataSet ReadExcelFile(string[] hojasDocumento, string path)
         {
-            DataSet ds = new DataSet();
+            DataSet dataSet = new DataSet();
             int i = 0;
 
-            foreach (string sheet in hojasDocumento)
+            foreach (string hoja in hojasDocumento)
             {
-                using (OleDbConnection conn = new OleDbConnection())
+                using (OleDbConnection conexionOleBd = new OleDbConnection())
                 {
-                    string Import_FileName = path;
-                    string fileExtension = Path.GetExtension(Import_FileName);
-                    if (fileExtension == ".xls")
-                        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Import_FileName + ";" + "Extended Properties='Excel 8.0;HDR=YES;'";
-                    if (fileExtension == ".xlsx")
-                        conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Import_FileName + ";" + "Extended Properties='Excel 12.0 Xml;HDR=YES;'";
-                    using (OleDbCommand comm = new OleDbCommand())
+                    string rutaDocumentoExcel = path;
+                    string extensionDocumentoExcel = Path.GetExtension(rutaDocumentoExcel);
+                    if (extensionDocumentoExcel == ".xls")
+                        conexionOleBd.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + rutaDocumentoExcel + ";" + "Extended Properties='Excel 8.0;HDR=YES;'";
+                    if (extensionDocumentoExcel == ".xlsx")
+                        conexionOleBd.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + rutaDocumentoExcel + ";" + "Extended Properties='Excel 12.0 Xml;HDR=YES;'";
+                    using (OleDbCommand comandoOleBd = new OleDbCommand())
                     {
-                        comm.CommandText = "Select * from [" + sheet + "$]";
-                        comm.Connection = conn;
+                        comandoOleBd.CommandText = "Select * from [" + hoja + "$]";
+                        comandoOleBd.Connection = conexionOleBd;
 
                         using (OleDbDataAdapter da = new OleDbDataAdapter())
                         {
-                            da.SelectCommand = comm;
-                            da.Fill(ds);
-                            ds.Tables[i].TableName = sheet;
-                            ds.AcceptChanges();
+                            da.SelectCommand = comandoOleBd;
+                            da.Fill(dataSet);
+                            dataSet.Tables[i].TableName = hoja;
+                            dataSet.AcceptChanges();
                             i++;
                         }
                     }
@@ -46,7 +44,7 @@ namespace Tier.Cmd.Classes
 
 
             }
-            return ds;
+            return dataSet;
 
 
         }
