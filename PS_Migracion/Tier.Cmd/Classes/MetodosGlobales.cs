@@ -1,11 +1,8 @@
 ﻿using System;
-//using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.IO;
 using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
 
 namespace Tier.Cmd.Classes
 {
@@ -36,7 +33,7 @@ namespace Tier.Cmd.Classes
                             da.SelectCommand = comandoOleBd;
                             da.Fill(dataSet);
                             dataSet.Tables[i].TableName = hoja;
-                            dataSet.AcceptChanges();
+                           dataSet.AcceptChanges();
                             i++;
                         }
                     }
