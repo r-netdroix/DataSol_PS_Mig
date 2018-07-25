@@ -13,33 +13,42 @@ namespace Tier.Cmd.Classes
 {
     internal static class MetodosGlobales
     {
-        internal static DataSet ReadExcelFile(string sheet, string path)
+        internal static DataSet ReadExcelFile(string[] hojasDocumento, string path)
         {
-            using (OleDbConnection conn = new OleDbConnection())
-            {
-                DataTable dt = new DataTable();
-                DataSet ds = new DataSet();
-                string Import_FileName = path;
-                string fileExtension = Path.GetExtension(Import_FileName);
-                if (fileExtension == ".xls")
-                    conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Import_FileName + ";" + "Extended Properties='Excel 8.0;HDR=YES;'";
-                if (fileExtension == ".xlsx")
-                    conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Import_FileName + ";" + "Extended Properties='Excel 12.0 Xml;HDR=YES;'";
-                using (OleDbCommand comm = new OleDbCommand())
-                {
-                    comm.CommandText = "Select * from [" + sheet + "$]";
-                    comm.Connection = conn;
+            DataSet ds = new DataSet();
+            int i = 0;
 
-                    using (OleDbDataAdapter da = new OleDbDataAdapter())
+            foreach (string sheet in hojasDocumento)
+            {
+                using (OleDbConnection conn = new OleDbConnection())
+                {
+                    string Import_FileName = path;
+                    string fileExtension = Path.GetExtension(Import_FileName);
+                    if (fileExtension == ".xls")
+                        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Import_FileName + ";" + "Extended Properties='Excel 8.0;HDR=YES;'";
+                    if (fileExtension == ".xlsx")
+                        conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Import_FileName + ";" + "Extended Properties='Excel 12.0 Xml;HDR=YES;'";
+                    using (OleDbCommand comm = new OleDbCommand())
                     {
-                        da.SelectCommand = comm;
-                        da.Fill(ds);
-                        ds.Tables[0].TableName = sheet;
-                        ds.AcceptChanges();
-                        return ds;
+                        comm.CommandText = "Select * from [" + sheet + "$]";
+                        comm.Connection = conn;
+
+                        using (OleDbDataAdapter da = new OleDbDataAdapter())
+                        {
+                            da.SelectCommand = comm;
+                            da.Fill(ds);
+                            ds.Tables[i].TableName = sheet;
+                            ds.AcceptChanges();
+                            i++;
+                        }
                     }
                 }
+
+
             }
+            return ds;
+
+
         }
 
 
