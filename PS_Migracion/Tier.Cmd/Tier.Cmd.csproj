@@ -53,9 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Recursos\prueba.xls" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Recursos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
