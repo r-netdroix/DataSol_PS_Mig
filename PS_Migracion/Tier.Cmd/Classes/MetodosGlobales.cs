@@ -31,7 +31,7 @@ namespace Tier.Cmd.Classes
                             da.SelectCommand = comandoOleBd;
                             da.Fill(dataSet);
                             dataSet.Tables[i].TableName = hoja;
-                            dataSet.AcceptChanges();
+                           dataSet.AcceptChanges();
                             i++;
                         }
                     }
