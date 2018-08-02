@@ -31,7 +31,7 @@ namespace Tier.Cmd.Classes
                             da.SelectCommand = comandoOleBd;
                             da.Fill(dataSet);
                             dataSet.Tables[i].TableName = hoja;
-                           dataSet.AcceptChanges();
+                            dataSet.AcceptChanges();
                             i++;
                         }
                     }
@@ -43,40 +43,50 @@ namespace Tier.Cmd.Classes
         internal static bool ObtenerDatosNombre(string NombreCliente, out string Apellidos, out string Nombres)
         {
             //Determinar Nombres y Apellidos por separado
-            string sNombreClienteSeparado = "";
-            string sApellidoClienteSeparado = "";
-            string[] sPalabrasNombre = NombreCliente.Split(' ');
-            if (sPalabrasNombre.Length == 4)
+            if (!string.IsNullOrEmpty(NombreCliente))
             {
-                sNombreClienteSeparado = sPalabrasNombre[0] + " " + sPalabrasNombre[1];
-                sApellidoClienteSeparado = sPalabrasNombre[2] + " " + sPalabrasNombre[3];
-            }
-            else if (sPalabrasNombre.Length == 1)
-            {
-                sNombreClienteSeparado = sPalabrasNombre[0];
-                sApellidoClienteSeparado = "Sin Apellido";
-            }
-            else if (sPalabrasNombre.Length == 2)
-            {
-                sNombreClienteSeparado = sPalabrasNombre[0];
-                sApellidoClienteSeparado = sPalabrasNombre[1];
-            }
-            else if (sPalabrasNombre.Length == 3)
-            {
-                sNombreClienteSeparado = sPalabrasNombre[0];
-                sApellidoClienteSeparado = sPalabrasNombre[1] + " " + sPalabrasNombre[2];
-            }
-            else if (sPalabrasNombre.Length > 4)
-            {
-                sNombreClienteSeparado = sPalabrasNombre[0] + " " + sPalabrasNombre[1];
-                for (int i = 2; i < sPalabrasNombre.Length; i++)
+                string[] sPalabrasNombre = NombreCliente.Split(' ');
+
+                if (sPalabrasNombre.Length == 4)
                 {
-                    sApellidoClienteSeparado += sPalabrasNombre[i] + " ";
+                    Nombres = sPalabrasNombre[0] + " " + sPalabrasNombre[1];
+                    Apellidos = sPalabrasNombre[2] + " " + sPalabrasNombre[3];
+                }
+                else if (sPalabrasNombre.Length == 1)
+                {
+                    Nombres = sPalabrasNombre[0];
+                    Apellidos = "Sin Apellido";
+                }
+                else if (sPalabrasNombre.Length == 2)
+                {
+                    Nombres = sPalabrasNombre[0];
+                    Apellidos = sPalabrasNombre[1];
+                }
+                else if (sPalabrasNombre.Length == 3)
+                {
+                    Nombres = sPalabrasNombre[0];
+                    Apellidos = sPalabrasNombre[1] + " " + sPalabrasNombre[2];
+                }
+                else if (sPalabrasNombre.Length > 4)
+                {
+                    Nombres = sPalabrasNombre[0] + " " + sPalabrasNombre[1];
+                    Apellidos = string.Empty;
+                    for (int i = 2; i < sPalabrasNombre.Length; i++)
+                    {
+                        Apellidos += sPalabrasNombre[i] + " ";
+                    }
+                }
+                else
+                {
+                    Nombres = null;
+                    Apellidos = null;
                 }
             }
-
-            Apellidos = sApellidoClienteSeparado;
-            Nombres = sNombreClienteSeparado;
+            else
+            {
+                Nombres = null;
+                Apellidos = null;
+            }
 
             return true;
         }
