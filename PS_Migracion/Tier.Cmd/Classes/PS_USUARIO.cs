@@ -20,17 +20,15 @@ namespace Tier.Cmd.Classes
             MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
             IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
 
-            var constructorConsulta = Builders<Dto.PS_USUARIO>.Filter;
-            var filtros = constructorConsulta.Empty;
-
-
-            //var lista = db.GetCollection<Dto.PS_USUARIO>("PS_USUARIO").Find(filtros).ToList();
+            FilterDefinitionBuilder<Dto.PS_USUARIO> constructorConsulta = Builders<Dto.PS_USUARIO>.Filter;
+            FilterDefinition<Dto.PS_USUARIO> filtros = constructorConsulta.Empty;
+            IMongoCollection<Dto.PS_USUARIO> coleccion_usuarios = db.GetCollection<Dto.PS_USUARIO>("PS_USUARIO");
 
             DataSet dataSet = new DataSet();
             DateTime fechahoy = DateTime.Now;
             dataSet = MetodosGlobales.ReadExcelFile(hojasDocumento, rutaArchivo);
             DataTable tabla_usuarios = dataSet.Tables["USUARIOS"];
-            List<Dto.PS_USUARIO> lista = tabla_usuarios.AsEnumerable().Select(x => new Dto.PS_USUARIO()
+            List<Dto.PS_USUARIO> lista_usuarios = tabla_usuarios.AsEnumerable().Select(x => new Dto.PS_USUARIO()
             {
                 Id = ObjectId.GenerateNewId().ToString(),
                 FechaCreacion = fechahoy,
@@ -42,9 +40,37 @@ namespace Tier.Cmd.Classes
                 tipo_identificacion = "CÉDULA DE CIUDADANÍA",
                 identificacion = x[4] != DBNull.Value ? x[4].ToString().Trim() : null,
                 nombres = x[2] != DBNull.Value ? x[2].ToString().Trim().ToUpper() : null,
-                apellidos = null
+                es_activo= x[1].ToString() == "Activo" ? true : false,
+                apellidos = ""
             }).ToList();
-
+            foreach (Dto.PS_USUARIO usuario in lista_usuarios)
+            {
+                if (usuario.es_activo == true)
+                {
+                    if (string.IsNullOrEmpty(usuario.nombres) )
+                    {
+                        usuario.apellidos = "N/A";
+                    }
+                    else
+                    {
+                        string apellidos = "", nombres = "";
+                        MetodosGlobales.ObtenerDatosNombre(usuario.nombres, out nombres, out apellidos);
+                        usuario.nombres = nombres;
+                        usuario.apellidos = apellidos;
+                        Console.WriteLine("nombre: " + nombres + " apellidos: " + apellidos);
+                    }
+                }
+                else
+                {
+                    //lista_usuarios.Remove(usuario);
+                    Console.WriteLine("El usuario: " + usuario.username+" fue removido");
+                }
+            }
+            
+            lista_usuarios=lista_usuarios.Where(x => x.es_activo == true).ToList();
+            Console.WriteLine("Registros a ingresar: " + lista_usuarios.Count);
+            coleccion_usuarios.InsertMany(lista_usuarios);
+            
             Console.ReadLine();
         }
     }

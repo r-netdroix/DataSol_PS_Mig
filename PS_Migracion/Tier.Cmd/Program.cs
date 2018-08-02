@@ -11,8 +11,8 @@ namespace Tier.Cmd
     {
         static void Main(string[] args)
         {
-            Classes.PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.RecolectarDatos();
-
+            //Classes.PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.RecolectarDatos();
+            Classes.PS_USUARIO.RecolectarDatos();
         }
     }
 }
