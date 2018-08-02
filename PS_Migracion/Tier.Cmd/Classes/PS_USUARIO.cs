@@ -60,11 +60,7 @@ namespace Tier.Cmd.Classes
                         Console.WriteLine("nombre: " + nombres + " apellidos: " + apellidos);
                     }
                 }
-                else
-                {
-                    //lista_usuarios.Remove(usuario);
-                    Console.WriteLine("El usuario: " + usuario.username+" fue removido");
-                }
+                
             }
             
             lista_usuarios=lista_usuarios.Where(x => x.es_activo == true).ToList();
