@@ -40,6 +40,46 @@ namespace Tier.Cmd.Classes
 
             return dataSet;
         }
+        internal static bool ObtenerDatosNombre(string NombreCliente, out string Apellidos, out string Nombres)
+        {
+            //Determinar Nombres y Apellidos por separado
+            string sNombreClienteSeparado = "";
+            string sApellidoClienteSeparado = "";
+            string[] sPalabrasNombre = NombreCliente.Split(' ');
+            if (sPalabrasNombre.Length == 4)
+            {
+                sNombreClienteSeparado = sPalabrasNombre[0] + " " + sPalabrasNombre[1];
+                sApellidoClienteSeparado = sPalabrasNombre[2] + " " + sPalabrasNombre[3];
+            }
+            else if (sPalabrasNombre.Length == 1)
+            {
+                sNombreClienteSeparado = sPalabrasNombre[0];
+                sApellidoClienteSeparado = "Sin Apellido";
+            }
+            else if (sPalabrasNombre.Length == 2)
+            {
+                sNombreClienteSeparado = sPalabrasNombre[0];
+                sApellidoClienteSeparado = sPalabrasNombre[1];
+            }
+            else if (sPalabrasNombre.Length == 3)
+            {
+                sNombreClienteSeparado = sPalabrasNombre[0];
+                sApellidoClienteSeparado = sPalabrasNombre[1] + " " + sPalabrasNombre[2];
+            }
+            else if (sPalabrasNombre.Length > 4)
+            {
+                sNombreClienteSeparado = sPalabrasNombre[0] + " " + sPalabrasNombre[1];
+                for (int i = 2; i < sPalabrasNombre.Length; i++)
+                {
+                    sApellidoClienteSeparado += sPalabrasNombre[i] + " ";
+                }
+            }
+
+            Apellidos = sApellidoClienteSeparado;
+            Nombres = sNombreClienteSeparado;
+
+            return true;
+        }
     }
 }
 
