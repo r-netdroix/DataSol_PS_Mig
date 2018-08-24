@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using System;
+using System.Configuration;
+using System.Data;
 using System.Data.OleDb;
 using System.IO;
 
@@ -91,6 +93,225 @@ namespace Tier.Cmd.Classes
             return true;
         }
     }
+
+    public class prcManejoErrores
+    {
+        public void ErroresGeneral(Exception Excepcion, string sNombreArchivo, string sMensajeAdicional = "")
+        {
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(ConfigurationManager.AppSettings["RutaLog"]);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(ConfigurationManager.AppSettings["RutaLog"]);
+            }
+            catch { }
+
+            //Registrar error en Log
+            StreamWriter sw = null;
+            string NombreArchivoLog = ConfigurationManager.AppSettings["RutaLog"].ToString() + sNombreArchivo + ".txt";
+            try
+            {
+                sw = new StreamWriter(NombreArchivoLog, true);
+                string sMensajeLog = "-------------------------------------";
+                sw.WriteLine(sMensajeLog);
+                sMensajeLog = "Fecha y Hora: " + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Day.ToString())) + "-" + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Month.ToString())) + "-" + string.Format("{0:0000}", Convert.ToInt32(System.DateTime.Now.Year.ToString())) + " " + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Hour.ToString())) + ":" + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Minute.ToString())) + ":" + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Second.ToString()));
+                sw.WriteLine(sMensajeLog);
+                if (Excepcion != null)
+                {
+                    sMensajeLog = "Fuente: " + Excepcion.Source;
+                    sw.WriteLine(sMensajeLog);
+                    sMensajeLog = "Mensaje: " + Excepcion.Message;
+                    sw.WriteLine(sMensajeLog);
+                }
+                if (sMensajeAdicional.Length > 0)
+                {
+                    sMensajeLog = "Observacion Adicional: " + sMensajeAdicional;
+                    sw.WriteLine(sMensajeLog);
+                }
+            }
+            catch { }
+            finally
+            {
+                try { sw.Close(); }
+                catch { }
+            }
+        }
+
+        public void GuardarRegistroSQL(string sNombreArchivo, string sConsulta)
+        {
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(ConfigurationManager.AppSettings["RutaLog"]);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(ConfigurationManager.AppSettings["RutaLog"]);
+            }
+            catch { }
+
+            //Registrar error en Log
+            StreamWriter sw = null;
+            string NombreArchivoLog = ConfigurationManager.AppSettings["RutaLog"].ToString() + sNombreArchivo + ".txt";
+            try
+            {
+                sw = new StreamWriter(NombreArchivoLog, true);
+                string sMensajeLog = sConsulta;
+                sw.WriteLine(sMensajeLog);
+            }
+            catch { }
+            finally
+            {
+                try { sw.Close(); }
+                catch { }
+            }
+        }
+
+        public void LogGeneral(String message, String item, string sNombreArchivo, string sMensajeAdicional = "")
+        {
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(ConfigurationManager.AppSettings["RutaLog"]);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(ConfigurationManager.AppSettings["RutaLog"]);
+            }
+            catch { }
+
+            //Registrar error en Log
+            StreamWriter sw = null;
+            string NombreArchivoLog = ConfigurationManager.AppSettings["RutaLog"].ToString() + sNombreArchivo + ".txt";
+            try
+            {
+                sw = new StreamWriter(NombreArchivoLog, true);
+                string sMensajeLog = "-------------------------------------";
+                sw.WriteLine(sMensajeLog);
+                sMensajeLog = "Fecha y Hora: " + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Day.ToString())) + "-" + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Month.ToString())) + "-" + string.Format("{0:0000}", Convert.ToInt32(System.DateTime.Now.Year.ToString())) + " " + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Hour.ToString())) + ":" + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Minute.ToString())) + ":" + string.Format("{0:00}", Convert.ToInt32(System.DateTime.Now.Second.ToString()));
+                sw.WriteLine(sMensajeLog);
+                if (message != null)
+                {
+                    sMensajeLog = "Fuente: " + message;
+                    sw.WriteLine(sMensajeLog);
+                    sMensajeLog = "Mensaje: " + item;
+                    sw.WriteLine(sMensajeLog);
+                }
+                if (sMensajeAdicional.Length > 0)
+                {
+                    sMensajeLog = "Observacion Adicional: " + sMensajeAdicional;
+                    sw.WriteLine(sMensajeLog);
+                }
+            }
+            catch { }
+            finally
+            {
+                try { sw.Close(); }
+                catch { }
+            }
+        }
+    }
+
+    //class PublicarArchivo
+    //{
+    //    public static bool PublicarArchivoIVR(string sNombreArchivoPublicar)
+    //    {
+    //        try
+    //        {
+    //            bool IsExists = System.IO.Directory.Exists(ConfigurationManager.AppSettings["RutaArchivosGenerados"]);
+    //            if (!IsExists)
+    //                System.IO.Directory.CreateDirectory(ConfigurationManager.AppSettings["RutaArchivosGenerados"]);
+    //        }
+    //        catch { }
+
+    //        bool bRetorno = false;
+
+    //        //Obtener Archivos via sFTP a Ruta Local
+    //        SessionOptions sessionOptionsOCS = new SessionOptions
+    //        {
+    //            Protocol = Protocol.Ftp,
+    //            HostName = ConfigurationManager.AppSettings["FTPIVR"].ToString(),
+    //            UserName = ConfigurationManager.AppSettings["UserFTPIVR"].ToString(),
+    //            Password = ConfigurationManager.AppSettings["PassFTPIVR"].ToString()
+    //        };
+
+    //        using (Session sessionOCS = new Session())
+    //        {
+    //            try
+    //            {
+    //                sessionOCS.Open(sessionOptionsOCS);
+    //                sessionOCS.Timeout = new TimeSpan(0, 0, 45);
+    //                TransferOperationResult transferResult;
+    //                TransferOptions transferOptions;
+
+    //                transferOptions = new TransferOptions();
+    //                transferOptions.TransferMode = TransferMode.Binary;
+
+    //                //Publicar
+    //                transferResult = sessionOCS.PutFiles(ConfigurationManager.AppSettings["RutaArchivosGenerados"] + sNombreArchivoPublicar, ConfigurationManager.AppSettings["RutaFTPIVR"].ToString() + sNombreArchivoPublicar, false, transferOptions);
+    //                transferResult.Check();
+
+    //                bRetorno = true;
+    //            }
+    //            catch (Exception ex)
+    //            {
+    //                //Enviar a Archivo de Log Errores
+    //                string sNombreArchivoError = "ErrorBatch_GeneraIVR";
+    //                prcManejoErrores objError = new prcManejoErrores();
+    //                objError.ErroresGeneral(ex, sNombreArchivoError, "Publicar Archivo a FTP IVR. Archivo " + sNombreArchivoPublicar);
+    //            }
+    //        }
+
+    //        return bRetorno;
+    //    }
+
+        
+    //    //public static bool PublicarArchivoExtractores(string sNombreArchivoPublicar)
+    //    //{
+    //    //    try
+    //    //    {
+    //    //        bool IsExists = System.IO.Directory.Exists(ConfigurationManager.AppSettings["RutaArchivosExtractores"]);
+    //    //        if (!IsExists)
+    //    //            System.IO.Directory.CreateDirectory(ConfigurationManager.AppSettings["RutaArchivosExtractores"]);
+    //    //    }
+    //    //    catch { }
+
+    //    //    bool bRetorno = false;
+
+    //    //    //Obtener Archivos via sFTP a Ruta Local
+    //    //    SessionOptions sessionOptionsOCS = new SessionOptions
+    //    //    {
+    //    //        Protocol = Protocol.Ftp,
+    //    //        HostName = ConfigurationManager.AppSettings["FTP_DWH"].ToString(),
+    //    //        UserName = ConfigurationManager.AppSettings["UserFTP_DWH"].ToString(),
+    //    //        Password = ConfigurationManager.AppSettings["PassFTP_DWH"].ToString()
+    //    //    };
+
+    //    //    using (Session sessionOCS = new Session())
+    //    //    {
+    //    //        try
+    //    //        {
+    //    //            sessionOCS.Open(sessionOptionsOCS);
+    //    //            sessionOCS.Timeout = new TimeSpan(0, 0, 45);
+    //    //            TransferOperationResult transferResult;
+    //    //            TransferOptions transferOptions;
+
+    //    //            transferOptions = new TransferOptions();
+    //    //            transferOptions.TransferMode = TransferMode.Binary;
+
+    //    //            //Publicar
+    //    //            transferResult = sessionOCS.PutFiles(ConfigurationManager.AppSettings["RutaArchivosExtractores"] + sNombreArchivoPublicar, ConfigurationManager.AppSettings["RutaFTP_Dataservices_Extractores"].ToString() + sNombreArchivoPublicar, false, transferOptions);
+    //    //            transferResult.Check();
+
+    //    //            bRetorno = true;
+    //    //        }
+    //    //        catch (Exception ex)
+    //    //        {
+    //    //            //Enviar a Archivo de Log Errores
+    //    //            string sNombreArchivoError = "ErrorBatch_GeneraIVR";
+    //    //            prcManejoErrores objError = new prcManejoErrores();
+    //    //            objError.ErroresGeneral(ex, sNombreArchivoError, "Publicar Archivo a FTP Extractores. Archivo " + sNombreArchivoPublicar);
+    //    //        }
+    //    //    }
+
+    //    //    return bRetorno;
+    //    //}
+
+    //}
 }
 
 
