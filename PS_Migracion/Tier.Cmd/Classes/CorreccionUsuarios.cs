@@ -109,7 +109,7 @@ namespace Tier.Cmd.Classes
                             Archivo_Grupo_Usu.Close();
                             if (pruebas == false)
                             {
-                                sTextoDescarga = string.Format("el usuario: {0}, fue actualizado con {1} registros en grupos_lider", id_mongo, consulta_PS_Grupo_Asignacion.Count());
+                                sTextoDescarga = string.Format("Se actualizaron {0}, usuarios con {1} registros de grupos de asignacion", Conteo_Usu, conteo_registros_grupos);
                                 Console.WriteLine(sTextoDescarga);
                                 Archivo_Grupo_Usu.WriteLine(sTextoDescarga);
                             }

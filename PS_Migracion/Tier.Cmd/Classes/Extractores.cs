@@ -53,13 +53,15 @@ namespace Tier.Cmd.Classes
                 }
                 else if (tipo != "full")
                 {
-                    filterPS_Alertas = builderPS_Alertas.And(
-                           builderPS_Alertas.Eq("Fecha_extraccion", tipo),
-                           builderPS_Alertas.Or(
-                               builderPS_Alertas.Eq("Actualizacion_Extractor", "1"),
-                               !builderPS_Alertas.Exists("Actualizacion_Extractor")
-                               )
-                           );
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+                    //filterPS_Alertas = builderPS_Alertas.And(
+                    //       builderPS_Alertas.Eq("Fecha_extraccion", tipo),
+                    //       builderPS_Alertas.Or(
+                    //           builderPS_Alertas.Eq("Actualizacion_Extractor", "1"),
+                    //           !builderPS_Alertas.Exists("Actualizacion_Extractor")
+                    //           )
+                    //       );
+                    filterPS_Alertas = builderPS_Alertas.And(builderPS_Alertas.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_Alertas.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
                 List<BsonDocument> consulta_PS_Alertas = Vol_PS.Find(filterPS_Alertas).ToList();
@@ -78,9 +80,11 @@ namespace Tier.Cmd.Classes
 
                             try
                             {
-                                if (string.IsNullOrEmpty(id_mongo)
-                                    && !itemPS_Alerta.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                if (!string.IsNullOrEmpty(id_mongo)
+                                    && (!itemPS_Alerta.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                    || itemPS_Alerta.ToBsonDocument().Contains("Actualizacion_Extractor")
                                     || (itemPS_Alerta.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull))
+                                    )
                                 {
                                     try
                                     {
@@ -97,7 +101,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_Alerta.Contains("fecha_visto") && !itemPS_Alerta.GetValue("fecha_visto").IsBsonNull && !string.IsNullOrEmpty(itemPS_Alerta.GetValue("fecha_visto").ToString()) ? (itemPS_Alerta.GetValue("fecha_visto").ToString().Length > 30 ? itemPS_Alerta.GetValue("fecha_visto").ToString().Substring(0, 30) : itemPS_Alerta.GetValue("fecha_visto").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_Alerta.Contains("idSolicitud") && !itemPS_Alerta.GetValue("idSolicitud").IsBsonNull && !string.IsNullOrEmpty(itemPS_Alerta.GetValue("idSolicitud").ToString()) ? (itemPS_Alerta.GetValue("idSolicitud").ToString().Length > 10 ? itemPS_Alerta.GetValue("idSolicitud").ToString().Substring(0, 10) : itemPS_Alerta.GetValue("idSolicitud").ToString()) : "") + //VARCHAR(40) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_Alerta.Contains("tipo_solicitud") && !itemPS_Alerta.GetValue("tipo_solicitud").IsBsonNull && !string.IsNullOrEmpty(itemPS_Alerta.GetValue("tipo_solicitud").ToString()) ? (itemPS_Alerta.GetValue("tipo_solicitud").ToString().Length > 10 ? itemPS_Alerta.GetValue("tipo_solicitud").ToString().Substring(0, 10) : itemPS_Alerta.GetValue("tipo_solicitud").ToString()) : "") + //VARCHAR(40) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_Alerta.Contains("idTareaSolicitud") ? !string.IsNullOrEmpty(itemPS_Alerta.GetValue("idTareaSolicitud")?.ToString()) ? (itemPS_Alerta.GetValue("idTareaSolicitud").ToString().Length > 30 ? itemPS_Alerta.GetValue("idTareaSolicitud").ToString().Substring(0, 29) : itemPS_Alerta.GetValue("idTareaSolicitud").ToString()) : "" : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,                                           
+                                        "~|" + (itemPS_Alerta.Contains("idTareaSolicitud") && !itemPS_Alerta.GetValue("idTareaSolicitud").IsBsonNull && !string.IsNullOrEmpty(itemPS_Alerta.GetValue("idTareaSolicitud").ToString()) ? (itemPS_Alerta.GetValue("idTareaSolicitud").ToString().Length > 30 ? itemPS_Alerta.GetValue("idTareaSolicitud").ToString().Substring(0, 29) : itemPS_Alerta.GetValue("idTareaSolicitud").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,                                           
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                     }
                                     catch (Exception ex)
@@ -115,18 +119,18 @@ namespace Tier.Cmd.Classes
                                             Archivo_PS_ALERTAS_NOTIFICACIONES.WriteLine(sTextoDescarga);
                                             if (pruebas == false)
                                             {
-                                                if (tipo != "")
+                                                if (tipo == "")
                                                 {
                                                     Vol_PS.UpdateOne(Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_Alerta.GetValue("_id").ToString())), Builders<BsonDocument>.Update.Set("Actualizacion_Extractor", "0")
-                                                                                                                                                                                                                .Set("Fecha_extraccion", fechatemp.ToLocalTime().ToString("dd/MM/yyyy")));
+                                                                                                                                                                                                                .Set("Fecha_extraccion", fechatemp.ToLocalTime()));
                                                     Conteo_PROM++;
                                                 }
-                                                else if (tipo == "full")
+                                                else if (tipo != "")
                                                 {
                                                     if ((itemPS_Alerta.GetValue("Actualizacion_Extractor") ?? "").ToString() != "0")
                                                     {
                                                         Vol_PS.UpdateOne(Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_Alerta.GetValue("_id").ToString())), Builders<BsonDocument>.Update.Set("Actualizacion_Extractor", "0")
-                                                                                                                                                                                                                    .Set("Fecha_extraccion", fechatemp.ToLocalTime().ToString("dd/MM/yyyy")));
+                                                                                                                                                                                                                    .Set("Fecha_extraccion", fechatemp.ToLocalTime()/*.ToString("dd/MM/yyyy")*/));
                                                         Conteo_PROM++;
                                                     }
 

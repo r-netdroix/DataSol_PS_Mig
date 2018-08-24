@@ -14,8 +14,8 @@ namespace Tier.Cmd
             string sOpcion = "";
             //Classes.PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.RecolectarDatos();
             //Classes.PS_USUARIO.RecolectarDatos();
-            Classes.CorreccionUsuarios.CorreccionGrupoUsuarios();
-
+            //Classes.CorreccionUsuarios.CorreccionGrupoUsuarios();
+            Classes.Extractores.Extractor_PS_ALERTA("24-08-2018");
             try
             {
                 sOpcion = args[0];
