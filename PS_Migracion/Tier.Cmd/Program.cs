@@ -16,7 +16,7 @@ namespace Tier.Cmd
             //Classes.PS_USUARIO.RecolectarDatos();
             //Classes.CorreccionUsuarios.CorreccionGrupoUsuarios();
             //Classes.Extractores.Extractor_PS_APROBACION_Usuario();
-            Classes.Extractores.Extractor_PS_SERVICIO_CLIENTE();
+            //Classes.Extractores.Extractor_PS_SERVICIO_CLIENTE();
             //Classes.Extractores.Extractor_PS_SERVICIO_CLIENTE_valores_elementos_configuracion("5b61d9f8bf886f0bc0b7a641");
             try
             {
@@ -31,9 +31,11 @@ namespace Tier.Cmd
             }
             catch { }
 
-            if (sOpcion == "Extraccion_Colecciones_PROM")
+            if (sOpcion == "Extraccion_Colecciones_PS")
             {
-                Classes.Extractores.Extractor_PS_ALERTA(sOpcion2);                
+                //Classes.Extractores.Extractor_PS_ALERTA(sOpcion2);     
+                Classes.Extractores.Extractor_PS_SERVICIO_CLIENTE();
+
             }
         }
     }
