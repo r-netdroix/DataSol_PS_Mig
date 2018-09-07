@@ -15,7 +15,9 @@ namespace Tier.Cmd
             //Classes.PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.RecolectarDatos();
             //Classes.PS_USUARIO.RecolectarDatos();
             //Classes.CorreccionUsuarios.CorreccionGrupoUsuarios();
-            Classes.Extractores.Extractor_PS_ALERTA("24-08-2018");
+            //Classes.Extractores.Extractor_PS_APROBACION_Usuario();
+            Classes.Extractores.Extractor_PS_SERVICIO_CLIENTE();
+            //Classes.Extractores.Extractor_PS_SERVICIO_CLIENTE_valores_elementos_configuracion("5b61d9f8bf886f0bc0b7a641");
             try
             {
                 sOpcion = args[0];

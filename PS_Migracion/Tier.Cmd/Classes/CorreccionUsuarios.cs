@@ -25,7 +25,7 @@ namespace Tier.Cmd.Classes
             {
                 string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
                 prcManejoErrores objError = new prcManejoErrores();
-                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en la creacion y existencia de la carpetacontenedora del archivo generado");
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en la creacion y existencia de la carpeta contenedora del archivo generado");
             }
 
             //Conexion a DB
