@@ -26,7 +26,7 @@ namespace Tier.Cmd.Classes
                 string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
                 prcManejoErrores objError = new prcManejoErrores();
                 objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo  PS_ALERTAS_NOTIFICACIONES");
-                
+
             }
 
             //Conexion a DB
@@ -288,14 +288,14 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_APROBACION.Contains("usuario_creacion") && !itemPS_APROBACION.GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("usuario_creacion").ToString()) ? (itemPS_APROBACION.GetValue("usuario_creacion").ToString().Length > 50 ? itemPS_APROBACION.GetValue("usuario_creacion").ToString().Substring(0, 50) : itemPS_APROBACION.GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_APROBACION.Contains("fecha_actualizacion") && !itemPS_APROBACION.GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("fecha_actualizacion").ToString()) ? (itemPS_APROBACION.GetValue("fecha_actualizacion").ToString().Length > 30 ? itemPS_APROBACION.GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemPS_APROBACION.GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_APROBACION.Contains("usuario_modificacion") && !itemPS_APROBACION.GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("usuario_modificacion").ToString()) ? (itemPS_APROBACION.GetValue("usuario_modificacion").ToString().Length > 50 ? itemPS_APROBACION.GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemPS_APROBACION.GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROBACION.Contains("id_movimiento") && !itemPS_APROBACION.GetValue("id_movimiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_movimiento").ToString()) ? (itemPS_APROBACION.GetValue("id_movimiento").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_movimiento").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_movimiento").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("estado_inicial") && !itemPS_APROBACION.GetValue("estado_inicial").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("estado_inicial").ToString()) ? (itemPS_APROBACION.GetValue("estado_inicial").ToString().Length > 30 ? itemPS_APROBACION.GetValue("estado_inicial").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("estado_inicial").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("id_estado") && !itemPS_APROBACION.GetValue("id_estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_estado").ToString()) ? (itemPS_APROBACION.GetValue("id_estado").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_estado").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_estado").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("estado") && !itemPS_APROBACION.GetValue("estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("estado").ToString()) ? (itemPS_APROBACION.GetValue("estado").ToString().Length > 30 ? itemPS_APROBACION.GetValue("estado").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("estado").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("id_aprovisionamiento") && !itemPS_APROBACION.GetValue("id_aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString()) ? (itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("numero_orden") && !itemPS_APROBACION.GetValue("numero_orden").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("numero_orden").ToString()) ? (itemPS_APROBACION.GetValue("numero_orden").ToString().Length > 30 ? itemPS_APROBACION.GetValue("numero_orden").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("numero_orden").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("id_tipo_aprobacion") && !itemPS_APROBACION.GetValue("id_tipo_aprobacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString()) ? (itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROBACION.Contains("tipo_aprobacion") && !itemPS_APROBACION.GetValue("tipo_aprobacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("tipo_aprobacion").ToString()) ? (itemPS_APROBACION.GetValue("tipo_aprobacion").ToString().Length > 30 ? itemPS_APROBACION.GetValue("tipo_aprobacion").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("tipo_aprobacion").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("id_movimiento") && !itemPS_APROBACION.GetValue("id_movimiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_movimiento").ToString()) ? (itemPS_APROBACION.GetValue("id_movimiento").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_movimiento").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_movimiento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("estado_inicial") && !itemPS_APROBACION.GetValue("estado_inicial").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("estado_inicial").ToString()) ? (itemPS_APROBACION.GetValue("estado_inicial").ToString().Length > 30 ? itemPS_APROBACION.GetValue("estado_inicial").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("estado_inicial").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("id_estado") && !itemPS_APROBACION.GetValue("id_estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_estado").ToString()) ? (itemPS_APROBACION.GetValue("id_estado").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_estado").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("estado") && !itemPS_APROBACION.GetValue("estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("estado").ToString()) ? (itemPS_APROBACION.GetValue("estado").ToString().Length > 30 ? itemPS_APROBACION.GetValue("estado").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("id_aprovisionamiento") && !itemPS_APROBACION.GetValue("id_aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString()) ? (itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_aprovisionamiento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("numero_orden") && !itemPS_APROBACION.GetValue("numero_orden").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("numero_orden").ToString()) ? (itemPS_APROBACION.GetValue("numero_orden").ToString().Length > 30 ? itemPS_APROBACION.GetValue("numero_orden").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("numero_orden").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("id_tipo_aprobacion") && !itemPS_APROBACION.GetValue("id_tipo_aprobacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString()) ? (itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString().Length > 30 ? itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("id_tipo_aprobacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        "~|" + (itemPS_APROBACION.Contains("tipo_aprobacion") && !itemPS_APROBACION.GetValue("tipo_aprobacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("tipo_aprobacion").ToString()) ? (itemPS_APROBACION.GetValue("tipo_aprobacion").ToString().Length > 30 ? itemPS_APROBACION.GetValue("tipo_aprobacion").ToString().Substring(0, 29) : itemPS_APROBACION.GetValue("tipo_aprobacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
                                         "~|" + (itemPS_APROBACION.Contains("fecha_solicitud") && !itemPS_APROBACION.GetValue("fecha_solicitud").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("fecha_solicitud").ToString()) ? (itemPS_APROBACION.GetValue("fecha_solicitud").ToString().Length > 30 ? itemPS_APROBACION.GetValue("fecha_solicitud").ToString().Substring(0, 30) : itemPS_APROBACION.GetValue("fecha_solicitud").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_APROBACION.Contains("usuario_solicitud") && !itemPS_APROBACION.GetValue("usuario_solicitud").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("usuario_solicitud").ToString()) ? (itemPS_APROBACION.GetValue("usuario_solicitud").ToString().Length > 50 ? itemPS_APROBACION.GetValue("usuario_solicitud").ToString().Substring(0, 50) : itemPS_APROBACION.GetValue("usuario_solicitud").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_APROBACION.Contains("observacion") && !itemPS_APROBACION.GetValue("observacion").IsBsonNull ? !string.IsNullOrEmpty(itemPS_APROBACION.GetValue("observacion").ToString()) ? (itemPS_APROBACION.GetValue("observacion").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Length > 500 ? itemPS_APROBACION.GetValue("observacion").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Substring(0, 500) : itemPS_APROBACION.GetValue("observacion").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ")) : "" : "") + // VARCHAR(8000) CHARACTER SET LATIN NOT CASESPECIFIC,
@@ -442,7 +442,7 @@ namespace Tier.Cmd.Classes
                 }
                 else if (tipo != "full")
                 {
-                    DateTime fechaconsulta = DateTime.Parse(tipo);                    
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
                     filterPS_APROBACION = builderPS_APROBACION.And(builderPS_APROBACION.Gte("usuario_aprobacion.Fecha_extraccion", fechaconsulta.Date), builderPS_APROBACION.Lt("usuario_aprobacion.Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
@@ -488,7 +488,7 @@ namespace Tier.Cmd.Classes
                                             {
                                                 string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
                                                 prcManejoErrores objError = new prcManejoErrores();
-                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROBACION_Usuario Id: " + id_mongo +","+ itemAprobacionUsuario.ToBsonDocument().GetValue("usuario_aprobacion").ToString());
+                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROBACION_Usuario Id: " + id_mongo + "," + itemAprobacionUsuario.ToBsonDocument().GetValue("usuario_aprobacion").ToString());
                                                 continue;
                                             }
                                             // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
@@ -514,9 +514,9 @@ namespace Tier.Cmd.Classes
                                                             if ((itemAprobacionUsuario.ToBsonDocument().GetValue("Actualizacion_Extractor") ?? "").ToString() != "0")
                                                             {
                                                                 Col_PS_APROBACION.UpdateOne(Builders<BsonDocument>.Filter.And(
-                                                                    Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROBACION.GetValue("_id").ToString())), 
-                                                                    Builders<BsonDocument>.Filter.Eq("usuario_aprobacion.usuario_aprobacion", 
-                                                                    itemAprobacionUsuario.ToBsonDocument().GetValue("usuario_aprobacion").ToString())), 
+                                                                    Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROBACION.GetValue("_id").ToString())),
+                                                                    Builders<BsonDocument>.Filter.Eq("usuario_aprobacion.usuario_aprobacion",
+                                                                    itemAprobacionUsuario.ToBsonDocument().GetValue("usuario_aprobacion").ToString())),
                                                                     Builders<BsonDocument>.Update.Set("usuario_aprobacion.Actualizacion_Extractor", "0")
                                                                                                  .Set("usuario_aprobacion.Fecha_extraccion", fechatemp.ToLocalTime()));
                                                                 Conteo_PS_APROBACION_Usuario++;
@@ -546,7 +546,7 @@ namespace Tier.Cmd.Classes
                                     }
                                 }
                             }
-                            
+
                         }
 
                         if (Conteo_PS_APROBACION_Usuario > 0)
@@ -666,7 +666,7 @@ namespace Tier.Cmd.Classes
                                             {
                                                 sTextoDescarga =
                                                 (itemPS_APROBACION.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROBACION.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROBACION.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROBACION.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROBACION.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemAprobacionInventario.ToBsonDocument().Contains("id_inventario") && !itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").IsBsonNull && !string.IsNullOrEmpty(itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString()) ? (itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString().Length > 30 ? itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString().Substring(0, 29) : itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                "~|" + (itemAprobacionInventario.ToBsonDocument().Contains("id_inventario") && !itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").IsBsonNull && !string.IsNullOrEmpty(itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString()) ? (itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString().Length > 30 ? itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString().Substring(0, 29) : itemAprobacionInventario.ToBsonDocument().GetValue("id_inventario").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                                 "~|" + (itemAprobacionInventario.ToBsonDocument().Contains("producto_inventario") && !itemAprobacionInventario.ToBsonDocument().GetValue("producto_inventario").IsBsonNull && !string.IsNullOrEmpty(itemAprobacionInventario.ToBsonDocument().GetValue("producto_inventario").ToString()) ? (itemAprobacionInventario.ToBsonDocument().GetValue("producto_inventario").ToString().Length > 50 ? itemAprobacionInventario.ToBsonDocument().GetValue("producto_inventario").ToString().Substring(0, 50) : itemAprobacionInventario.ToBsonDocument().GetValue("producto_inventario").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                                 "~|" + (itemAprobacionInventario.ToBsonDocument().Contains("fecha_aprobacion") && !itemAprobacionInventario.ToBsonDocument().GetValue("fecha_aprobacion").IsBsonNull && !string.IsNullOrEmpty(itemAprobacionInventario.ToBsonDocument().GetValue("fecha_aprobacion").ToString()) ? (itemAprobacionInventario.ToBsonDocument().GetValue("fecha_aprobacion").ToString().Length > 30 ? itemAprobacionInventario.ToBsonDocument().GetValue("fecha_aprobacion").ToString().Substring(0, 30) : itemAprobacionInventario.ToBsonDocument().GetValue("fecha_aprobacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                                 "~|" + (itemAprobacionInventario.ToBsonDocument().Contains("rol_aprobacion") && !itemAprobacionInventario.ToBsonDocument().GetValue("rol_aprobacion").IsBsonNull && !string.IsNullOrEmpty(itemAprobacionInventario.ToBsonDocument().GetValue("rol_aprobacion").ToString()) ? (itemAprobacionInventario.ToBsonDocument().GetValue("rol_aprobacion").ToString().Length > 30 ? itemAprobacionInventario.ToBsonDocument().GetValue("rol_aprobacion").ToString().Substring(0, 29) : itemAprobacionInventario.ToBsonDocument().GetValue("rol_aprobacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
@@ -800,15 +800,23 @@ namespace Tier.Cmd.Classes
             StreamWriter Archivo_PS_APROVISIONAMIENTO = null;
 
             int Conteo_PS_APROVISIONAMIENTO = 0;
-            string sTextoDescarga = "";
+            string sTextoDescarga_aprov = "";
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
             bool pruebas = true;
             int comunicaciones = 0;
             int historico = 0;
             int servicios_cliente = 0;
+            int conteo_adjuntos = 0;
+            int conteo_tiempos_solicitud = 0;
+            int conteo_solicitud_materiales = 0;
+            int conteo_total_Usu_Aprov = 0;
+            int Total_conteo_total_Usu_Aprov = 0;
+            int cont__Grupos_Lider = 0;
+            int Total_cont__Grupos_Lider = 0;
+            int datos_adicionales_aprov = 0;
 
-            string archivo = path + "PS_APROVISIONAMIENTO_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo = path + "PS_02_00_APROVISIONA_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
@@ -826,7 +834,7 @@ namespace Tier.Cmd.Classes
                 }
                 else if (tipo != "full")
                 {
-                    DateTime fechaconsulta = DateTime.Parse(tipo);                    
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
                     filterPS_APROBACION = builderPS_APROVISIONAMIENTO.And(builderPS_APROVISIONAMIENTO.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_APROVISIONAMIENTO.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
@@ -842,7 +850,7 @@ namespace Tier.Cmd.Classes
                         {
                             id_mongo = itemPS_APROVISIONAMIENTO.GetValue("_id").ToString();
 
-                            sTextoDescarga = "";
+                            sTextoDescarga_aprov = "";
 
                             try
                             {
@@ -854,41 +862,73 @@ namespace Tier.Cmd.Classes
                                 {
                                     try
                                     {
-                                        sTextoDescarga =
-                                        (itemPS_APROVISIONAMIENTO.Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fecha_creacion") && !itemPS_APROVISIONAMIENTO.GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fecha_creacion").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fecha_creacion").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fecha_creacion").ToString().Substring(0, 30) : itemPS_APROVISIONAMIENTO.GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("usuario_creacion") && !itemPS_APROVISIONAMIENTO.GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("usuario_creacion").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("usuario_creacion").ToString().Length > 50 ? itemPS_APROVISIONAMIENTO.GetValue("usuario_creacion").ToString().Substring(0, 50) : itemPS_APROVISIONAMIENTO.GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fecha_actualizacion") && !itemPS_APROVISIONAMIENTO.GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fecha_actualizacion").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fecha_actualizacion").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemPS_APROVISIONAMIENTO.GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("usuario_modificacion") && !itemPS_APROVISIONAMIENTO.GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("usuario_modificacion").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("usuario_modificacion").ToString().Length > 50 ? itemPS_APROVISIONAMIENTO.GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemPS_APROVISIONAMIENTO.GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("tipo_solicitud") && !itemPS_APROVISIONAMIENTO.GetValue("tipo_solicitud").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("tipo_solicitud").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("tipo_solicitud").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("tipo_solicitud").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("tipo_solicitud").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("id_aprovisionamiento") && !itemPS_APROVISIONAMIENTO.GetValue("id_aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_aprovisionamiento").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_aprovisionamiento").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_aprovisionamiento").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_aprovisionamiento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("viabilidad_origen") && !itemPS_APROVISIONAMIENTO.GetValue("viabilidad_origen").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("viabilidad_origen").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("viabilidad_origen").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("viabilidad_origen").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("viabilidad_origen").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("opcion_viabilidad") && !itemPS_APROVISIONAMIENTO.GetValue("opcion_viabilidad").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("opcion_viabilidad").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("opcion_viabilidad").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("opcion_viabilidad").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("opcion_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("comentarios") && !itemPS_APROVISIONAMIENTO.GetValue("comentarios").IsBsonNull ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("comentarios").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("comentarios").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Length > 500 ? itemPS_APROVISIONAMIENTO.GetValue("comentarios").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Substring(0, 500) : itemPS_APROVISIONAMIENTO.GetValue("comentarios").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ")) : "" : "") + // VARCHAR(8000) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("numero_contrato") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("numero_contrato")?.ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("numero_contrato").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("numero_contrato").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("numero_contrato").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,                                        
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fecha_inicio_contrato") && !itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_contrato").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_contrato").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_contrato").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_contrato").ToString().Substring(0, 30) : itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_contrato").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fecha_fin_contrato") && !itemPS_APROVISIONAMIENTO.GetValue("fecha_fin_contrato").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fecha_fin_contrato").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fecha_fin_contrato").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fecha_fin_contrato").ToString().Substring(0, 30) : itemPS_APROVISIONAMIENTO.GetValue("fecha_fin_contrato").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("renovacion_automatica") && !itemPS_APROVISIONAMIENTO.GetValue("renovacion_automatica").IsBsonNull ? itemPS_APROVISIONAMIENTO.GetValue("renovacion_automatica").ToString().Length > 8 ? itemPS_APROVISIONAMIENTO.GetValue("renovacion_automatica").ToString().Substring(0, 8) : itemPS_APROVISIONAMIENTO.GetValue("renovacion_automatica").ToString() : "") + //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("datos_adicionales_aprovisionamiento") && !itemPS_APROVISIONAMIENTO.GetValue("datos_adicionales_aprovisionamiento").IsBsonNull ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("datos_adicionales_aprovisionamiento").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("datos_adicionales_aprovisionamiento").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Length > 500 ? itemPS_APROVISIONAMIENTO.GetValue("datos_adicionales_aprovisionamiento").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Substring(0, 500) : itemPS_APROVISIONAMIENTO.GetValue("datos_adicionales_aprovisionamiento").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ")) : "" : "") + // VARCHAR(8000) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("id_usuario_asignado") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_usuario_asignado")?.ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_usuario_asignado").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_usuario_asignado").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_usuario_asignado").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,                                        
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("usuario_asignado") && !itemPS_APROVISIONAMIENTO.GetValue("usuario_asignado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("usuario_asignado").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("usuario_asignado").ToString().Length > 50 ? itemPS_APROVISIONAMIENTO.GetValue("usuario_asignado").ToString().Substring(0, 50) : itemPS_APROVISIONAMIENTO.GetValue("usuario_asignado").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("id_grupo_asignado") && !itemPS_APROVISIONAMIENTO.GetValue("id_grupo_asignado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_grupo_asignado").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_grupo_asignado").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_grupo_asignado").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_grupo_asignado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("grupo_asignado") && !itemPS_APROVISIONAMIENTO.GetValue("grupo_asignado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("grupo_asignado").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("grupo_asignado").ToString().Length > 50 ? itemPS_APROVISIONAMIENTO.GetValue("grupo_asignado").ToString().Substring(0, 50) : itemPS_APROVISIONAMIENTO.GetValue("grupo_asignado").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("id_fase") && !itemPS_APROVISIONAMIENTO.GetValue("id_fase").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_fase").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_fase").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_fase").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_fase").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fase_actual") && !itemPS_APROVISIONAMIENTO.GetValue("fase_actual").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fase_actual").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fase_actual").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fase_actual").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("fase_actual").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("id_estado") && !itemPS_APROVISIONAMIENTO.GetValue("id_estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_estado").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_estado").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_estado").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("estado") && !itemPS_APROVISIONAMIENTO.GetValue("estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("estado").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("estado").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("estado").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("tiempo_ans") && !itemPS_APROVISIONAMIENTO.GetValue("tiempo_ans").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("tiempo_ans").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("tiempo_ans").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("tiempo_ans").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("tiempo_ans").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("id_tipo_proceso") && !itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("tipo_proceso") && !itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("id_tipo_proceso").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fecha_inicio_facturacion") && !itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_facturacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_facturacion").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_facturacion").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_facturacion").ToString().Substring(0, 30) : itemPS_APROVISIONAMIENTO.GetValue("fecha_inicio_facturacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("solicitud_entrega_materiales") && !itemPS_APROVISIONAMIENTO.GetValue("solicitud_entrega_materiales").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("solicitud_entrega_materiales").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("solicitud_entrega_materiales").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("solicitud_entrega_materiales").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.GetValue("solicitud_entrega_materiales").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_APROVISIONAMIENTO.Contains("fecha_finalizacion") && !itemPS_APROVISIONAMIENTO.GetValue("fecha_finalizacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.GetValue("fecha_finalizacion").ToString()) ? (itemPS_APROVISIONAMIENTO.GetValue("fecha_finalizacion").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.GetValue("fecha_finalizacion").ToString().Substring(0, 30) : itemPS_APROVISIONAMIENTO.GetValue("fecha_finalizacion").ToString()) : ""); // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        sTextoDescarga_aprov = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "_id", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fecha_creacion", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "usuario_creacion", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fecha_actualizacion", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "usuario_modificacion", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "tipo_solicitud", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "id_aprovisionamiento", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "viabilidad_origen", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "opcion_viabilidad", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "comentarios", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "numero_contrato", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fecha_inicio_contrato", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fecha_fin_contrato", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "renovacion_automatica", 30));
+                                        //sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "datos_adicionales_aprovisionamiento", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "id_usuario_asignado", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "usuario_asignado", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "id_grupo_asignado", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "grupo_asignado", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "id_fase", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fase_actual", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "id_estado", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "estado", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "tiempo_ans", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "id_tipo_proceso", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "tipo_proceso", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fecha_inicio_facturacion", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "solicitud_entrega_materiales", 30));
+                                        sTextoDescarga_aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "fecha_finalizacion", 30));
+                                        sTextoDescarga_aprov = sTextoDescarga_aprov.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                                        if (itemPS_APROVISIONAMIENTO.Contains("comunicaciones") && !itemPS_APROVISIONAMIENTO.GetElement("comunicaciones").Value.IsBsonNull)
+                                        {
+                                            comunicaciones += Extractor_PS_APROVISIONAMIENTO_Comunicaciones(id_mongo);
+                                        }                                        
+                                        if (itemPS_APROVISIONAMIENTO.Contains("adjuntos") && !itemPS_APROVISIONAMIENTO.GetElement("adjuntos").Value.IsBsonNull)
+                                        {
+                                            conteo_adjuntos += Extractor_PS_APROVISIONAMIENTO_Adjuntos(id_mongo);
+                                        }
+                                        if (itemPS_APROVISIONAMIENTO.Contains("historico_estados") && !itemPS_APROVISIONAMIENTO.GetElement("historico_estados").Value.IsBsonNull)
+                                        {
+                                            historico += Extractor_PS_APROVISIONAMIENTO_historico_estados(id_mongo);
+                                        }
+                                        if (itemPS_APROVISIONAMIENTO.Contains("tiempos_solicitud") && !itemPS_APROVISIONAMIENTO.GetElement("tiempos_solicitud").Value.IsBsonNull)
+                                        {
+                                            conteo_tiempos_solicitud += Extractor_PS_APROVISIONAMIENTO_Tiempos_Solicitud(id_mongo);
+                                        }
+                                        if (itemPS_APROVISIONAMIENTO.Contains("servicios_cliente") && !itemPS_APROVISIONAMIENTO.GetElement("servicios_cliente").Value.IsBsonNull)
+                                        {
+                                            servicios_cliente += Extractor_PS_APROVISIONAMIENTO_servicios_cliente(id_mongo);
+                                        }
+                                        if (itemPS_APROVISIONAMIENTO.Contains("solicitud_entrega_materiales") && !itemPS_APROVISIONAMIENTO.GetElement("solicitud_entrega_materiales").Value.IsBsonNull)
+                                        {
+                                            conteo_solicitud_materiales += Extractor_PS_APROVISIONAMIENTO_Solicitud_Materiales(id_mongo, out conteo_total_Usu_Aprov, out cont__Grupos_Lider);
+                                        }
+                                        Total_conteo_total_Usu_Aprov += conteo_total_Usu_Aprov;
+                                        Total_cont__Grupos_Lider += cont__Grupos_Lider;
                                         
-                                        sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                        comunicaciones += Extractor_PS_APROVISIONAMIENTO_Comunicaciones(id_mongo);
-                                        historico += Extractor_PS_APROVISIONAMIENTO_historico_estados(id_mongo);
-                                        servicios_cliente +=Extractor_PS_APROVISIONAMIENTO_servicios_cliente(id_mongo);
+                                        if (itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("datos_adicionales_aprovisionamiento") && !itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("datos_adicionales_aprovisionamiento").IsBsonNull && itemPS_APROVISIONAMIENTO.ToBsonDocument().GetElement("datos_adicionales_aprovisionamiento").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
+                                        {
+                                            List<BsonValue> consulta_Datos_Adicionales_Aprov = itemPS_APROVISIONAMIENTO.ToBsonDocument().GetElement("datos_adicionales_aprovisionamiento").Value.AsBsonArray.AsQueryable().ToList();
+                                            datos_adicionales_aprov += Extractor_PS_APROVISIONAMIENTO_datos_adicionales(id_mongo, consulta_Datos_Adicionales_Aprov);
+                                        }
+                                        if (itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("respuesta") && !itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("respuesta").IsBsonNull && itemPS_APROVISIONAMIENTO.ToBsonDocument().GetElement("respuesta").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
+                                        {
+                                            List<BsonValue> consulta_Respuesta_Aprov = itemPS_APROVISIONAMIENTO.ToBsonDocument().GetElement("respuesta").Value.AsBsonArray.AsQueryable().ToList();
+                                            datos_adicionales_aprov += Extractor_PS_APROVISIONAMIENTO_respuesta(id_mongo, consulta_Respuesta_Aprov);
+                                        }
                                     }
                                     catch (Exception ex)
                                     {
@@ -900,9 +940,9 @@ namespace Tier.Cmd.Classes
                                     // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
                                     try
                                     {
-                                        if (sTextoDescarga != "")
+                                        if (sTextoDescarga_aprov != "")
                                         {
-                                            Archivo_PS_APROVISIONAMIENTO.WriteLine(sTextoDescarga);
+                                            Archivo_PS_APROVISIONAMIENTO.WriteLine(sTextoDescarga_aprov);
                                             if (pruebas == false)
                                             {
                                                 if (tipo == "")
@@ -954,11 +994,31 @@ namespace Tier.Cmd.Classes
                                 {
                                     //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Comunicaciones_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
                                 }
+                                if (conteo_adjuntos > 0)
+                                {
+                                    //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Comunicaciones_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                                }
                                 if (historico > 0)
                                 {
                                     //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_historico_estados_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
                                 }
+                                if (conteo_tiempos_solicitud > 0)
+                                {
+                                    //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Comunicaciones_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                                }
                                 if (servicios_cliente > 0)
+                                {
+                                    //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_servicios_cliente_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                                }
+                                if (conteo_solicitud_materiales > 0)
+                                {
+                                    //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_servicios_cliente_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                                }
+                                if (Total_conteo_total_Usu_Aprov > 0)
+                                {
+                                    //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_servicios_cliente_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                                }
+                                if (Total_cont__Grupos_Lider > 0)
                                 {
                                     //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_servicios_cliente_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
                                 }
@@ -1016,11 +1076,11 @@ namespace Tier.Cmd.Classes
             StreamWriter Archivo_PS_APROVISIONAMIENTO_Comunicaciones = null;
 
             int Conteo_PS_APROVISIONAMIENTO_Comunicaciones = 0;
-            string sTextoDescarga = "";            
+            string sTextoDescarga_aprovisionamiento_comunicaciones = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
-            
 
-            string archivo = path + "PS_APROVISIONAMIENTO_Comunicaciones_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+
+            string archivo = path + "PS_02_01_APROV_COMUN_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
@@ -1034,7 +1094,7 @@ namespace Tier.Cmd.Classes
                 filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.And(
                 builderPS_APROVISIONAMIENTO.Eq("_id", MongoDB.Bson.ObjectId.Parse(id_mongo)),
                 builderPS_APROVISIONAMIENTO.SizeGte("comunicaciones", 1));
-                
+
 
                 List<BsonDocument> consulta_PS_APROVISIONAMIENTO = Col_PS_APROVISIONAMIENTO.Find(filterPS_APROVISIONAMIENTO).ToList();
 
@@ -1048,7 +1108,7 @@ namespace Tier.Cmd.Classes
                         {
                             id_mongo = itemPS_APROVISIONAMIENTO.GetValue("_id").ToString();
 
-                            sTextoDescarga = "";
+                            sTextoDescarga_aprovisionamiento_comunicaciones = "";
                             List<BsonValue> consulta_PS_APROVISIONAMIENTO_Comunicaciones = itemPS_APROVISIONAMIENTO.GetElement("comunicaciones").Value.AsBsonArray.AsQueryable().ToList();
                             if (consulta_PS_APROVISIONAMIENTO_Comunicaciones != null && consulta_PS_APROVISIONAMIENTO_Comunicaciones.Count() > 0)
                             {
@@ -1058,11 +1118,14 @@ namespace Tier.Cmd.Classes
                                     {
                                         try
                                         {
-                                            sTextoDescarga =
+                                            //sTextoDescarga_aprovisionamiento_comunicaciones += string.Format("|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "_id", 30));
+                                            //sTextoDescarga_aprovisionamiento_comunicaciones += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO_Comunicaciones.ToBsonDocument(), "comunicaciones", 30));
+
+                                            sTextoDescarga_aprovisionamiento_comunicaciones =
                                             (itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                             "~|" + (itemPS_APROVISIONAMIENTO_Comunicaciones.ToString());// VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                            
+                                            sTextoDescarga_aprovisionamiento_comunicaciones = sTextoDescarga_aprovisionamiento_comunicaciones.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
                                         }
                                         catch (Exception ex)
                                         {
@@ -1074,10 +1137,10 @@ namespace Tier.Cmd.Classes
                                         // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
                                         try
                                         {
-                                            if (sTextoDescarga != "")
+                                            if (sTextoDescarga_aprovisionamiento_comunicaciones != "")
                                             {
-                                                Archivo_PS_APROVISIONAMIENTO_Comunicaciones.WriteLine(sTextoDescarga);
-                                                Console.WriteLine(sTextoDescarga);
+                                                Archivo_PS_APROVISIONAMIENTO_Comunicaciones.WriteLine(sTextoDescarga_aprovisionamiento_comunicaciones);
+                                                Console.WriteLine(sTextoDescarga_aprovisionamiento_comunicaciones);
                                                 Conteo_PS_APROVISIONAMIENTO_Comunicaciones++;
                                             }
                                             //Console.WriteLine("PS_APROVISIONAMIENTO_Comunicaciones ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_APROVISIONAMIENTO_Comunicaciones actializadas: " + Conteo_PS_APROVISIONAMIENTO_Comunicaciones);
@@ -1105,7 +1168,7 @@ namespace Tier.Cmd.Classes
 
                         if (Conteo_PS_APROVISIONAMIENTO_Comunicaciones > 0)
                         {
-                            Archivo_PS_APROVISIONAMIENTO_Comunicaciones.Close();                                                       
+                            Archivo_PS_APROVISIONAMIENTO_Comunicaciones.Close();
                         }
                     }
                     catch (Exception ex)
@@ -1130,12 +1193,12 @@ namespace Tier.Cmd.Classes
             finally
             {
                 Archivo_PS_APROVISIONAMIENTO_Comunicaciones.Close();
-                
+
             }
             return Conteo_PS_APROVISIONAMIENTO_Comunicaciones;
         } //Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
 
-        internal static void Extractor_PS_APROVISIONAMIENTO_Adjuntos(string tipo = "")
+        internal static int Extractor_PS_APROVISIONAMIENTO_Adjuntos(string id_mongo)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -1159,34 +1222,28 @@ namespace Tier.Cmd.Classes
             StreamWriter Archivo_PS_APROBACION = null;
 
             int Conteo_PS_APROVISIONAMIENTO_Adjuntos = 0;
-            string sTextoDescarga = "";
-            string id_mongo = "";
+            string sTextoDescarga_aprov_adjuntos = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
             bool pruebas = true;
 
-            string archivo = path + "PS_APROVISIONAMIENTO_Adjuntos_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo = path + "PS_02_02_APROV_ADJUN_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
                 // Se abren los archivos para poder escribirlos
-                Archivo_PS_APROBACION = new StreamWriter(archivo, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+                Archivo_PS_APROBACION = new StreamWriter(archivo, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
 
                 // FILTRO PARA LAS COLECCION
-                IMongoCollection<BsonDocument> Col_PS_APROVISIONAMIENTO = db.GetCollection<BsonDocument>("PS_APROVISIONAMIENTO");
-                FilterDefinitionBuilder<BsonDocument> builderPS_APROVISIONAMIENTO = Builders<BsonDocument>.Filter;
-                FilterDefinition<BsonDocument> filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.Empty;
+                IMongoCollection<BsonDocument> Col_PS_APROVISIONAMIENTO_ADJUNTOS = db.GetCollection<BsonDocument>("PS_APROVISIONAMIENTO");
+                FilterDefinitionBuilder<BsonDocument> builderPS_APROVISIONAMIENTO_ADJUNTOS = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_APROVISIONAMIENTO_ADJUNTOS = builderPS_APROVISIONAMIENTO_ADJUNTOS.Empty;
 
-                if (tipo == "")
-                {
-                    filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.Or(builderPS_APROVISIONAMIENTO.Eq("adjuntos.Actualizacion_Extractor", "1"), !builderPS_APROVISIONAMIENTO.Exists("adjuntos.Actualizacion_Extractor"));
-                }
-                else if (tipo != "full")
-                {
-                    DateTime fechaconsulta = DateTime.Parse(tipo);
-                    filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.And(builderPS_APROVISIONAMIENTO.Gte("adjuntos.Fecha_extraccion", fechaconsulta.Date), builderPS_APROVISIONAMIENTO.Lt("adjuntos.Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
-                }
+                filterPS_APROVISIONAMIENTO_ADJUNTOS = builderPS_APROVISIONAMIENTO_ADJUNTOS.And(
+                builderPS_APROVISIONAMIENTO_ADJUNTOS.Eq("_id", MongoDB.Bson.ObjectId.Parse(id_mongo)),
+                builderPS_APROVISIONAMIENTO_ADJUNTOS.SizeGte("adjuntos", 1));
 
-                List<BsonDocument> consulta_PS_APROVISIONAMIENTO = Col_PS_APROVISIONAMIENTO.Find(filterPS_APROVISIONAMIENTO).ToList();
+
+                List<BsonDocument> consulta_PS_APROVISIONAMIENTO = Col_PS_APROVISIONAMIENTO_ADJUNTOS.Find(filterPS_APROVISIONAMIENTO_ADJUNTOS).ToList();
 
                 if (consulta_PS_APROVISIONAMIENTO != null && consulta_PS_APROVISIONAMIENTO.Count() > 0)
                 {
@@ -1198,7 +1255,7 @@ namespace Tier.Cmd.Classes
                         {
                             id_mongo = itemPS_APROVISIONAMIENTO.GetValue("_id").ToString();
 
-                            sTextoDescarga = "";
+                            sTextoDescarga_aprov_adjuntos = "";
                             List<BsonValue> consulta_PS_APROVISIONAMIENTO_Adjuntos = itemPS_APROVISIONAMIENTO.GetElement("adjuntos").Value.AsBsonArray.AsQueryable().ToList();
                             if (consulta_PS_APROVISIONAMIENTO_Adjuntos != null && consulta_PS_APROVISIONAMIENTO_Adjuntos.Count() > 0)
                             {
@@ -1206,76 +1263,87 @@ namespace Tier.Cmd.Classes
                                 {
                                     try
                                     {
-                                        if (!string.IsNullOrEmpty(id_mongo)
-                                            && (!itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("Actualizacion_Extractor")
-                                            || itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("Actualizacion_Extractor")
-                                            || (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull))
-                                            )
+                                        try
                                         {
-                                            try
-                                            {
-                                                sTextoDescarga =
-                                                (itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("_id") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("ruta") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("fecha_creacion") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("usuario_modificacion") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("id_tarea_relacionada") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("tarea_relacionada") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("es_publico") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").IsBsonNull ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").ToString().Length > 8 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").ToString().Substring(0, 8) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").ToString() : "");
+                                            sTextoDescarga_aprov_adjuntos = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "_id", 30));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "_id", 30));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "ruta", 500));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "fecha_creacion", 30));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "usuario_creacion", 30));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "id_tarea_relacionada", 30));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "tarea_relacionada", 100));
+                                            sTextoDescarga_aprov_adjuntos += string.Format("~|{0}", ValidarDatoEnBsonValue(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument(), "es_publico", 8));
 
-                                                sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                            }
-                                            catch (Exception ex)
-                                            {
-                                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                prcManejoErrores objError = new prcManejoErrores();
-                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROVISIONAMIENTO_Adjuntos Id: " + id_mongo + "," + itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_aprobacion").ToString());
-                                                continue;
-                                            }
-                                            // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
-                                            try
-                                            {
-                                                if (sTextoDescarga != "")
-                                                {
-                                                    Archivo_PS_APROBACION.WriteLine(sTextoDescarga);
-                                                    if (pruebas == false)
-                                                    {
-                                                        if (tipo == "")
-                                                        {
-                                                            Col_PS_APROVISIONAMIENTO.UpdateOne(Builders<BsonDocument>.Filter.And(
-                                                                   Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
-                                                                   Builders<BsonDocument>.Filter.Eq("adjuntos._id", MongoDB.Bson.ObjectId.Parse(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()))),
-                                                                   Builders<BsonDocument>.Update.Set("adjuntos.Actualizacion_Extractor", "0")
-                                                                                                .Set("adjuntos.Fecha_extraccion", fechatemp.ToLocalTime()));
-                                                            Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
-                                                        }
-                                                        else if (tipo != "")
-                                                        {
-                                                            if ((itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("Actualizacion_Extractor") ?? "").ToString() != "0")
-                                                            {
-                                                                Col_PS_APROVISIONAMIENTO.UpdateOne(Builders<BsonDocument>.Filter.And(
-                                                                  Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
-                                                                  Builders<BsonDocument>.Filter.Eq("adjuntos._id", MongoDB.Bson.ObjectId.Parse(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()))),
-                                                                  Builders<BsonDocument>.Update.Set("adjuntos.Actualizacion_Extractor", "0")
-                                                                                               .Set("adjuntos.Fecha_extraccion", fechatemp.ToLocalTime()));
-                                                                Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
-                                                            }
 
-                                                        }
 
-                                                    }
-                                                }
-                                                Console.WriteLine("PS_APROBACION_Usuario ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_APROVISIONAMIENTO_Adjuntos actializadas: " + Conteo_PS_APROVISIONAMIENTO_Adjuntos);
-                                            }
-                                            catch (Exception ex)
+                                            //sTextoDescarga =
+                                            //(itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                            //"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("_id") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                            //"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("ruta") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("ruta").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                            ////"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("ruta") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                            //"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("usuario_modificacion") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                            //"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("id_tarea_relacionada") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("id_tarea_relacionada").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                            //"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("tarea_relacionada") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").IsBsonNull && !string.IsNullOrEmpty(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString()) ? (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString().Length > 30 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString().Substring(0, 29) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("tarea_relacionada").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                            //"~|" + (itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().Contains("es_publico") && !itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").IsBsonNull ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").ToString().Length > 8 ? itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").ToString().Substring(0, 8) : itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("es_publico").ToString() : "");
+
+                                            sTextoDescarga_aprov_adjuntos = sTextoDescarga_aprov_adjuntos.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                            if (sTextoDescarga_aprov_adjuntos != "")
                                             {
-                                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                prcManejoErrores objError = new prcManejoErrores();
-                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_APROVISIONAMIENTO_Adjuntos en mongo Id: " + id_mongo);
-                                                continue;
+                                                Archivo_PS_APROBACION.WriteLine(sTextoDescarga_aprov_adjuntos);
+                                                Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
                                             }
+
                                         }
+                                        catch (Exception ex)
+                                        {
+                                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                            prcManejoErrores objError = new prcManejoErrores();
+                                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROVISIONAMIENTO_Adjuntos Id: " + id_mongo + "," + itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("usuario_aprobacion").ToString());
+                                            continue;
+                                        }
+                                        // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                                        //try
+                                        //{
+                                        //    if (sTextoDescarga != "")
+                                        //    {
+                                        //        Archivo_PS_APROBACION.WriteLine(sTextoDescarga);
+                                        //        if (pruebas == false)
+                                        //        {
+                                        //            if (tipo == "")
+                                        //            {
+                                        //                Col_PS_APROVISIONAMIENTO_ADJUNTOS.UpdateOne(Builders<BsonDocument>.Filter.And(
+                                        //                       Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
+                                        //                       Builders<BsonDocument>.Filter.Eq("adjuntos._id", MongoDB.Bson.ObjectId.Parse(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()))),
+                                        //                       Builders<BsonDocument>.Update.Set("adjuntos.Actualizacion_Extractor", "0")
+                                        //                                                    .Set("adjuntos.Fecha_extraccion", fechatemp.ToLocalTime()));
+                                        //                Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
+                                        //            }
+                                        //            else if (tipo != "")
+                                        //            {
+                                        //                if ((itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("Actualizacion_Extractor") ?? "").ToString() != "0")
+                                        //                {
+                                        //                    Col_PS_APROVISIONAMIENTO_ADJUNTOS.UpdateOne(Builders<BsonDocument>.Filter.And(
+                                        //                      Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
+                                        //                      Builders<BsonDocument>.Filter.Eq("adjuntos._id", MongoDB.Bson.ObjectId.Parse(itemAPROVISIONAMIENTOAdjuntos.ToBsonDocument().GetValue("_id").ToString()))),
+                                        //                      Builders<BsonDocument>.Update.Set("adjuntos.Actualizacion_Extractor", "0")
+                                        //                                                   .Set("adjuntos.Fecha_extraccion", fechatemp.ToLocalTime()));
+                                        //                    Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
+                                        //                }
+
+                                        //            }
+
+                                        //        }
+                                        //    }
+                                        //    Console.WriteLine("PS_APROBACION_Usuario ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_APROVISIONAMIENTO_Adjuntos actializadas: " + Conteo_PS_APROVISIONAMIENTO_Adjuntos);
+                                        //}
+                                        //catch (Exception ex)
+                                        //{
+                                        //    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                        //    prcManejoErrores objError = new prcManejoErrores();
+                                        //    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_APROVISIONAMIENTO_Adjuntos en mongo Id: " + id_mongo);
+                                        //    continue;
+                                        //}
                                     }
                                     catch (Exception ex)
                                     {
@@ -1292,11 +1360,12 @@ namespace Tier.Cmd.Classes
                         if (Conteo_PS_APROVISIONAMIENTO_Adjuntos > 0)
                         {
                             Archivo_PS_APROBACION.Close();
+
                             if (pruebas == false)
                             {
                                 //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Adjuntos_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
                             }
-
+                            return Conteo_PS_APROVISIONAMIENTO_Adjuntos;
                         }
                     }
                     catch (Exception ex)
@@ -1322,8 +1391,8 @@ namespace Tier.Cmd.Classes
             {
                 Archivo_PS_APROBACION.Close();
             }
-
-        }
+            return Conteo_PS_APROVISIONAMIENTO_Adjuntos;
+        } //Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
 
         internal static int Extractor_PS_APROVISIONAMIENTO_historico_estados(string id_mongo)
         {
@@ -1349,11 +1418,11 @@ namespace Tier.Cmd.Classes
             StreamWriter Archivo_PS_APROVISIONAMIENTO_historico_estados = null;
 
             int Conteo_PS_APROVISIONAMIENTO_historico_estados = 0;
-            string sTextoDescarga = "";
+            string sTextoDescarga_Histo_estados = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
 
 
-            string archivo = path + "PS_APROVISIONAMIENTO_historico_estados_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo = path + "PS_02_03_APROV_HISTE_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
@@ -1381,7 +1450,7 @@ namespace Tier.Cmd.Classes
                         {
                             id_mongo = itemPS_APROVISIONAMIENTO.GetValue("_id").ToString();
 
-                            sTextoDescarga = "";
+                            sTextoDescarga_Histo_estados = "";
                             List<BsonValue> consulta_PS_APROVISIONAMIENTO_historico_estados = itemPS_APROVISIONAMIENTO.GetElement("historico_estados").Value.AsBsonArray.AsQueryable().ToList();
                             if (consulta_PS_APROVISIONAMIENTO_historico_estados != null && consulta_PS_APROVISIONAMIENTO_historico_estados.Count() > 0)
                             {
@@ -1391,10 +1460,13 @@ namespace Tier.Cmd.Classes
                                     {
                                         try
                                         {
-                                            sTextoDescarga =
+                                            //sTextoDescarga_Histo_estados += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "_id", 30));
+                                            //sTextoDescarga_Histo_estados += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO_historico_estados.ToBsonDocument(), "historico_estados", 30));
+
+                                            sTextoDescarga_Histo_estados =
                                             (itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                             "~|" + (itemPS_APROVISIONAMIENTO_historico_estados.ToString());// VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                                            sTextoDescarga_Histo_estados = sTextoDescarga_Histo_estados.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
 
                                         }
                                         catch (Exception ex)
@@ -1407,10 +1479,10 @@ namespace Tier.Cmd.Classes
                                         // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
                                         try
                                         {
-                                            if (sTextoDescarga != "")
+                                            if (sTextoDescarga_Histo_estados != "")
                                             {
-                                                Archivo_PS_APROVISIONAMIENTO_historico_estados.WriteLine(sTextoDescarga);
-                                                Console.WriteLine(sTextoDescarga);
+                                                Archivo_PS_APROVISIONAMIENTO_historico_estados.WriteLine(sTextoDescarga_Histo_estados);
+                                                Console.WriteLine(sTextoDescarga_Histo_estados);
                                                 Conteo_PS_APROVISIONAMIENTO_historico_estados++;
                                             }
                                             //Console.WriteLine("PS_APROVISIONAMIENTO_historico_estados ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_APROVISIONAMIENTO_historico_estados actializadas: " + Conteo_PS_APROVISIONAMIENTO_Comunicaciones);
@@ -1468,7 +1540,7 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_APROVISIONAMIENTO_historico_estados;
         } //Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
 
-        internal static void Extractor_PS_APROVISIONAMIENTO_Tiempos_Solicitud(string tipo = "")
+        internal static int Extractor_PS_APROVISIONAMIENTO_Tiempos_Solicitud(string id_mongo)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -1492,34 +1564,27 @@ namespace Tier.Cmd.Classes
             StreamWriter Archivo_PS_APROBACION = null;
 
             int Conteo_PS_APROVISIONAMIENTO_Adjuntos = 0;
-            string sTextoDescarga = "";
-            string id_mongo = "";
+            string sTextoDescarga_T_SOLICITUD = "";
+
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
             bool pruebas = true;
 
-            string archivo = path + "PS_APROVISIONAMIENTO_Tiempos_Solicitud_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo = path + "PS_02_04_APROV_TIEMS_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
                 // Se abren los archivos para poder escribirlos
-                Archivo_PS_APROBACION = new StreamWriter(archivo, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+                Archivo_PS_APROBACION = new StreamWriter(archivo, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
 
                 // FILTRO PARA LAS COLECCION
-                IMongoCollection<BsonDocument> Col_PS_APROVISIONAMIENTO = db.GetCollection<BsonDocument>("PS_APROVISIONAMIENTO");
-                FilterDefinitionBuilder<BsonDocument> builderPS_APROVISIONAMIENTO = Builders<BsonDocument>.Filter;
-                FilterDefinition<BsonDocument> filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.Empty;
+                IMongoCollection<BsonDocument> Col_PS_APROVISIONAMIENTO_TS = db.GetCollection<BsonDocument>("PS_APROVISIONAMIENTO");
+                FilterDefinitionBuilder<BsonDocument> builderPS_APROVISIONAMIENTO_TS = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_APROVISIONAMIENTO_TS = builderPS_APROVISIONAMIENTO_TS.Empty;
+                filterPS_APROVISIONAMIENTO_TS = builderPS_APROVISIONAMIENTO_TS.And(
+                builderPS_APROVISIONAMIENTO_TS.Eq("_id", MongoDB.Bson.ObjectId.Parse(id_mongo)),
+                builderPS_APROVISIONAMIENTO_TS.SizeGte("tiempos_solicitud", 1));
 
-                if (tipo == "")
-                {
-                    filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.Or(builderPS_APROVISIONAMIENTO.Eq("tiempos_solicitud.Actualizacion_Extractor", "1"), !builderPS_APROVISIONAMIENTO.Exists("tiempos_solicitud.Actualizacion_Extractor"));
-                }
-                else if (tipo != "full")
-                {
-                    DateTime fechaconsulta = DateTime.Parse(tipo);
-                    filterPS_APROVISIONAMIENTO = builderPS_APROVISIONAMIENTO.And(builderPS_APROVISIONAMIENTO.Gte("tiempos_solicitud.Fecha_extraccion", fechaconsulta.Date), builderPS_APROVISIONAMIENTO.Lt("tiempos_solicitud.Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
-                }
-
-                List<BsonDocument> consulta_PS_APROVISIONAMIENTO = Col_PS_APROVISIONAMIENTO.Find(filterPS_APROVISIONAMIENTO).ToList();
+                List<BsonDocument> consulta_PS_APROVISIONAMIENTO = Col_PS_APROVISIONAMIENTO_TS.Find(filterPS_APROVISIONAMIENTO_TS).ToList();
 
                 if (consulta_PS_APROVISIONAMIENTO != null && consulta_PS_APROVISIONAMIENTO.Count() > 0)
                 {
@@ -1531,7 +1596,7 @@ namespace Tier.Cmd.Classes
                         {
                             id_mongo = itemPS_APROVISIONAMIENTO.GetValue("_id").ToString();
 
-                            sTextoDescarga = "";
+                            sTextoDescarga_T_SOLICITUD = "";
                             List<BsonValue> consulta_PS_APROVISIONAMIENTO_Tiempos_Solicitud = itemPS_APROVISIONAMIENTO.GetElement("tiempos_solicitud").Value.AsBsonArray.AsQueryable().ToList();
                             if (consulta_PS_APROVISIONAMIENTO_Tiempos_Solicitud != null && consulta_PS_APROVISIONAMIENTO_Tiempos_Solicitud.Count() > 0)
                             {
@@ -1547,23 +1612,39 @@ namespace Tier.Cmd.Classes
                                         {
                                             try
                                             {
-                                                sTextoDescarga =
-                                                (itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("_id") && !itemTiempos_solicitud.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("fecha_creacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("usuario_creacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("fecha_actualizacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("usuario_modificacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("nombre") && !itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("descripcion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("color") && !itemTiempos_solicitud.ToBsonDocument().GetValue("color").IsBsonNull ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Length > 8 ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Substring(0, 8) : itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString() : "") +
-                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("color") && !itemTiempos_solicitud.ToBsonDocument().GetValue("color").IsBsonNull ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Length > 8 ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Substring(0, 8) : itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString() : "") +
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("fechainicio") && !itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("Fechafin") && !itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("tiempoTranscurrido") && !itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("en_ejecucion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").IsBsonNull ? itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").ToString().Length > 8 ? itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").ToString().Substring(0, 8) : itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").ToString() : "");
+                                                sTextoDescarga_T_SOLICITUD = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO, "_id", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "_id", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "fecha_creacion", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "usuario_creacion", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "fecha_actualizacion", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "usuario_modificacion", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "nombre", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "descripcion", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "es_activo", 8));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "color", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "fechainicio", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "Fechafin", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "tiempoTranscurrido", 30));
+                                                sTextoDescarga_T_SOLICITUD += string.Format("~|{0}", ValidarDatoEnBsonValue(itemTiempos_solicitud.ToBsonDocument(), "en_ejecucion", 8));
 
-                                                sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                                //sTextoDescarga_T_SOLICITUD =
+                                                //(itemPS_APROVISIONAMIENTO.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("_id") && !itemTiempos_solicitud.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("fecha_creacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("usuario_creacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("fecha_actualizacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("usuario_modificacion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemTiempos_solicitud.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("nombre") && !itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("nombre").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("descripcion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("descripcion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("color") && !itemTiempos_solicitud.ToBsonDocument().GetValue("color").IsBsonNull ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Length > 8 ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Substring(0, 8) : itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString() : "") +
+                                                ////"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("color") && !itemTiempos_solicitud.ToBsonDocument().GetValue("color").IsBsonNull ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Length > 8 ? itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString().Substring(0, 8) : itemTiempos_solicitud.ToBsonDocument().GetValue("color").ToString() : "") +
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("fechainicio") && !itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("fechainicio").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("Fechafin") && !itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString().Substring(0, 30) : itemTiempos_solicitud.ToBsonDocument().GetValue("Fechafin").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("tiempoTranscurrido") && !itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").IsBsonNull && !string.IsNullOrEmpty(itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString()) ? (itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString().Length > 30 ? itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString().Substring(0, 29) : itemTiempos_solicitud.ToBsonDocument().GetValue("tiempoTranscurrido").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                                //"~|" + (itemTiempos_solicitud.ToBsonDocument().Contains("en_ejecucion") && !itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").IsBsonNull ? itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").ToString().Length > 8 ? itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").ToString().Substring(0, 8) : itemTiempos_solicitud.ToBsonDocument().GetValue("en_ejecucion").ToString() : "");
+
+                                                sTextoDescarga_T_SOLICITUD = sTextoDescarga_T_SOLICITUD.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                             }
                                             catch (Exception ex)
                                             {
@@ -1575,35 +1656,36 @@ namespace Tier.Cmd.Classes
                                             // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
                                             try
                                             {
-                                                if (sTextoDescarga != "")
+                                                if (sTextoDescarga_T_SOLICITUD != "")
                                                 {
-                                                    Archivo_PS_APROBACION.WriteLine(sTextoDescarga);
-                                                    if (pruebas == false)
-                                                    {
-                                                        if (tipo == "")
-                                                        {
-                                                            Col_PS_APROVISIONAMIENTO.UpdateOne(Builders<BsonDocument>.Filter.And(
-                                                                   Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
-                                                                   Builders<BsonDocument>.Filter.Eq("tiempos_solicitud._id", MongoDB.Bson.ObjectId.Parse(itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()))),
-                                                                   Builders<BsonDocument>.Update.Set("tiempos_solicitud.Actualizacion_Extractor", "0")
-                                                                                                .Set("tiempos_solicitud.Fecha_extraccion", fechatemp.ToLocalTime()));
-                                                            Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
-                                                        }
-                                                        else if (tipo != "")
-                                                        {
-                                                            if ((itemTiempos_solicitud.ToBsonDocument().GetValue("Actualizacion_Extractor") ?? "").ToString() != "0")
-                                                            {
-                                                                Col_PS_APROVISIONAMIENTO.UpdateOne(Builders<BsonDocument>.Filter.And(
-                                                                  Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
-                                                                  Builders<BsonDocument>.Filter.Eq("tiempos_solicitud._id", MongoDB.Bson.ObjectId.Parse(itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()))),
-                                                                  Builders<BsonDocument>.Update.Set("tiempos_solicitud.Actualizacion_Extractor", "0")
-                                                                                               .Set("tiempos_solicitud.Fecha_extraccion", fechatemp.ToLocalTime()));
-                                                                Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
-                                                            }
+                                                    Archivo_PS_APROBACION.WriteLine(sTextoDescarga_T_SOLICITUD);
+                                                    Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
+                                                    //if (pruebas == false)
+                                                    //{
+                                                    //    if (tipo == "")
+                                                    //    {
+                                                    //        Col_PS_APROVISIONAMIENTO.UpdateOne(Builders<BsonDocument>.Filter.And(
+                                                    //               Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
+                                                    //               Builders<BsonDocument>.Filter.Eq("tiempos_solicitud._id", MongoDB.Bson.ObjectId.Parse(itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()))),
+                                                    //               Builders<BsonDocument>.Update.Set("tiempos_solicitud.Actualizacion_Extractor", "0")
+                                                    //                                            .Set("tiempos_solicitud.Fecha_extraccion", fechatemp.ToLocalTime()));
+                                                    //        Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
+                                                    //    }
+                                                    //    else if (tipo != "")
+                                                    //    {
+                                                    //        if ((itemTiempos_solicitud.ToBsonDocument().GetValue("Actualizacion_Extractor") ?? "").ToString() != "0")
+                                                    //        {
+                                                    //            Col_PS_APROVISIONAMIENTO.UpdateOne(Builders<BsonDocument>.Filter.And(
+                                                    //              Builders<BsonDocument>.Filter.Eq("_id", MongoDB.Bson.ObjectId.Parse(itemPS_APROVISIONAMIENTO.GetValue("_id").ToString())),
+                                                    //              Builders<BsonDocument>.Filter.Eq("tiempos_solicitud._id", MongoDB.Bson.ObjectId.Parse(itemTiempos_solicitud.ToBsonDocument().GetValue("_id").ToString()))),
+                                                    //              Builders<BsonDocument>.Update.Set("tiempos_solicitud.Actualizacion_Extractor", "0")
+                                                    //                                           .Set("tiempos_solicitud.Fecha_extraccion", fechatemp.ToLocalTime()));
+                                                    //            Conteo_PS_APROVISIONAMIENTO_Adjuntos++;
+                                                    //        }
 
-                                                        }
+                                                    //    }
 
-                                                    }
+                                                    //}
                                                 }
                                                 Console.WriteLine("PS_APROVISIONAMIENTO_Tiempos_Solicitud ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_APROVISIONAMIENTO_Tiempos_Solicitud actializadas: " + Conteo_PS_APROVISIONAMIENTO_Adjuntos);
                                             }
@@ -1631,11 +1713,12 @@ namespace Tier.Cmd.Classes
                         if (Conteo_PS_APROVISIONAMIENTO_Adjuntos > 0)
                         {
                             Archivo_PS_APROBACION.Close();
+
                             if (pruebas == false)
                             {
                                 //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Adjuntos_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
                             }
-
+                            return Conteo_PS_APROVISIONAMIENTO_Adjuntos;
                         }
                     }
                     catch (Exception ex)
@@ -1661,8 +1744,8 @@ namespace Tier.Cmd.Classes
             {
                 Archivo_PS_APROBACION.Close();
             }
-
-        }
+            return Conteo_PS_APROVISIONAMIENTO_Adjuntos;
+        } //Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
 
         internal static int Extractor_PS_APROVISIONAMIENTO_servicios_cliente(string id_mongo)
         {
@@ -1692,7 +1775,7 @@ namespace Tier.Cmd.Classes
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
 
 
-            string archivo = path + "PS_APROVISIONAMIENTO_servicios_cliente_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo = path + "PS_02_05_APROV_SERVC_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
@@ -1807,6 +1890,528 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_APROVISIONAMIENTO_servicios_cliente;
         } //Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
 
+        internal static int Extractor_PS_APROVISIONAMIENTO_Solicitud_Materiales(string id_mongo, out int Conteo_PS_APROVISIONAMIENTO_usua_aprov, out int contador_gupos_lider)
+        {
+            string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(path);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(path);
+            }
+            catch (Exception ex)
+            {
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo  PS_APROVISIONAMIENTO_solicitud_entrega_materiales");
+
+            }
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_Aprovi_Sol_Mat = null;
+
+            int Conteo_PS_APROVISIONAMIENTO_Sol_Mat = 0;
+            Conteo_PS_APROVISIONAMIENTO_usua_aprov = 0;
+            contador_gupos_lider = 0;
+            contador_gupos_lider = 0;
+            string sTextoDescarga_Sol_Mat = "";
+            DateTime fechatemp = DateTime.Now.ToUniversalTime();
+            bool pruebas = true;
+
+            string archivo = path + "PS_02_06_00_SOL_MATE_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+
+            try
+            {
+                // Se abren los archivos para poder escribirlos
+                Archivo_PS_Aprovi_Sol_Mat = new StreamWriter(archivo, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_APROVISIONAMIENTO_Sol_Mat = db.GetCollection<BsonDocument>("PS_APROVISIONAMIENTO");
+                FilterDefinitionBuilder<BsonDocument> builderPS_APROVISIONAMIENTO_Sol_Mat = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_APROVISIONAMIENTO_Sol_Mat = builderPS_APROVISIONAMIENTO_Sol_Mat.Empty;
+
+                filterPS_APROVISIONAMIENTO_Sol_Mat = builderPS_APROVISIONAMIENTO_Sol_Mat.And(
+                builderPS_APROVISIONAMIENTO_Sol_Mat.Eq("_id", MongoDB.Bson.ObjectId.Parse(id_mongo)),
+                !builderPS_APROVISIONAMIENTO_Sol_Mat.Eq("solicitud_entrega_materiales.id_empresa", ""));
+                List<BsonDocument> consulta_PS_APROVISIONAMIENTO_Sol_Mat = Col_PS_APROVISIONAMIENTO_Sol_Mat.Find(filterPS_APROVISIONAMIENTO_Sol_Mat).ToList();
+
+                if (consulta_PS_APROVISIONAMIENTO_Sol_Mat != null && consulta_PS_APROVISIONAMIENTO_Sol_Mat.Count() > 0)
+                {
+                    try
+                    {
+                        // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PQR 
+                        Console.WriteLine("Registros en la coleccion de PS_APROVISIONAMIENTO_solicitud_entrega_materiales " + consulta_PS_APROVISIONAMIENTO_Sol_Mat.Count().ToString());
+                        foreach (var itemPS_APROVISIONAMIENTO in consulta_PS_APROVISIONAMIENTO_Sol_Mat)
+                        {
+                            id_mongo = itemPS_APROVISIONAMIENTO.GetValue("_id").ToString();
+
+                            sTextoDescarga_Sol_Mat = "";
+                            //List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = !item_CV_DAS.ToBsonDocument().GetElement("datos_adicionales_servicio").Value.IsBsonNull ? item_CV_DAS.ToBsonDocument().GetElement("datos_adicionales_servicio").Value.AsBsonArray.ToList():null;
+                            //var consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det = itemPS_APROVISIONAMIENTO.GetElement("solicitud_entrega_materiales").ToBsonDocument().ToArray();
+                            //var consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det = !itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("solicitud_entrega_materiales").IsBsonNull ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("solicitud_entrega_materiales").ToBsonDocument().AsQueryable().ToArray().ToList(): null;
+                            var consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det = !itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("solicitud_entrega_materiales").IsBsonNull ? itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("solicitud_entrega_materiales").ToBsonDocument() : null;
+
+                            //BsonDocument Consulta_PS_VIABILIDAD_CV_respuesta = Col_PS_VIABILIDAD_CV_respuesta.Find(filterPS_VIABILIDAD_CV_respuesta).FirstOrDefault<BsonDocument>();
+                            if (consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det != null && consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.Count() > 0)
+                            {
+                                try
+                                {
+                                    try
+                                    {
+                                        sTextoDescarga_Sol_Mat = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_APROVISIONAMIENTO.ToBsonDocument(), "_id", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "fecha_creacion", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "usuario_creacion", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "fecha_actualizacion", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "usuario_modificacion", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "fecha_solicitud", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "id_empresa", 30));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "empresa", 200));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "nombre_receptor", 200));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "apellidos_receptor", 200));
+                                        sTextoDescarga_Sol_Mat += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "identificacion_receptor", 30));
+                                        sTextoDescarga_Sol_Mat = sTextoDescarga_Sol_Mat.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                        if (sTextoDescarga_Sol_Mat != "")
+                                        {
+                                            Archivo_PS_Aprovi_Sol_Mat.WriteLine(sTextoDescarga_Sol_Mat);
+                                            Conteo_PS_APROVISIONAMIENTO_Sol_Mat++;
+                                            //if (!consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument().GetElement("usuarios_aprovadores").ToBsonDocument().IsBsonNull)
+                                            //{
+                                                  string id_empresa_in = string.Format("{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument(), "id_empresa", 30));
+                                            //    Conteo_PS_APROVISIONAMIENTO_usua_aprov = Extractor_PS_APROVISIONAMIENTO_SolMat_Usu_Aprov(id_mongo, id_empresa_in);
+                                            //}
+                                            if (consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.ToBsonDocument().Contains("usuarios_aprovadores") && consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.GetElement("usuarios_aprovadores").Value.AsBsonArray.Count > 0)
+                                            {
+                                                Conteo_PS_APROVISIONAMIENTO_usua_aprov = Extractor_PS_APROVISIONAMIENTO_SolMat_Usu_Aprov(id_mongo, id_mongo,id_empresa_in, consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.GetElement("usuarios_aprovadores").Value.AsBsonArray.ToList(), out contador_gupos_lider);
+                                            }
+
+                                        }
+
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                        prcManejoErrores objError = new prcManejoErrores();
+                                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROVISIONAMIENTO_solicitud_entrega_materiales Id: " + id_mongo + "," + itemPS_APROVISIONAMIENTO.ToBsonDocument().GetValue("_id").ToString());
+                                        continue;
+                                    }
+                                    
+                                }
+                                catch (Exception ex)
+                                {
+                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_APROVISIONAMIENTO_solicitud_entrega_materiales para el procesamiento de registros de mongo Id: " + id_mongo);
+                                    continue;
+                                }
+                            }
+
+                        }
+
+                        if (Conteo_PS_APROVISIONAMIENTO_Sol_Mat > 0)
+                        {
+                            Archivo_PS_Aprovi_Sol_Mat.Close();
+
+                            if (pruebas == false)
+                            {
+                                //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Adjuntos_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                            }
+                            return Conteo_PS_APROVISIONAMIENTO_Sol_Mat;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en PS_APROVISIONAMIENTO_solicitud_entrega_materiales entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString());
+                //throw ex;
+            }
+            finally
+            {
+                Archivo_PS_Aprovi_Sol_Mat.Close();
+            }
+            return Conteo_PS_APROVISIONAMIENTO_Sol_Mat;
+        } //Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
+
+        internal static int Extractor_PS_APROVISIONAMIENTO_SolMat_Usu_Aprov(string id_mongo, string id_aprovisionamiento, string id_empresa_in, List<BsonValue> listaOpciones, out int Conteo_PS_Aprovisionamiento_Grupos_Lider)
+        {
+            string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(path);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(path);
+            }
+            catch (Exception ex)
+            {
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo  PS_APROVISIONAMIENTO_usuarios_aprovadores");
+
+            }
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_Aprovi_Usu_Aprov = null;
+
+            int Conteo_PS_APROVISIONAMIENTO_Usu_Aprov = 0;
+            Conteo_PS_Aprovisionamiento_Grupos_Lider = 0;
+            string sTextoDescarga_Usu_Aprov = "";
+            DateTime fechatemp = DateTime.Now.ToUniversalTime();
+            bool pruebas = true;
+
+            string archivo = path + "PS_02_06_01_USU_APRO_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+
+            try
+            {
+                // Se abren los archivos para poder escribirlos
+                Archivo_PS_Aprovi_Usu_Aprov = new StreamWriter(archivo, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+                if (listaOpciones.Count() > 0)
+                {
+                    foreach (BsonValue consulta_PS_APROVISIONAMIENTO_Usu_Aprov in listaOpciones)
+                    {
+                        try
+                        {
+                            //BsonDocument respuesta = ((consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument().Contains("usuarios_aprovadores") && !consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument().GetElement("usuarios_aprovadores").Value.IsBsonNull) ? consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument().GetElement("usuarios_aprovadores").Value.AsBsonDocument : null);
+                            //consulta_PS_APROVISIONAMIENTO_Sol_Mat_Det.AsQueryable().ToBsonDocument();
+                            sTextoDescarga_Usu_Aprov = string.Format("{0}", id_mongo);
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", id_empresa_in); 
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "_id", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "fecha_creacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "usuario_creacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "fecha_actualizacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "usuario_modificacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "username", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "id_rol", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "rol", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "id_tipo_identificacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "tipo_identificacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "identificacion", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "nombres", 100));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "apellidos", 100));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "id_division", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "division", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "correo_electronico", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "telefono_fijo", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "telefono_celular", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "es_activo", 8));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "id_tipo_contrato", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "tipo_contrato", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "id_empresa", 30));
+                            sTextoDescarga_Usu_Aprov += string.Format("~|{0}", ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "empresa", 200));
+                            sTextoDescarga_Usu_Aprov = sTextoDescarga_Usu_Aprov.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            if (sTextoDescarga_Usu_Aprov != "")
+                            {
+                                Archivo_PS_Aprovi_Usu_Aprov.WriteLine(sTextoDescarga_Usu_Aprov);
+                                Conteo_PS_APROVISIONAMIENTO_Usu_Aprov++;
+                            }
+                            if (consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument().Contains("grupos_lider") && !consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument().GetElement("grupos_lider").Value.IsBsonNull)
+                            {
+                                string id_usu_aprobado = ValidarDatoEnBsonValue(consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument(), "_id", 30);
+                                List<BsonValue> consulta_PS_Aprov_Grup_Lider = consulta_PS_APROVISIONAMIENTO_Usu_Aprov.ToBsonDocument().GetElement("grupos_lider").Value.AsBsonArray.AsQueryable().ToList();
+                                Conteo_PS_Aprovisionamiento_Grupos_Lider = Extractor_APROVISIONAMIENTO_Grupos_lider(id_mongo, id_empresa_in, id_usu_aprobado, consulta_PS_Aprov_Grup_Lider);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROVISIONAMIENTO_solicitud_entrega_materiales Id: " + id_mongo);
+                            continue;
+                        }
+                    }
+                }
+                if (Conteo_PS_APROVISIONAMIENTO_Usu_Aprov > 0)
+                {
+                    Archivo_PS_Aprovi_Usu_Aprov.Close();
+
+                    if (pruebas == false)
+                    {
+                        //PublicarArchivo.PublicarArchivoExtractores("PS_APROVISIONAMIENTO_Adjuntos_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                    }
+                    return Conteo_PS_APROVISIONAMIENTO_Usu_Aprov;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString());
+                //throw ex;
+            }
+            finally
+            {
+                Archivo_PS_Aprovi_Usu_Aprov.Close();
+            }
+            return Conteo_PS_APROVISIONAMIENTO_Usu_Aprov;
+        }//Se ejecuta con Extractor_PS_APROVISIONAMIENTO()
+
+        internal static int Extractor_APROVISIONAMIENTO_Grupos_lider(string idmongo, string id_empresa_in, string id_usu_aprobado, List<BsonValue> Lista_Grupos_Lider)
+        {
+            string path = ValidarRutaArchivos("PS_02_06_01_01_GRPL_");
+            string sTextoDescarga_Grupos_Lider = string.Empty;
+            int Conteo_PS_Aprovisionamiento_Grupos_lider = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_Aprovisionamiento_Grupos_Lider = string.Format("{0}{1}{2}.txt", path, "PS_02_06_01_01_GRPL_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_Aprovisionamiento_Grupos_lider = new StreamWriter(archivo_Aprovisionamiento_Grupos_Lider, true, Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                if (Lista_Grupos_Lider?.Count > 0)
+                {
+                    foreach (BsonValue idGrupo in Lista_Grupos_Lider)
+                    {
+                        sTextoDescarga_Grupos_Lider = string.Empty;
+
+                        sTextoDescarga_Grupos_Lider = string.Format("{0}", idmongo);
+                        sTextoDescarga_Grupos_Lider = string.Format("~|{0}", id_empresa_in);
+                        sTextoDescarga_Grupos_Lider = string.Format("~|{0}", id_usu_aprobado);
+                        sTextoDescarga_Grupos_Lider += string.Format("~|{0}", (idGrupo.AsString.Length > 30 ? idGrupo.AsString.Substring(0, 29) : idGrupo.AsString));
+                        sTextoDescarga_Grupos_Lider = sTextoDescarga_Grupos_Lider.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                        Conteo_PS_Aprovisionamiento_Grupos_lider++;
+                        Archivo_Aprovisionamiento_Grupos_lider.WriteLine(sTextoDescarga_Grupos_Lider);
+                    }
+                }
+
+                Archivo_Aprovisionamiento_Grupos_lider.Close();
+            }
+            catch (Exception ex)
+            {
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_APROVISIONAMIENTO_GRUPOS_LIDER_ entre el modelo de datos y de registros de mongo Id: " + idmongo);
+            }
+            return Conteo_PS_Aprovisionamiento_Grupos_lider;
+
+        }
+
+        internal static int Extractor_PS_APROVISIONAMIENTO_datos_adicionales(string idmongo, List<BsonValue> lista_datos_adicionales_aprov)
+        {
+            string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(path);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(path);
+            }
+            catch (Exception ex)
+            {
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo PS_APROVISIONAMIENTO_datos_adicionales");
+            }
+            StreamWriter Archivo_PS_APROVIONAMIENTO_datos_adicionales = null;
+            int Conteo_APROVISIONAMIENTO_datos_adicionales = 0;
+            string sTextoDescarga_APROV_datos_adicionales = string.Empty;
+            string id_mongo = idmongo;
+            DateTime fechatemp = DateTime.Now.ToUniversalTime();
+            string archivo_Aprovisionamiento_datos_adicionales = path + "PS_02_07_DATO_ADICIO_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            try
+            {
+                // Se abren los archivos para poder escribirlos
+                Archivo_PS_APROVIONAMIENTO_datos_adicionales = new StreamWriter(archivo_Aprovisionamiento_datos_adicionales, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
+                if (lista_datos_adicionales_aprov.Count() > 0)
+                {
+                    // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_datos_adicionales_servicio 
+                    Console.WriteLine("Registros en la coleccion de PS_APROVISIONAMIENTO_datos_adicionales encontrados " + lista_datos_adicionales_aprov.Count.ToString());
+                    foreach (BsonValue itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio in lista_datos_adicionales_aprov)
+                    {
+                        try
+                        {
+                            try
+                            {
+                                sTextoDescarga_APROV_datos_adicionales = string.Empty;
+                                sTextoDescarga_APROV_datos_adicionales = string.Format("{0}", id_mongo);
+                                sTextoDescarga_APROV_datos_adicionales += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "identificador", 30));
+                                sTextoDescarga_APROV_datos_adicionales += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "valor", 30));
+                                sTextoDescarga_APROV_datos_adicionales = sTextoDescarga_APROV_datos_adicionales.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROVISIONAMIENTO_datos_adicionales Id: " + id_mongo + "," + itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().ToString());
+                                continue;
+                            }
+                            // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                            try
+                            {
+                                if (sTextoDescarga_APROV_datos_adicionales != "")
+                                {
+                                    Archivo_PS_APROVIONAMIENTO_datos_adicionales.WriteLine(sTextoDescarga_APROV_datos_adicionales);
+                                    Console.WriteLine(sTextoDescarga_APROV_datos_adicionales);
+                                    Conteo_APROVISIONAMIENTO_datos_adicionales++;
+                                }
+                                //Console.WriteLine("PS_SERVICIO_CLIENTE_datos_adicionales_servicio ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_datos_adicionales_servicio actializadas: " + Conteo_PS_APROVISIONAMIENTO_Comunicaciones);
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_APROVIONAMIENTO_datos_adicionales en mongo Id: " + id_mongo);
+                                continue;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_APROVISIONAMIENTO_datos_adicionales para el procesamiento de registros de mongo Id: " + id_mongo);
+                            continue;
+                        }
+                    }
+                    Console.WriteLine("PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio ACTUALIZADA: " + id_mongo + "Numero de PS_APROVISIONAMIENTO_datos_adicionales actializadas: " + Conteo_APROVISIONAMIENTO_datos_adicionales);
+                }
+                if (Conteo_APROVISIONAMIENTO_datos_adicionales > 0)
+                {
+                    Archivo_PS_APROVIONAMIENTO_datos_adicionales.Close();
+                }
+                return Conteo_APROVISIONAMIENTO_datos_adicionales;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString());
+                //throw ex;
+            }
+            finally
+            {
+                Archivo_PS_APROVIONAMIENTO_datos_adicionales.Close();
+            }
+            return Conteo_APROVISIONAMIENTO_datos_adicionales;
+        } //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE()
+
+        internal static int Extractor_PS_APROVISIONAMIENTO_respuesta(string idmongo, List<BsonValue> lista_respuesta_aprov)
+        {
+            string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
+            try
+            {
+                bool IsExists = System.IO.Directory.Exists(path);
+                if (!IsExists)
+                    System.IO.Directory.CreateDirectory(path);
+            }
+            catch (Exception ex)
+            {
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo PS_APROVISIONAMIENTO_respuesta");
+            }
+            StreamWriter Archivo_PS_APROVIONAMIENTO_respuesta = null;
+            int Conteo_APROVISIONAMIENTO_respuesta = 0;
+            string sTextoDescarga_APROV_respuesta = string.Empty;
+            string id_mongo = idmongo;
+            DateTime fechatemp = DateTime.Now.ToUniversalTime();
+            string archivo_Aprovisionamiento_respuesta = path + "PS_02_08_APROV_RESPU_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            try
+            {
+                // Se abren los archivos para poder escribirlos
+                Archivo_PS_APROVIONAMIENTO_respuesta = new StreamWriter(archivo_Aprovisionamiento_respuesta, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
+                if (lista_respuesta_aprov.Count() > 0)
+                {
+                    // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_datos_adicionales_servicio 
+                    Console.WriteLine("Registros en la coleccion de PS_APROVISIONAMIENTO_respuesta encontrados " + lista_respuesta_aprov.Count.ToString());
+                    foreach (BsonValue itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio in lista_respuesta_aprov)
+                    {
+                        try
+                        {
+                            try
+                            {
+                                sTextoDescarga_APROV_respuesta = string.Empty;
+                                sTextoDescarga_APROV_respuesta = string.Format("{0}", id_mongo);
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "fecha_creacion", 30));
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "usuario_creacion", 30));
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "fecha_actualizacion", 30));
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "usuario_modificacion", 30));
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "id_causal_finalizacion", 30));
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "causal_finalizacion", 30));
+                                sTextoDescarga_APROV_respuesta += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "observaciones_finalizacion", 200));
+                                sTextoDescarga_APROV_respuesta = sTextoDescarga_APROV_respuesta.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_APROVISIONAMIENTO_respuesta Id: " + id_mongo + "," + itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().ToString());
+                                continue;
+                            }
+                            // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                            try
+                            {
+                                if (sTextoDescarga_APROV_respuesta != "")
+                                {
+                                    Archivo_PS_APROVIONAMIENTO_respuesta.WriteLine(sTextoDescarga_APROV_respuesta);
+                                    Console.WriteLine(sTextoDescarga_APROV_respuesta);
+                                    Conteo_APROVISIONAMIENTO_respuesta++;
+                                }
+                                //Console.WriteLine("PS_SERVICIO_CLIENTE_datos_adicionales_servicio ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_datos_adicionales_servicio actializadas: " + Conteo_PS_APROVISIONAMIENTO_Comunicaciones);
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_APROVISIONAMIENTO_respuesta en mongo Id: " + id_mongo);
+                                continue;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_APROVISIONAMIENTO_respuesta para el procesamiento de registros de mongo Id: " + id_mongo);
+                            continue;
+                        }
+                    }
+                    Console.WriteLine("PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio ACTUALIZADA: " + id_mongo + "Numero de PS_APROVISIONAMIENTO_respuesta actializadas: " + Conteo_APROVISIONAMIENTO_respuesta);
+                }
+                if (Conteo_APROVISIONAMIENTO_respuesta > 0)
+                {
+                    Archivo_PS_APROVIONAMIENTO_respuesta.Close();
+                }
+                return Conteo_APROVISIONAMIENTO_respuesta;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString());
+                //throw ex;
+            }
+            finally
+            {
+                Archivo_PS_APROVIONAMIENTO_respuesta.Close();
+            }
+            return Conteo_APROVISIONAMIENTO_respuesta;
+        } //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE()
+
         internal static void Extractor_PS_ATRIBUTO(string tipo = "")
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
@@ -1855,7 +2460,7 @@ namespace Tier.Cmd.Classes
                 else if (tipo != "full")
                 {
                     DateTime fechaconsulta = DateTime.Parse(tipo);
-                   
+
                     filterPS_ATRIBUTO = builderPS_ATRIBUTO.And(builderPS_ATRIBUTO.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_ATRIBUTO.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
@@ -2075,7 +2680,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_BODEGA.Contains("usuario_creacion") && !itemPS_BODEGA.GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_BODEGA.GetValue("usuario_creacion").ToString()) ? (itemPS_BODEGA.GetValue("usuario_creacion").ToString().Length > 50 ? itemPS_BODEGA.GetValue("usuario_creacion").ToString().Substring(0, 50) : itemPS_BODEGA.GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_BODEGA.Contains("fecha_actualizacion") && !itemPS_BODEGA.GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_BODEGA.GetValue("fecha_actualizacion").ToString()) ? (itemPS_BODEGA.GetValue("fecha_actualizacion").ToString().Length > 30 ? itemPS_BODEGA.GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemPS_BODEGA.GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_BODEGA.Contains("usuario_modificacion") && !itemPS_BODEGA.GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_BODEGA.GetValue("usuario_modificacion").ToString()) ? (itemPS_BODEGA.GetValue("usuario_modificacion").ToString().Length > 50 ? itemPS_BODEGA.GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemPS_BODEGA.GetValue("usuario_modificacion").ToString()) : "");// VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        
+
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                     }
                                     catch (Exception ex)
@@ -2254,7 +2859,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_CAMPO_DINAMICO.Contains("id_lista") ? !string.IsNullOrEmpty(itemPS_CAMPO_DINAMICO.GetValue("id_lista")?.ToString()) ? (itemPS_CAMPO_DINAMICO.GetValue("id_lista").ToString().Length > 30 ? itemPS_CAMPO_DINAMICO.GetValue("id_lista").ToString().Substring(0, 29) : itemPS_CAMPO_DINAMICO.GetValue("id_lista").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,                                        
                                         "~|" + (itemPS_CAMPO_DINAMICO.Contains("apiname") && !itemPS_CAMPO_DINAMICO.GetValue("apiname").IsBsonNull && !string.IsNullOrEmpty(itemPS_CAMPO_DINAMICO.GetValue("apiname").ToString()) ? (itemPS_CAMPO_DINAMICO.GetValue("apiname").ToString().Length > 50 ? itemPS_CAMPO_DINAMICO.GetValue("apiname").ToString().Substring(0, 50) : itemPS_CAMPO_DINAMICO.GetValue("apiname").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_CAMPO_DINAMICO.Contains("agrupador") && !itemPS_CAMPO_DINAMICO.GetValue("agrupador").IsBsonNull && !string.IsNullOrEmpty(itemPS_CAMPO_DINAMICO.GetValue("agrupador").ToString()) ? (itemPS_CAMPO_DINAMICO.GetValue("agrupador").ToString().Length > 50 ? itemPS_CAMPO_DINAMICO.GetValue("agrupador").ToString().Substring(0, 50) : itemPS_CAMPO_DINAMICO.GetValue("agrupador").ToString()) : ""); // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        
+
 
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                     }
@@ -2851,7 +3456,7 @@ namespace Tier.Cmd.Classes
 
             StreamWriter Archivo_PS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO = null;
 
-            int Conteo_PS_COMUNICACION = 0;            
+            int Conteo_PS_COMUNICACION = 0;
             string sTextoDescarga = "";
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
@@ -2914,7 +3519,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.Contains("producto") && !itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("producto").IsBsonNull && !string.IsNullOrEmpty(itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("producto").ToString()) ? (itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("producto").ToString().Length > 50 ? itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("producto").ToString().Substring(0, 50) : itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("producto").ToString()) : "") +// VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.Contains("es_activo") && !itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("es_activo").IsBsonNull ? itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("es_activo").ToString().Length > 8 ? itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("es_activo").ToString().Substring(0, 8) : itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("es_activo").ToString() : "") + //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.Contains("observaciones") && !itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("observaciones").IsBsonNull ? !string.IsNullOrEmpty(itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("observaciones").ToString()) ? (itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("observaciones").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Length > 500 ? itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("observaciones").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Substring(0, 500) : itemPS_CONFIG_CAMPOS_RESPUESTA_PRODUCTO.GetValue("observaciones").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ")) : "" : "");// VARCHAR(8000) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");                                     
+                                        sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
 
                                     }
                                     catch (Exception ex)
@@ -3226,7 +3831,7 @@ namespace Tier.Cmd.Classes
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
             bool pruebas = true;
-            
+
 
             string archivo = path + "PS_CONFIG_SERVICIO_PRODUCTO_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
@@ -3286,7 +3891,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_CONFIG_SERVICIO_PRODUCTO.Contains("observaciones") && !itemPS_CONFIG_SERVICIO_PRODUCTO.GetValue("observaciones").IsBsonNull ? !string.IsNullOrEmpty(itemPS_CONFIG_SERVICIO_PRODUCTO.GetValue("observaciones").ToString()) ? (itemPS_CONFIG_SERVICIO_PRODUCTO.GetValue("observaciones").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Length > 500 ? itemPS_CONFIG_SERVICIO_PRODUCTO.GetValue("observaciones").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Substring(0, 500) : itemPS_CONFIG_SERVICIO_PRODUCTO.GetValue("observaciones").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ")) : "" : "");
 
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                        
+
                                     }
                                     catch (Exception ex)
                                     {
@@ -3469,7 +4074,7 @@ namespace Tier.Cmd.Classes
                                                 "~|" + (itemElementos_Configuracion.ToBsonDocument().Contains("nombre_agrupador") && !itemElementos_Configuracion.ToBsonDocument().GetValue("nombre_agrupador").IsBsonNull && !string.IsNullOrEmpty(itemElementos_Configuracion.ToBsonDocument().GetValue("nombre_agrupador").ToString()) ? (itemElementos_Configuracion.ToBsonDocument().GetValue("nombre_agrupador").ToString().Length > 30 ? itemElementos_Configuracion.ToBsonDocument().GetValue("nombre_agrupador").ToString().Substring(0, 29) : itemElementos_Configuracion.ToBsonDocument().GetValue("nombre_agrupador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
                                                 "~|" + (itemElementos_Configuracion.ToBsonDocument().Contains("cantidad") && !itemElementos_Configuracion.ToBsonDocument().GetValue("cantidad").IsBsonNull && !string.IsNullOrEmpty(itemElementos_Configuracion.ToBsonDocument().GetValue("cantidad").ToString()) ? (itemElementos_Configuracion.ToBsonDocument().GetValue("cantidad").ToString().Length > 30 ? itemElementos_Configuracion.ToBsonDocument().GetValue("cantidad").ToString().Substring(0, 29) : itemElementos_Configuracion.ToBsonDocument().GetValue("cantidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
                                                 "~|" + (itemElementos_Configuracion.ToBsonDocument().Contains("tipo_elemento") && !itemElementos_Configuracion.ToBsonDocument().GetValue("tipo_elemento").IsBsonNull ? itemElementos_Configuracion.ToBsonDocument().GetValue("tipo_elemento").ToString().Length > 8 ? itemElementos_Configuracion.ToBsonDocument().GetValue("tipo_elemento").ToString().Substring(0, 8) : itemElementos_Configuracion.ToBsonDocument().GetValue("tipo_elemento").ToString() : "") +
-                                                "~|" + (itemElementos_Configuracion.ToBsonDocument().Contains("inventario_etb") && !itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").IsBsonNull ? itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").ToString().Length > 8 ? itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").ToString().Substring(0, 8) : itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").ToString() : "") ;
+                                                "~|" + (itemElementos_Configuracion.ToBsonDocument().Contains("inventario_etb") && !itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").IsBsonNull ? itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").ToString().Length > 8 ? itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").ToString().Substring(0, 8) : itemElementos_Configuracion.ToBsonDocument().GetValue("inventario_etb").ToString() : "");
                                                 sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                             }
                                             catch (Exception ex)
@@ -3657,7 +4262,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_CONSECUTIVO.Contains("valor") ? !string.IsNullOrEmpty(itemPS_CONSECUTIVO.GetValue("valor")?.ToString()) ? (itemPS_CONSECUTIVO.GetValue("valor").ToString().Length > 30 ? itemPS_CONSECUTIVO.GetValue("valor").ToString().Substring(0, 29) : itemPS_CONSECUTIVO.GetValue("valor").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_CONSECUTIVO.Contains("es_activo") && !itemPS_CONSECUTIVO.GetValue("es_activo").IsBsonNull ? itemPS_CONSECUTIVO.GetValue("es_activo").ToString().Length > 8 ? itemPS_CONSECUTIVO.GetValue("es_activo").ToString().Substring(0, 8) : itemPS_CONSECUTIVO.GetValue("es_activo").ToString() : "") + //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_CONSECUTIVO.Contains("formato") ? !string.IsNullOrEmpty(itemPS_CONSECUTIVO.GetValue("formato")?.ToString()) ? (itemPS_CONSECUTIVO.GetValue("formato").ToString().Length > 30 ? itemPS_CONSECUTIVO.GetValue("formato").ToString().Substring(0, 29) : itemPS_CONSECUTIVO.GetValue("formato").ToString()) : "" : "");
-                                        
+
 
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                     }
@@ -4196,7 +4801,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_FASE.Contains("usuario_modificacion") && !itemPS_FASE.GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_FASE.GetValue("usuario_modificacion").ToString()) ? (itemPS_FASE.GetValue("usuario_modificacion").ToString().Length > 50 ? itemPS_FASE.GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemPS_FASE.GetValue("usuario_modificacion").ToString()) : "") +// VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_FASE.Contains("fase") ? !string.IsNullOrEmpty(itemPS_FASE.GetValue("fase")?.ToString()) ? (itemPS_FASE.GetValue("fase").ToString().Length > 30 ? itemPS_FASE.GetValue("fase").ToString().Substring(0, 29) : itemPS_FASE.GetValue("fase").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_FASE.Contains("es_activo") && !itemPS_FASE.GetValue("es_activo").IsBsonNull ? itemPS_FASE.GetValue("es_activo").ToString().Length > 8 ? itemPS_FASE.GetValue("es_activo").ToString().Substring(0, 8) : itemPS_FASE.GetValue("es_activo").ToString() : "") + //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_FASE.Contains("es_inicial") && !itemPS_FASE.GetValue("es_inicial").IsBsonNull ? itemPS_FASE.GetValue("es_inicial").ToString().Length > 8 ? itemPS_FASE.GetValue("es_inicial").ToString().Substring(0, 8) : itemPS_FASE.GetValue("es_inicial").ToString() : "") ; //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        "~|" + (itemPS_FASE.Contains("es_inicial") && !itemPS_FASE.GetValue("es_inicial").IsBsonNull ? itemPS_FASE.GetValue("es_inicial").ToString().Length > 8 ? itemPS_FASE.GetValue("es_inicial").ToString().Substring(0, 8) : itemPS_FASE.GetValue("es_inicial").ToString() : ""); //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
 
 
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
@@ -4522,7 +5127,7 @@ namespace Tier.Cmd.Classes
                 }
                 else if (tipo != "full")
                 {
-                    DateTime fechaconsulta = DateTime.Parse(tipo);                    
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
                     filterPS_FORMATO_SALIDA = builderPS_FORMATO_SALIDA.And(builderPS_FORMATO_SALIDA.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_FORMATO_SALIDA.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
@@ -5339,7 +5944,7 @@ namespace Tier.Cmd.Classes
                                         {
                                             acciones += Extractor_PS_FUNCIONALIDAD_acciones(id_mongo);
                                         }
-                                        
+
                                     }
                                     catch (Exception ex)
                                     {
@@ -5625,7 +6230,7 @@ namespace Tier.Cmd.Classes
                 }
                 else if (tipo != "full")
                 {
-                    DateTime fechaconsulta = DateTime.Parse(tipo);                   
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
                     filterPS_GRUPO_ASIGNACION = builderPS_GRUPO_ASIGNACION.And(builderPS_GRUPO_ASIGNACION.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_GRUPO_ASIGNACION.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
@@ -6033,7 +6638,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_HISTORICO_MODIFICACIONES.Contains("id_usuario") && !itemPS_HISTORICO_MODIFICACIONES.GetValue("id_usuario").IsBsonNull && !string.IsNullOrEmpty(itemPS_HISTORICO_MODIFICACIONES.GetValue("id_usuario").ToString()) ? (itemPS_HISTORICO_MODIFICACIONES.GetValue("id_usuario").ToString().Length > 30 ? itemPS_HISTORICO_MODIFICACIONES.GetValue("id_usuario").ToString().Substring(0, 29) : itemPS_HISTORICO_MODIFICACIONES.GetValue("id_usuario").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
                                         "~|" + (itemPS_HISTORICO_MODIFICACIONES.Contains("usuario") && !itemPS_HISTORICO_MODIFICACIONES.GetValue("usuario").IsBsonNull && !string.IsNullOrEmpty(itemPS_HISTORICO_MODIFICACIONES.GetValue("usuario").ToString()) ? (itemPS_HISTORICO_MODIFICACIONES.GetValue("usuario").ToString().Length > 50 ? itemPS_HISTORICO_MODIFICACIONES.GetValue("usuario").ToString().Substring(0, 50) : itemPS_HISTORICO_MODIFICACIONES.GetValue("usuario").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_HISTORICO_MODIFICACIONES.Contains("comentarios") && !itemPS_HISTORICO_MODIFICACIONES.GetValue("comentarios").IsBsonNull ? !string.IsNullOrEmpty(itemPS_HISTORICO_MODIFICACIONES.GetValue("comentarios").ToString()) ? (itemPS_HISTORICO_MODIFICACIONES.GetValue("comentarios").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Length > 500 ? itemPS_HISTORICO_MODIFICACIONES.GetValue("comentarios").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ").Substring(0, 500) : itemPS_HISTORICO_MODIFICACIONES.GetValue("comentarios").ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ")) : "" : "") + // VARCHAR(8000) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_HISTORICO_MODIFICACIONES.Contains("ip") && !itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").IsBsonNull && !string.IsNullOrEmpty(itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString()) ? (itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString().Length > 50 ? itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString().Substring(0, 50) : itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString()) : "")+ // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        "~|" + (itemPS_HISTORICO_MODIFICACIONES.Contains("ip") && !itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").IsBsonNull && !string.IsNullOrEmpty(itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString()) ? (itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString().Length > 50 ? itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString().Substring(0, 50) : itemPS_HISTORICO_MODIFICACIONES.GetValue("ip").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         "~|" + (itemPS_HISTORICO_MODIFICACIONES.Contains("objeto_serializado") && !itemPS_HISTORICO_MODIFICACIONES.GetValue("objeto_serializado").IsBsonNull && !string.IsNullOrEmpty(itemPS_HISTORICO_MODIFICACIONES.GetValue("objeto_serializado").ToString()) ? (itemPS_HISTORICO_MODIFICACIONES.GetValue("objeto_serializado").ToString().Length > 50 ? itemPS_HISTORICO_MODIFICACIONES.GetValue("objeto_serializado").ToString().Substring(0, 50) : itemPS_HISTORICO_MODIFICACIONES.GetValue("objeto_serializado").ToString()) : ""); // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                     }
@@ -6155,7 +6760,7 @@ namespace Tier.Cmd.Classes
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
             bool pruebas = true;
-           
+
 
             string archivo = path + "PS_INVENTARIO_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
@@ -6227,7 +6832,7 @@ namespace Tier.Cmd.Classes
                                         "~|" + (itemPS_INVENTARIO.Contains("es_activo") && !itemPS_INVENTARIO.GetValue("es_activo").IsBsonNull ? itemPS_INVENTARIO.GetValue("es_activo").ToString().Length > 8 ? itemPS_INVENTARIO.GetValue("es_activo").ToString().Substring(0, 8) : itemPS_INVENTARIO.GetValue("es_activo").ToString() : ""); //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
 
                                         sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                        
+
                                     }
                                     catch (Exception ex)
                                     {
@@ -6905,7 +7510,7 @@ namespace Tier.Cmd.Classes
 
             StreamWriter Archivo_PS_PLANTILLA_COMUNICACION = null;
 
-            int Conteo_PS_PLANTILLA_COMUNICACION = 0;            
+            int Conteo_PS_PLANTILLA_COMUNICACION = 0;
             string sTextoDescarga = "";
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
@@ -7539,7 +8144,7 @@ namespace Tier.Cmd.Classes
                                         if (itemPS_REGLA_ASIGANCION.Contains("validaciones_parametros") && !itemPS_REGLA_ASIGANCION.GetValue("validaciones_parametros").IsBsonNull && itemPS_REGLA_ASIGANCION.GetElement("validaciones_parametros").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
                                         {
                                             validacion_parametros += Extractor_PS_REGLA_ASIGANCION_validaciones_parametros(id_mongo);
-                                        }                                        
+                                        }
                                     }
                                     catch (Exception ex)
                                     {
@@ -7693,7 +8298,7 @@ namespace Tier.Cmd.Classes
 
                             sTextoDescarga_validacion_parametros = "";
                             List<BsonValue> consulta_PS_REGLA_ASIGANCION_validaciones_parametros = itemPS_REGLA_ASIGANCION.GetElement("validaciones_parametros").Value.AsBsonArray.AsQueryable().ToList();
-                            
+
                             if (consulta_PS_REGLA_ASIGANCION_validaciones_parametros != null && consulta_PS_REGLA_ASIGANCION_validaciones_parametros.Count() > 0)
                             {
                                 foreach (BsonValue itemPS_REGLA_ASIGANCION_validaciones_parametros in consulta_PS_REGLA_ASIGANCION_validaciones_parametros)
@@ -7712,7 +8317,7 @@ namespace Tier.Cmd.Classes
                                                      "~|" + (itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().Contains("campo_validacion") && !itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("campo_validacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("campo_validacion").ToString()) ? (itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("campo_validacion").ToString().Length > 30 ? itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("campo_validacion").ToString().Substring(0, 29) : itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("campo_validacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
                                                      "~|" + (itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().Contains("parametro_validacion") && !itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("parametro_validacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("parametro_validacion").ToString()) ? (itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("parametro_validacion").ToString().Length > 30 ? itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("parametro_validacion").ToString().Substring(0, 29) : itemPS_REGLA_ASIGANCION_validaciones_parametros.ToBsonDocument().GetValue("parametro_validacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
                                                      "~|" + (item.ToString());// VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                     sTextoDescarga_validacion_parametros = sTextoDescarga_validacion_parametros.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                                                    sTextoDescarga_validacion_parametros = sTextoDescarga_validacion_parametros.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                                 }
                                             }
                                         }
@@ -8043,8 +8648,8 @@ namespace Tier.Cmd.Classes
                                             sTextoDescarga_permisos =
                                             (itemPS_ROL.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_ROL.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_ROL.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_ROL.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_ROL.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                              "~|" + (itemPS_ROL_permisos.ToBsonDocument().Contains("funcionalidad") && !itemPS_ROL_permisos.ToBsonDocument().GetValue("funcionalidad").IsBsonNull && !string.IsNullOrEmpty(itemPS_ROL_permisos.ToBsonDocument().GetValue("funcionalidad").ToString()) ? (itemPS_ROL_permisos.ToBsonDocument().GetValue("funcionalidad").ToString().Length > 30 ? itemPS_ROL_permisos.ToBsonDocument().GetValue("funcionalidad").ToString().Substring(0, 29) : itemPS_ROL_permisos.ToBsonDocument().GetValue("funcionalidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                             "~|" + (itemPS_ROL_permisos.ToBsonDocument().Contains("accion") && !itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").IsBsonNull && !string.IsNullOrEmpty(itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString()) ? (itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString().Length > 30 ? itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString().Substring(0, 29) : itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString()) : "")+  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                             "~|" + (itemPS_ROL.Contains("permitido") && !itemPS_ROL.GetValue("permitido").IsBsonNull ? itemPS_ROL.GetValue("permitido").ToString().Length > 8 ? itemPS_ROL.GetValue("permitido").ToString().Substring(0, 8) : itemPS_ROL.GetValue("permitido").ToString() : "")+ //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                             "~|" + (itemPS_ROL_permisos.ToBsonDocument().Contains("accion") && !itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").IsBsonNull && !string.IsNullOrEmpty(itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString()) ? (itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString().Length > 30 ? itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString().Substring(0, 29) : itemPS_ROL_permisos.ToBsonDocument().GetValue("accion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                             "~|" + (itemPS_ROL.Contains("permitido") && !itemPS_ROL.GetValue("permitido").IsBsonNull ? itemPS_ROL.GetValue("permitido").ToString().Length > 8 ? itemPS_ROL.GetValue("permitido").ToString().Substring(0, 8) : itemPS_ROL.GetValue("permitido").ToString() : "") + //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                              "~|" + (itemPS_ROL.Contains("todos_elementos") && !itemPS_ROL.GetValue("todos_elementos").IsBsonNull ? itemPS_ROL.GetValue("todos_elementos").ToString().Length > 8 ? itemPS_ROL.GetValue("todos_elementos").ToString().Substring(0, 8) : itemPS_ROL.GetValue("todos_elementos").ToString() : ""); //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
                                             sTextoDescarga_permisos = sTextoDescarga_permisos.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                         }
@@ -8158,7 +8763,7 @@ namespace Tier.Cmd.Classes
             int Conteo_Valores_Elementos_CV = 0;
             int Valores_Elementos_CV = 0;
             int Valores_Elementos = 0;
-            string archivo_SC = path + "PS_SERVICIO_CLIENTE_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo_SC = path + "PS_01_00_SER_CLIENTE_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
             try
             {
                 // Se abren los archivos para poder escribirlos
@@ -8176,7 +8781,7 @@ namespace Tier.Cmd.Classes
                 else if (tipo != "full")
                 {
                     DateTime fechaconsulta = DateTime.Parse(tipo);
-                    
+
                     filterPS_SERVICIO_CLIENTE = builderPS_SERVICIO_CLIENTE.And(builderPS_SERVICIO_CLIENTE.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_SERVICIO_CLIENTE.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
                 }
 
@@ -8204,35 +8809,72 @@ namespace Tier.Cmd.Classes
                                 {
                                     try
                                     {
-                                        sTextoDescarga_SC =
-                                        (itemPS_SERVICIO_CLIENTE.Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("fecha_creacion") && !itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString().Substring(0, 30) : itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("usuario_creacion") && !itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString().Length > 50 ? itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString().Substring(0, 50) : itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("fecha_actualizacion") && !itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("usuario_modificacion") && !itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString().Length > 50 ? itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("estado") && !itemPS_SERVICIO_CLIENTE.GetValue("estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("ancho_banda") && !itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("cuenta_cliente") && !itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("nit") && !itemPS_SERVICIO_CLIENTE.GetValue("nit").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("id_servicio") && !itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("nombre_producto") && !itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("plan") && !itemPS_SERVICIO_CLIENTE.GetValue("plan").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("sucursal") && !itemPS_SERVICIO_CLIENTE.GetValue("sucursal").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("ciudad") && !itemPS_SERVICIO_CLIENTE.GetValue("ciudad").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("disponibilidad_servicio") && !itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("servicio_etb") && !itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("cuenta_facturacion") && !itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("aliado_colaborador") && !itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("proveedor_ultima_milla") && !itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("medio_ultima_milla") && !itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("external_service_id") && !itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("numero_conexion") && !itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("numero_aprovisionamiento") && !itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("numero_viabilidad") && !itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("opcion_respuesta_viabilidad") && !itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("fecha_inicio_facturacion") && !itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString().Substring(0, 30) : itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("version") && !itemPS_SERVICIO_CLIENTE.GetValue("version").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("version").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("version").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("version").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("version").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                        "~|" + (itemPS_SERVICIO_CLIENTE.Contains("id_Aprovisionamiento") && !itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        sTextoDescarga_SC = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "_id", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "fecha_creacion", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "usuario_creacion", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "fecha_actualizacion", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "usuario_modificacion", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "estado", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "ancho_banda", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "cuenta_cliente", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "nit", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "id_servicio", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "nombre_producto", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "plan", 200));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "sucursal", 200));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "ciudad", 200));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "disponibilidad_servicio", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "servicio_etb", 50));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "cuenta_facturacion", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "aliado_colaborador", 200));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "proveedor_ultima_milla", 200));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "medio_ultima_milla", 200));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "external_service_id", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "numero_conexion", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "numero_aprovisionamiento", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "numero_viabilidad", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "opcion_respuesta_viabilidad", 100));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "fecha_inicio_facturacion", 30));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "version", 10));
+                                        sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE, "id_Aprovisionamiento", 30));
+
+
+
+
+
+
+
+
+
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("fecha_creacion") && !itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString().Substring(0, 30) : itemPS_SERVICIO_CLIENTE.GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("usuario_creacion") && !itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString().Length > 50 ? itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString().Substring(0, 50) : itemPS_SERVICIO_CLIENTE.GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("fecha_actualizacion") && !itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemPS_SERVICIO_CLIENTE.GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("usuario_modificacion") && !itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString().Length > 50 ? itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemPS_SERVICIO_CLIENTE.GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("estado") && !itemPS_SERVICIO_CLIENTE.GetValue("estado").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("ancho_banda") && !itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("ancho_banda").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("cuenta_cliente") && !itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("cuenta_cliente").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("nit") && !itemPS_SERVICIO_CLIENTE.GetValue("nit").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("nit").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("id_servicio") && !itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("id_servicio").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("nombre_producto") && !itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("nombre_producto").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("plan") && !itemPS_SERVICIO_CLIENTE.GetValue("plan").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("plan").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("sucursal") && !itemPS_SERVICIO_CLIENTE.GetValue("sucursal").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("sucursal").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("ciudad") && !itemPS_SERVICIO_CLIENTE.GetValue("ciudad").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("ciudad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("disponibilidad_servicio") && !itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("disponibilidad_servicio").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("servicio_etb") && !itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("servicio_etb").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("cuenta_facturacion") && !itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("cuenta_facturacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("aliado_colaborador") && !itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("aliado_colaborador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("proveedor_ultima_milla") && !itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("proveedor_ultima_milla").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("medio_ultima_milla") && !itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("medio_ultima_milla").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("external_service_id") && !itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("external_service_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("numero_conexion") && !itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("numero_conexion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("numero_aprovisionamiento") && !itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("numero_aprovisionamiento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("numero_viabilidad") && !itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("numero_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("opcion_respuesta_viabilidad") && !itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("opcion_respuesta_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("fecha_inicio_facturacion") && !itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString().Substring(0, 30) : itemPS_SERVICIO_CLIENTE.GetValue("fecha_inicio_facturacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("version") && !itemPS_SERVICIO_CLIENTE.GetValue("version").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("version").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("version").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("version").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("version").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                        //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("id_Aprovisionamiento") && !itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("id_Aprovisionamiento").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+
+
                                         //"~|" + (itemPS_SERVICIO_CLIENTE.Contains("historico_modificaciones") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.GetValue("historico_modificaciones")?.ToString()) ? (itemPS_SERVICIO_CLIENTE.GetValue("historico_modificaciones").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.GetValue("historico_modificaciones").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.GetValue("historico_modificaciones").ToString()) : "" : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,                                        
                                         sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                         if (itemPS_SERVICIO_CLIENTE.Contains("datos_adicionales_servicio") && !itemPS_SERVICIO_CLIENTE.GetValue("datos_adicionales_servicio").IsBsonNull && itemPS_SERVICIO_CLIENTE.GetElement("datos_adicionales_servicio").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
@@ -8320,7 +8962,7 @@ namespace Tier.Cmd.Classes
                                     //PublicarArchivo.PublicarArchivoExtractores("PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
 
                                 }
-                               
+
 
                             }
 
@@ -8352,7 +8994,7 @@ namespace Tier.Cmd.Classes
 
         }
 
-        internal static int Extractor_PS_SERVICIO_CLIENTE_configuracion_servicio(string idmongo, out int valores_elementos) 
+        internal static int Extractor_PS_SERVICIO_CLIENTE_configuracion_servicio(string idmongo, out int valores_elementos)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -8377,11 +9019,11 @@ namespace Tier.Cmd.Classes
             string sTextoDescarga = "";
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
-            string archivo_CS = path + "PS_SERVICIO_CLIENTE_configuracion_servicio_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo_CS2 = path + "PS_01_02_CONFI_SERVC_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
             try
             {
                 // Se abren los archivos para poder escribirlos
-                Archivo_PS_SERVICIO_CLIENTE_configuracion_servicio = new StreamWriter(archivo_CS, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
+                Archivo_PS_SERVICIO_CLIENTE_configuracion_servicio = new StreamWriter(archivo_CS2, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
 
                 // FILTRO PARA LAS COLECCION
                 IMongoCollection<BsonDocument> Col_PS_SERVICIO_CLIENTE_CS = db.GetCollection<BsonDocument>("PS_SERVICIO_CLIENTE");
@@ -8410,23 +9052,22 @@ namespace Tier.Cmd.Classes
                                     {
                                         try
                                         {
-                                            sTextoDescarga =
-                                            (itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("_id") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("fecha_creacion") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("usuario_creacion") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("fecha_actualizacion") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : itemconfiguracion_servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("usuario_modificacion") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : itemconfiguracion_servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("id_agrupador") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("id_agrupador").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("id_agrupador").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("id_agrupador").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("id_agrupador").ToString().Substring(0, 29) : itemconfiguracion_servicio.ToBsonDocument().GetValue("id_agrupador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("nombre_agrupador") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_agrupador").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString().Substring(0, 29) : itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("nombre_elemento") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_elemento").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_elemento").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_elemento").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_elemento").ToString().Substring(0, 29) : itemconfiguracion_servicio.ToBsonDocument().GetValue("nombre_elemento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("cantidad") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("cantidad").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("cantidad").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("cantidad").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("cantidad").ToString().Substring(0, 29) : itemconfiguracion_servicio.ToBsonDocument().GetValue("cantidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("tipo_elemento") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("tipo_elemento").IsBsonNull && !string.IsNullOrEmpty(itemconfiguracion_servicio.ToBsonDocument().GetValue("tipo_elemento").ToString()) ? (itemconfiguracion_servicio.ToBsonDocument().GetValue("tipo_elemento").ToString().Length > 30 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("tipo_elemento").ToString().Substring(0, 29) : itemconfiguracion_servicio.ToBsonDocument().GetValue("tipo_elemento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                            "~|" + (itemconfiguracion_servicio.ToBsonDocument().Contains("inventario_etb") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("inventario_etb").IsBsonNull ? itemconfiguracion_servicio.ToBsonDocument().GetValue("inventario_etb").ToString().Length > 8 ? itemconfiguracion_servicio.ToBsonDocument().GetValue("inventario_etb").ToString().Substring(0, 8) : itemconfiguracion_servicio.ToBsonDocument().GetValue("inventario_etb").ToString() : "");
-                                            sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                                            sTextoDescarga = string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument(), "_id", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "_id", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "fecha_creacion", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "usuario_creacion", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "fecha_actualizacion", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "usuario_modificacion", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "id_agrupador", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "nombre_agrupador", 100));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "nombre_elemento", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "cantidad", 30));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "tipo_elemento", 100));
+                                            sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(itemconfiguracion_servicio.ToBsonDocument(), "inventario_etb", 200));
                                             if (itemconfiguracion_servicio.ToBsonDocument().Contains("valores_elementos_configuracion") && !itemconfiguracion_servicio.ToBsonDocument().GetValue("valores_elementos_configuracion").IsBsonNull && itemconfiguracion_servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
                                             {
-                                                valores_elementos += Extractor_PS_SERVICIO_CLIENTE_valores_elementos_configuracion(id_mongo, itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").ToString());
+                                                List<BsonValue> consulta_valores_elementos_configuracion = itemconfiguracion_servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList();
+                                                valores_elementos += Extractor_PS_SERVICIO_CLIENTE_valores_elementos_configuracion(id_mongo, itemconfiguracion_servicio.ToBsonDocument().GetValue("_id").ToString(), consulta_valores_elementos_configuracion);
                                             }
 
                                         }
@@ -8469,7 +9110,7 @@ namespace Tier.Cmd.Classes
 
                         if (Conteo_PS_SERVICIO_CLIENTE > 0)
                         {
-                            Archivo_PS_SERVICIO_CLIENTE_configuracion_servicio.Close();                            
+                            Archivo_PS_SERVICIO_CLIENTE_configuracion_servicio.Close();
                         }
                     }
                     catch (Exception ex)
@@ -8498,7 +9139,7 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_SERVICIO_CLIENTE;
         } //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE()
 
-        internal static int Extractor_PS_SERVICIO_CLIENTE_valores_elementos_configuracion(string idmongo, string id_mongo_registro)
+        internal static int Extractor_PS_SERVICIO_CLIENTE_valores_elementos_configuracion(string idmongo, string id_mongo_registro, List<BsonValue> lista_val_elementos)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -8514,126 +9155,69 @@ namespace Tier.Cmd.Classes
                 objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo PS_SERVICIO_CLIENTE_valores_elementos_configuracion");
 
             }
-
-            //Conexion a DB
-            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
-            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
             StreamWriter Archivo_PS_SERVICIO_CLIENTE_valores_elementos_configuracion = null;
             int Conteo_PS_SERVICIO_CLIENTE = 0;
-            string sTextoDescarga_SC = "";
-            string id_mongo = "";
-            DateTime fechatemp = DateTime.Now.ToUniversalTime();         
-
-            string archivo_VC = path + "PS_SERVICIO_CLIENTE_valores_elementos_configuracion_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
-
+            string sTextoDescarga_SC = string.Empty;
+            string id_mongo = idmongo;
+            DateTime fechatemp = DateTime.Now.ToUniversalTime();
+            string archivo_VC = path + "PS_01_03_VAL_ELEMENT_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
             try
             {
                 // Se abren los archivos para poder escribirlos
                 Archivo_PS_SERVICIO_CLIENTE_valores_elementos_configuracion = new StreamWriter(archivo_VC, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
 
-                // FILTRO PARA LAS COLECCION
-                IMongoCollection<BsonDocument> Col_PS_SERVICIO_CLIENTE = db.GetCollection<BsonDocument>("PS_SERVICIO_CLIENTE");
-                FilterDefinitionBuilder<BsonDocument> builderPS_SERVICIO_CLIENTE = Builders<BsonDocument>.Filter;
-                FilterDefinition<BsonDocument> filterPS_SERVICIO_CLIENTE = builderPS_SERVICIO_CLIENTE.Empty;
-                filterPS_SERVICIO_CLIENTE = builderPS_SERVICIO_CLIENTE.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
-                List<BsonDocument> consulta_PS_SERVICIO_CLIENTE_CS = Col_PS_SERVICIO_CLIENTE.Find(filterPS_SERVICIO_CLIENTE).ToList();
-
-                if (consulta_PS_SERVICIO_CLIENTE_CS != null && consulta_PS_SERVICIO_CLIENTE_CS.Count() > 0)
+                if (lista_val_elementos.Count() > 0)
                 {
-                    try
+                    // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_valores_elementos_configuracion 
+                    Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_valores_elementos_configuracion encontrados " + lista_val_elementos.Count.ToString());
+                    foreach (BsonValue item_elementos_configuracion in lista_val_elementos)
                     {
-                        foreach (BsonDocument itemPS_SERVICIO_CLIENTE_CS in consulta_PS_SERVICIO_CLIENTE_CS)
+                        try
                         {
-                            id_mongo = itemPS_SERVICIO_CLIENTE_CS.GetValue("_id").ToString();
-                            
-                            List<BsonValue> consulta_PS_SERVICIO_CLIENTE_configuracion_servicio = itemPS_SERVICIO_CLIENTE_CS.GetElement("configuracion_servicio").Value.AsBsonArray.AsQueryable().ToList();
-                            if (consulta_PS_SERVICIO_CLIENTE_configuracion_servicio != null && consulta_PS_SERVICIO_CLIENTE_configuracion_servicio.Count() > 0)
+                            sTextoDescarga_SC = string.Empty;
+                            sTextoDescarga_SC = string.Format("{0}", id_mongo);
+                            sTextoDescarga_SC += string.Format("~|{0}", id_mongo_registro);
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "_id", 30));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "fecha_creacion", 30));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "usuario_creacion", 30));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "fecha_actualizacion", 30));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "usuario_modificacion", 30));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "marca", 100));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "referencia", 30));
+                            sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "valor_asignacion", 30));
+                            sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                        }
+                        catch (Exception ex)
+                        {
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_valores_elementos_configuracion Id: " + id_mongo + "," + item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString());
+                            continue;
+                        }
+                        // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                        try
+                        {
+                            if (sTextoDescarga_SC != "")
                             {
-                                foreach (BsonValue item_configuracion_servicio in consulta_PS_SERVICIO_CLIENTE_configuracion_servicio)
-                                {
-                                    try
-                                    {
-                                        List<BsonValue> consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion = item_configuracion_servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList();
-                                        if (consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion != null && consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.Count() > 0)
-                                        {
-                                            // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_valores_elementos_configuracion 
-                                            Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_valores_elementos_configuracion encontrados " + consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.Count.ToString());
-                                            foreach (var item_elementos_configuracion in consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion)
-                                            {
-                                                try
-                                                {
-                                                    sTextoDescarga_SC = "";
-                                                    if (item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString() == id_mongo_registro)
-                                                    {
-                                                        sTextoDescarga_SC =
-                                                            (itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_CS.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                            "~|" + (item_configuracion_servicio.ToBsonDocument().Contains("_id") && !item_configuracion_servicio.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString()) ? (item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("_id") && !item_elementos_configuracion.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("fecha_creacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("usuario_creacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("fecha_actualizacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("usuario_modificacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("marca") && !item_elementos_configuracion.ToBsonDocument().GetValue("marca").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("referencia") && !item_elementos_configuracion.ToBsonDocument().GetValue("referencia").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                            "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("valor_asignacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                        sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                                    }
-                                                    
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                    prcManejoErrores objError = new prcManejoErrores();
-                                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_valores_elementos_configuracion Id: " + id_mongo + "," + item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString());
-                                                    continue;
-                                                }
-                                                // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
-                                                try
-                                                {
-                                                    if (sTextoDescarga_SC != "")
-                                                    {
-                                                        Archivo_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.WriteLine(sTextoDescarga_SC);
-                                                        Conteo_PS_SERVICIO_CLIENTE++;
-                                                    }
-                                                    Console.WriteLine("PS_SERVICIO_CLIENTE_valores_elementos_configuracion ACTUALIZADA: " + itemPS_SERVICIO_CLIENTE_CS.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_valores_elementos_configuracion actializadas: " + Conteo_PS_SERVICIO_CLIENTE);
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                    prcManejoErrores objError = new prcManejoErrores();
-                                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_valores_elementos_configuracion en mongo Id: " + id_mongo);
-                                                    continue;
-                                                }
-                                            }
-                                        }
-
-                                        
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                        prcManejoErrores objError = new prcManejoErrores();
-                                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_SERVICIO_CLIENTE_valores_elementos_configuracion para el procesamiento de registros de mongo Id: " + id_mongo);
-                                        continue;
-                                    }
-                                }
+                                Archivo_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.WriteLine(sTextoDescarga_SC);
+                                Conteo_PS_SERVICIO_CLIENTE++;
                             }
-
+                            Console.WriteLine("PS_SERVICIO_CLIENTE_valores_elementos_configuracion ACTUALIZADA: " + ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "_id", 30) + "Numero de PS_SERVICIO_CLIENTE_valores_elementos_configuracion actializadas: " + Conteo_PS_SERVICIO_CLIENTE);
                         }
-
-                        if (Conteo_PS_SERVICIO_CLIENTE > 0)
+                        catch (Exception ex)
                         {
-                            Archivo_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.Close();                            
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_valores_elementos_configuracion en mongo Id: " + id_mongo);
+                            continue;
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                        prcManejoErrores objError = new prcManejoErrores();
-                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en PS_SERVICIO_CLIENTE_valores_elementos_configuracion entre el modelo de datos y de registros de mongo Id: " + id_mongo);
                     }
                 }
-
+                if (Conteo_PS_SERVICIO_CLIENTE > 0)
+                {
+                    Archivo_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -8677,7 +9261,7 @@ namespace Tier.Cmd.Classes
             string sTextoDescarga_datos_adicionales_servicio = "";
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
-            string archivo_datos_adicionales_servicio = path + "PS_SERVICIO_CLIENTE_datos_adicionales_servicio_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo_datos_adicionales_servicio = path + "PS_01_01_DATOS_SERVC_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
@@ -8716,10 +9300,9 @@ namespace Tier.Cmd.Classes
                                     {
                                         try
                                         {
-                                            sTextoDescarga_datos_adicionales_servicio =
-                                            (itemPS_SERVICIO_CLIENTE.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                             "~|" + (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().Contains("identificador") && !itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString()) ? (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                             "~|" + (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().Contains("valor") && !itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString()) ? (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                            sTextoDescarga_datos_adicionales_servicio = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE.ToBsonDocument(), "_id", 30));
+                                            sTextoDescarga_datos_adicionales_servicio += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "identificador", 30));
+                                            sTextoDescarga_datos_adicionales_servicio += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "valor", 30));
                                             sTextoDescarga_datos_adicionales_servicio = sTextoDescarga_datos_adicionales_servicio.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
                                         }
                                         catch (Exception ex)
@@ -8792,7 +9375,7 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_SERVICIO_CLIENTE_datos_adicionales_servicio;
         } //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE()
 
-        internal static int Extractor_PS_SERVICIO_CLIENTE_CV(string idmongo, out int configuracion_servicio_CV,out int valores_elementos_CV, out int datos_adicionales_CV)
+        internal static int Extractor_PS_SERVICIO_CLIENTE_CV(string idmongo, out int configuracion_servicio_CV, out int valores_elementos_CV, out int datos_adicionales_CV)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -8817,13 +9400,14 @@ namespace Tier.Cmd.Classes
 
             int Conteo_PS_SERVICIO_CLIENTE_CV = 0;
             string sTextoDescarga_cv = "";
-            string id_mongo = "";            
+            string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
             datos_adicionales_CV = 0;
             valores_elementos_CV = 0;
             configuracion_servicio_CV = 0;
+            string id_control_versiones = string.Empty;
 
-            string archivo_CV = path + "PS_SERVICIO_CLIENTE_CV_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo_CV = path + "PS_01_04_00_CV_SERVC_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
@@ -8835,7 +9419,7 @@ namespace Tier.Cmd.Classes
                 FilterDefinitionBuilder<BsonDocument> builderPS_SERVICIO_CLIENTE_CV = Builders<BsonDocument>.Filter;
                 FilterDefinition<BsonDocument> filterPS_SERVICIO_CLIENTE_CV = builderPS_SERVICIO_CLIENTE_CV.Empty;
                 filterPS_SERVICIO_CLIENTE_CV = builderPS_SERVICIO_CLIENTE_CV.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
-                
+
                 List<BsonDocument> consulta_PS_SERVICIO_CLIENTE_CV = Col_PS_SERVICIO_CLIENTE_CV.Find(filterPS_SERVICIO_CLIENTE_CV).ToList();
 
                 if (consulta_PS_SERVICIO_CLIENTE_CV != null && consulta_PS_SERVICIO_CLIENTE_CV.Count() > 0)
@@ -8857,47 +9441,50 @@ namespace Tier.Cmd.Classes
                                         Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV encontrados " + consulta_PS_SERVICIO_CLIENTE_CV.Count.ToString());
                                         foreach (var item_CVI in consulta_PS_SERVICIO_CLIENTE_CVI)
                                         {
-                                            sTextoDescarga_cv =
-                                                (itemPS_SERVICIO_CLIENTE_CV.Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_CV.GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE_CV.GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_CV.GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_CV.GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("_id")?.ToString()) ? (item_CVI.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("fecha_creacion") && !item_CVI.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : item_CVI.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("usuario_creacion") && !item_CVI.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? item_CVI.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : item_CVI.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("fecha_actualizacion") && !item_CVI.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : item_CVI.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("usuario_modificacion") && !item_CVI.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? item_CVI.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : item_CVI.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("estado") && !item_CVI.ToBsonDocument().GetValue("estado").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("estado").ToString()) ? (item_CVI.ToBsonDocument().GetValue("estado").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("estado").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("estado").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("ancho_banda") && !item_CVI.ToBsonDocument().GetValue("ancho_banda").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("ancho_banda").ToString()) ? (item_CVI.ToBsonDocument().GetValue("ancho_banda").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("ancho_banda").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("ancho_banda").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("cuenta_cliente") && !item_CVI.ToBsonDocument().GetValue("cuenta_cliente").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("cuenta_cliente").ToString()) ? (item_CVI.ToBsonDocument().GetValue("cuenta_cliente").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("cuenta_cliente").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("cuenta_cliente").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("nit") && !item_CVI.ToBsonDocument().GetValue("nit").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("nit").ToString()) ? (item_CVI.ToBsonDocument().GetValue("nit").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("nit").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("nit").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("id_servicio") && !item_CVI.ToBsonDocument().GetValue("id_servicio").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("id_servicio").ToString()) ? (item_CVI.ToBsonDocument().GetValue("id_servicio").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("id_servicio").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("id_servicio").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("nombre_producto") && !item_CVI.ToBsonDocument().GetValue("nombre_producto").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("nombre_producto").ToString()) ? (item_CVI.ToBsonDocument().GetValue("nombre_producto").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("nombre_producto").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("nombre_producto").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("plan") && !item_CVI.ToBsonDocument().GetValue("plan").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("plan").ToString()) ? (item_CVI.ToBsonDocument().GetValue("plan").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("plan").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("plan").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("sucursal") && !item_CVI.ToBsonDocument().GetValue("sucursal").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("sucursal").ToString()) ? (item_CVI.ToBsonDocument().GetValue("sucursal").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("sucursal").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("sucursal").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("ciudad") && !item_CVI.ToBsonDocument().GetValue("ciudad").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("ciudad").ToString()) ? (item_CVI.ToBsonDocument().GetValue("ciudad").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("ciudad").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("ciudad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("disponibilidad_servicio") && !item_CVI.ToBsonDocument().GetValue("disponibilidad_servicio").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("disponibilidad_servicio").ToString()) ? (item_CVI.ToBsonDocument().GetValue("disponibilidad_servicio").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("disponibilidad_servicio").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("disponibilidad_servicio").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("servicio_etb") && !item_CVI.ToBsonDocument().GetValue("servicio_etb").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("servicio_etb").ToString()) ? (item_CVI.ToBsonDocument().GetValue("servicio_etb").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("servicio_etb").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("servicio_etb").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("cuenta_facturacion") && !item_CVI.ToBsonDocument().GetValue("cuenta_facturacion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("cuenta_facturacion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("cuenta_facturacion").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("cuenta_facturacion").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("cuenta_facturacion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("aliado_colaborador") && !item_CVI.ToBsonDocument().GetValue("aliado_colaborador").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("aliado_colaborador").ToString()) ? (item_CVI.ToBsonDocument().GetValue("aliado_colaborador").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("aliado_colaborador").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("aliado_colaborador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("proveedor_ultima_milla") && !item_CVI.ToBsonDocument().GetValue("proveedor_ultima_milla").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("proveedor_ultima_milla").ToString()) ? (item_CVI.ToBsonDocument().GetValue("proveedor_ultima_milla").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("proveedor_ultima_milla").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("proveedor_ultima_milla").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("medio_ultima_milla") && !item_CVI.ToBsonDocument().GetValue("medio_ultima_milla").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("medio_ultima_milla").ToString()) ? (item_CVI.ToBsonDocument().GetValue("medio_ultima_milla").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("medio_ultima_milla").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("medio_ultima_milla").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("external_service_id") && !item_CVI.ToBsonDocument().GetValue("external_service_id").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("external_service_id").ToString()) ? (item_CVI.ToBsonDocument().GetValue("external_service_id").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("external_service_id").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("external_service_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("numero_conexion") && !item_CVI.ToBsonDocument().GetValue("numero_conexion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("numero_conexion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("numero_conexion").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("numero_conexion").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("numero_conexion").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("numero_aprovisionamiento") && !item_CVI.ToBsonDocument().GetValue("numero_aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("numero_aprovisionamiento").ToString()) ? (item_CVI.ToBsonDocument().GetValue("numero_aprovisionamiento").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("numero_aprovisionamiento").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("numero_aprovisionamiento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("numero_viabilidad") && !item_CVI.ToBsonDocument().GetValue("numero_viabilidad").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("numero_viabilidad").ToString()) ? (item_CVI.ToBsonDocument().GetValue("numero_viabilidad").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("numero_viabilidad").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("numero_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("opcion_respuesta_viabilidad") && !item_CVI.ToBsonDocument().GetValue("opcion_respuesta_viabilidad").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("opcion_respuesta_viabilidad").ToString()) ? (item_CVI.ToBsonDocument().GetValue("opcion_respuesta_viabilidad").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("opcion_respuesta_viabilidad").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("opcion_respuesta_viabilidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("fecha_inicio_facturacion") && !item_CVI.ToBsonDocument().GetValue("fecha_inicio_facturacion").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("fecha_inicio_facturacion").ToString()) ? (item_CVI.ToBsonDocument().GetValue("fecha_inicio_facturacion").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("fecha_inicio_facturacion").ToString().Substring(0, 30) : item_CVI.ToBsonDocument().GetValue("fecha_inicio_facturacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("version") && !item_CVI.ToBsonDocument().GetValue("version").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("version").ToString()) ? (item_CVI.ToBsonDocument().GetValue("version").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("version").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("version").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                "~|" + (item_CVI.ToBsonDocument().Contains("id_Aprovisionamiento") && !item_CVI.ToBsonDocument().GetValue("id_Aprovisionamiento").IsBsonNull && !string.IsNullOrEmpty(item_CVI.ToBsonDocument().GetValue("id_Aprovisionamiento").ToString()) ? (item_CVI.ToBsonDocument().GetValue("id_Aprovisionamiento").ToString().Length > 30 ? item_CVI.ToBsonDocument().GetValue("id_Aprovisionamiento").ToString().Substring(0, 29) : item_CVI.ToBsonDocument().GetValue("id_Aprovisionamiento").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
+                                            sTextoDescarga_cv = string.Format("{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_CV, "_id", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "_id", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "fecha_creacion", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "usuario_creacion", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "fecha_actualizacion", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "usuario_modificacion", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "estado", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "ancho_banda", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "cuenta_cliente", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "nit", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "id_servicio", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "nombre_producto", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "plan", 200));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "sucursal", 200));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "ciudad", 200));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "disponibilidad_servicio", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "servicio_etb", 50));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "cuenta_facturacion", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "aliado_colaborador", 200));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "proveedor_ultima_milla", 200));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "medio_ultima_milla", 200));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "external_service_id", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "numero_conexion", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "numero_aprovisionamiento", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "numero_viabilidad", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "opcion_respuesta_viabilidad", 100));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "fecha_inicio_facturacion", 30));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "version", 10));
+                                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "id_Aprovisionamiento", 30));
                                             sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                            
+
                                             if (item_CVI.ToBsonDocument().Contains("datos_adicionales_servicio") && !item_CVI.ToBsonDocument().GetValue("datos_adicionales_servicio").IsBsonNull && item_CVI.ToBsonDocument().GetElement("datos_adicionales_servicio").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
                                             {
-                                                datos_adicionales_CV += Extractor_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio(id_mongo);
+                                                id_control_versiones = ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "_id", 30);
+                                                List<BsonValue> consulta_Datos_Adicionales_Serv = item_CVI.ToBsonDocument().GetElement("datos_adicionales_servicio").Value.AsBsonArray.AsQueryable().ToList();
+                                                datos_adicionales_CV += Extractor_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio(id_mongo, id_control_versiones, consulta_Datos_Adicionales_Serv);
                                             }
                                             if (item_CVI.ToBsonDocument().Contains("configuracion_servicio") && !item_CVI.ToBsonDocument().GetValue("configuracion_servicio").IsBsonNull && item_CVI.ToBsonDocument().GetElement("configuracion_servicio").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
                                             {
-                                                configuracion_servicio_CV += Extractor_PS_SERVICIO_CLIENTE_CV_CS(id_mongo, out valores_elementos_CV);
+                                                id_control_versiones = ValidarDatoEnBsonValue(item_CVI.ToBsonDocument(), "_id", 30);
+                                                List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CS = item_CVI.ToBsonDocument().GetElement("configuracion_servicio").Value.AsBsonArray.AsQueryable().ToList();
+                                                configuracion_servicio_CV += Extractor_PS_SERVICIO_CLIENTE_CV_CS(id_mongo, id_control_versiones, consulta_PS_SERVICIO_CLIENTE_CS, out valores_elementos_CV);
                                             }
-                                            
+
                                         }
                                     }
                                 }
@@ -8934,7 +9521,7 @@ namespace Tier.Cmd.Classes
 
                         if (Conteo_PS_SERVICIO_CLIENTE_CV > 0)
                         {
-                            Archivo_PS_SERVICIO_CLIENTE_CV.Close();                           
+                            Archivo_PS_SERVICIO_CLIENTE_CV.Close();
                         }
                     }
                     catch (Exception ex)
@@ -8963,7 +9550,7 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_SERVICIO_CLIENTE_CV;
         }  //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE()
 
-        internal static int Extractor_PS_SERVICIO_CLIENTE_CV_CS(string idmongo, out int valores_elementos_CVI) 
+        internal static int Extractor_PS_SERVICIO_CLIENTE_CV_CS(string idmongo, string id_control_versiones, List<BsonValue> lista_cfg_ser, out int valores_elementos_CVI)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -8979,126 +9566,97 @@ namespace Tier.Cmd.Classes
                 objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo PS_SERVICIO_CLIENTE_CV_CS");
             }
             //Conexion a DB
-            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
-            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+            // CONTROL VERSIONES CONFIGURACION SERVICIOS
             StreamWriter Archivo_PS_SERVICIO_CLIENTE_CV_CS = null;
             int Conteo_PS_SERVICIO_CLIENTE_CV_CS = 0;
             valores_elementos_CVI = 0;
             string sTextoDescarga = "";
-            string id_mongo = "";
-            DateTime fechatemp = DateTime.Now.ToUniversalTime();            
-            string archivo_CV_CS = path + "PS_SERVICIO_CLIENTE_CV_CS_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string id_mongo = idmongo;
+            DateTime fechatemp = DateTime.Now.ToUniversalTime();
+            string archivo_CV_CS = path + "PS_01_04_02_CFG_SERV_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
             try
             {
                 // Se abren los archivos para poder escribirlos
                 Archivo_PS_SERVICIO_CLIENTE_CV_CS = new StreamWriter(archivo_CV_CS, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
-                // FILTRO PARA LAS COLECCION
-                IMongoCollection<BsonDocument> Col_PS_SERVICIO_CLIENTE_CV_CS = db.GetCollection<BsonDocument>("PS_SERVICIO_CLIENTE");
-                FilterDefinitionBuilder<BsonDocument> builderPS_SERVICIO_CLIENTE_CV_CS = Builders<BsonDocument>.Filter;
-                FilterDefinition<BsonDocument> filterPS_SERVICIO_CLIENTE_CV_CS = builderPS_SERVICIO_CLIENTE_CV_CS.Empty;
-                filterPS_SERVICIO_CLIENTE_CV_CS = builderPS_SERVICIO_CLIENTE_CV_CS.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
-                List<BsonDocument> consulta_PS_SERVICIO_CLIENTE_CV_CS = Col_PS_SERVICIO_CLIENTE_CV_CS.Find(filterPS_SERVICIO_CLIENTE_CV_CS).ToList();
-                if (consulta_PS_SERVICIO_CLIENTE_CV_CS != null && consulta_PS_SERVICIO_CLIENTE_CV_CS.Count() > 0)
+                if (lista_cfg_ser.Count() >0)
                 {
-                    try
+                    Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV_CS encontrados " + lista_cfg_ser.Count.ToString());
+                    foreach (BsonDocument item_Configuracion_Servicio in lista_cfg_ser)
                     {
-                        foreach (var itemPS_SERVICIO_CLIENTE in consulta_PS_SERVICIO_CLIENTE_CV_CS)
+                        sTextoDescarga = "";
+                        try
                         {
-                            List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CVI = itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetElement("control_versiones").Value.AsBsonArray.AsQueryable().ToList();
-                            if (consulta_PS_SERVICIO_CLIENTE_CVI != null && consulta_PS_SERVICIO_CLIENTE_CVI.Count() > 0)
+                            try
                             {
-                                foreach (var itemPS_SERVICIO_CLIENTE_CVI in consulta_PS_SERVICIO_CLIENTE_CVI)
+                                sTextoDescarga = string.Format("{0}", id_mongo);
+                                sTextoDescarga += string.Format("~|{0}", id_control_versiones);
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "_id", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "fecha_creacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "usuario_creacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "fecha_actualizacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "usuario_modificacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "id_agrupador", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "nombre_agrupador", 100));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "nombre_elemento", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "cantidad", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "tipo_elemento", 100));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "inventario_etb", 200));
+                                sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                                if (item_Configuracion_Servicio.ToBsonDocument().Contains("valores_elementos_configuracion") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("valores_elementos_configuracion").IsBsonNull && item_Configuracion_Servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
                                 {
-                                    List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CS = itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().GetElement("configuracion_servicio").Value.AsBsonArray.AsQueryable().ToList();
-                                    if (consulta_PS_SERVICIO_CLIENTE_CS != null && consulta_PS_SERVICIO_CLIENTE_CS.Count() > 0)
+                                    string id_coleccion = id_mongo;
+                                    string configuracion_servicio = item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").ToString();
+                                    if (!item_Configuracion_Servicio.ToBsonDocument().GetValue("valores_elementos_configuracion").IsBsonNull)
                                     {
-                                        Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV_CS encontrados " + consulta_PS_SERVICIO_CLIENTE_CS.Count.ToString());
-                                        foreach (BsonDocument item_Configuracion_Servicio in consulta_PS_SERVICIO_CLIENTE_CS)
-                                        {
-                                            id_mongo = itemPS_SERVICIO_CLIENTE.GetValue("_id").ToString();
-
-                                            sTextoDescarga = "";
-                                            try
-                                            {
-                                                try
-                                                {
-                                                    sTextoDescarga =
-                                                    (itemPS_SERVICIO_CLIENTE.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                    "~|" + (itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("_id") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("fecha_creacion") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("usuario_creacion") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("fecha_actualizacion") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : item_Configuracion_Servicio.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("usuario_modificacion") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("id_agrupador") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("id_agrupador").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("id_agrupador").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("id_agrupador").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("id_agrupador").ToString().Substring(0, 29) : item_Configuracion_Servicio.ToBsonDocument().GetValue("id_agrupador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("nombre_agrupador") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_agrupador").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString().Substring(0, 29) : item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_agrupador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("nombre_elemento") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_elemento").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_elemento").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_elemento").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_elemento").ToString().Substring(0, 29) : item_Configuracion_Servicio.ToBsonDocument().GetValue("nombre_elemento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("cantidad") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("cantidad").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("cantidad").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("cantidad").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("cantidad").ToString().Substring(0, 29) : item_Configuracion_Servicio.ToBsonDocument().GetValue("cantidad").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("tipo_elemento") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("tipo_elemento").IsBsonNull && !string.IsNullOrEmpty(item_Configuracion_Servicio.ToBsonDocument().GetValue("tipo_elemento").ToString()) ? (item_Configuracion_Servicio.ToBsonDocument().GetValue("tipo_elemento").ToString().Length > 30 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("tipo_elemento").ToString().Substring(0, 29) : item_Configuracion_Servicio.ToBsonDocument().GetValue("tipo_elemento").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    "~|" + (item_Configuracion_Servicio.ToBsonDocument().Contains("inventario_etb") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("inventario_etb").IsBsonNull ? item_Configuracion_Servicio.ToBsonDocument().GetValue("inventario_etb").ToString().Length > 8 ? item_Configuracion_Servicio.ToBsonDocument().GetValue("inventario_etb").ToString().Substring(0, 8) : item_Configuracion_Servicio.ToBsonDocument().GetValue("inventario_etb").ToString() : "");
-                                                    sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                                    if (item_Configuracion_Servicio.ToBsonDocument().Contains("valores_elementos_configuracion") && !item_Configuracion_Servicio.ToBsonDocument().GetValue("valores_elementos_configuracion").IsBsonNull && item_Configuracion_Servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
-                                                    {
-                                                        string id_coleccion = id_mongo;
-                                                        string id_control_version = itemPS_SERVICIO_CLIENTE_CVI.ToBsonDocument().GetValue("_id").ToString();
-                                                        string configuracion_servicio = item_Configuracion_Servicio.ToBsonDocument().GetValue("_id").ToString();
-                                                        valores_elementos_CVI += Extractor_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion(id_mongo, id_control_version, configuracion_servicio);
-                                                    }
-                                                    
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                    prcManejoErrores objError = new prcManejoErrores();
-                                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_CV_CS Id: " + id_mongo + "," + item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_aprobacion").ToString());
-                                                    continue;
-                                                }
-                                                // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
-                                                try
-                                                {
-                                                    if (sTextoDescarga != "")
-                                                    {
-                                                        Archivo_PS_SERVICIO_CLIENTE_CV_CS.WriteLine(sTextoDescarga);
-                                                        Conteo_PS_SERVICIO_CLIENTE_CV_CS++;
-                                                        Console.WriteLine("PS_SERVICIO_CLIENTE_CV_CS ACTUALIZADA: " + itemPS_SERVICIO_CLIENTE.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_CV_CS actializadas: " + Conteo_PS_SERVICIO_CLIENTE_CV_CS);
-
-                                                    }
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                    prcManejoErrores objError = new prcManejoErrores();
-                                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_CV_CS en mongo Id: " + id_mongo);
-                                                    continue;
-                                                }
-                                            }
-                                            catch (Exception ex)
-                                            {
-                                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                prcManejoErrores objError = new prcManejoErrores();
-                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_SERVICIO_CLIENTE_CV_CS para el procesamiento de registros de mongo Id: " + id_mongo);
-                                                continue;
-                                            }
-
-                                        }
+                                        List<BsonValue> consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion = item_Configuracion_Servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList();
+                                        valores_elementos_CVI += Extractor_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion(id_mongo, id_control_versiones, configuracion_servicio, consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion);
                                     }
                                 }
-                                
+
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_CV_CS Id: " + id_mongo + "," + item_Configuracion_Servicio.ToBsonDocument().GetValue("usuario_aprobacion").ToString());
+                                continue;
+                            }
+                            // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                            try
+                            {
+                                if (sTextoDescarga != "")
+                                {
+                                    Archivo_PS_SERVICIO_CLIENTE_CV_CS.WriteLine(sTextoDescarga);
+                                    Conteo_PS_SERVICIO_CLIENTE_CV_CS++;
+                                    Console.WriteLine("PS_SERVICIO_CLIENTE_CV_CS ACTUALIZADA: " + ValidarDatoEnBsonValue(item_Configuracion_Servicio.ToBsonDocument(), "_id", 30) + "Numero de PS_SERVICIO_CLIENTE_CV_CS actializadas: " + Conteo_PS_SERVICIO_CLIENTE_CV_CS);
+
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_CV_CS en mongo Id: " + id_mongo);
+                                continue;
                             }
                         }
-                        // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_CV_CS 
-                        if (Conteo_PS_SERVICIO_CLIENTE_CV_CS > 0)
+                        catch (Exception ex)
                         {
-                            Archivo_PS_SERVICIO_CLIENTE_CV_CS.Close();                            
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_SERVICIO_CLIENTE_CV_CS para el procesamiento de registros de mongo Id: " + id_mongo);
+                            continue;
                         }
+
                     }
-                    catch (Exception ex)
+                    if (Conteo_PS_SERVICIO_CLIENTE_CV_CS > 0)
                     {
-                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                        prcManejoErrores objError = new prcManejoErrores();
-                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en PS_SERVICIO_CLIENTE_CV_CS entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                        Archivo_PS_SERVICIO_CLIENTE_CV_CS.Close();
                     }
                 }
+                
+                
+                
             }
             catch (Exception ex)
             {
@@ -9117,7 +9675,7 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_SERVICIO_CLIENTE_CV_CS;
         } //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE_CV()
 
-        internal static int Extractor_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion(string idmongo, string id_control_version, string configuracion_servicio)
+        internal static int Extractor_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion(string idmongo, string id_control_version, string configuracion_servicio, List<BsonValue> lista_valores_elementos_cfg)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -9125,7 +9683,7 @@ namespace Tier.Cmd.Classes
                 bool IsExists = System.IO.Directory.Exists(path);
                 if (!IsExists)
                     System.IO.Directory.CreateDirectory(path);
-            } 
+            }
             catch (Exception ex)
             {
                 string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
@@ -9143,124 +9701,64 @@ namespace Tier.Cmd.Classes
             string id_mongo = "";
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
 
-            string archivo_CV_valores_elementos_configuracion = path + "PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
+            string archivo_CV_valores_elementos_configuracion = path + "PS_01_04_03_VAL_ELEM_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
 
             try
             {
                 // Se abren los archivos para poder escribirlos
                 Archivo_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion = new StreamWriter(archivo_CV_valores_elementos_configuracion, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
 
-                // FILTRO PARA LAS COLECCION
-                IMongoCollection<BsonDocument> Col_PS_SERVICIO_CLIENTE_CV_VE = db.GetCollection<BsonDocument>("PS_SERVICIO_CLIENTE");
-                FilterDefinitionBuilder<BsonDocument> builderPS_SERVICIO_CLIENTE_CV_VE = Builders<BsonDocument>.Filter;
-                FilterDefinition<BsonDocument> filterPS_SERVICIO_CLIENTE_CV_VE = builderPS_SERVICIO_CLIENTE_CV_VE.Empty;
-                filterPS_SERVICIO_CLIENTE_CV_VE = builderPS_SERVICIO_CLIENTE_CV_VE.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
-                List<BsonDocument> consulta_PS_SERVICIO_CLIENTE_CV_VE = Col_PS_SERVICIO_CLIENTE_CV_VE.Find(filterPS_SERVICIO_CLIENTE_CV_VE).ToList();
-
-                if (consulta_PS_SERVICIO_CLIENTE_CV_VE != null && consulta_PS_SERVICIO_CLIENTE_CV_VE.Count() > 0)
+                if (lista_valores_elementos_cfg.Count() > 0)
                 {
-                    try
+                    Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion encontrados " + lista_valores_elementos_cfg.Count.ToString());
+                    foreach (var item_elementos_configuracion in lista_valores_elementos_cfg)
                     {
-                        foreach (BsonDocument itemPS_SERVICIO_CLIENTE_CV_VE in consulta_PS_SERVICIO_CLIENTE_CV_VE)
+                        try
                         {
-                            id_mongo = itemPS_SERVICIO_CLIENTE_CV_VE.GetValue("_id").ToString();
-                            sTextoDescarga_CV_VE = "";
-                            List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CV = itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().GetElement("control_versiones").Value.AsBsonArray.AsQueryable().ToList();
-                            if (consulta_PS_SERVICIO_CLIENTE_CV != null && consulta_PS_SERVICIO_CLIENTE_CV.Count() > 0)
+                            sTextoDescarga_CV_VE = string.Empty;
+                            sTextoDescarga_CV_VE = string.Format("{0}", idmongo);
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", id_control_version);
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", configuracion_servicio);
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "_id", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "fecha_creacion", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "usuario_creacion", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "fecha_actualizacion", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "usuario_modificacion", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "marca", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "referencia", 30));
+                            sTextoDescarga_CV_VE += string.Format("~|{0}", ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "valor_asignacion", 30));
+                        }
+                        catch (Exception ex)
+                        {
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion Id: " + id_mongo + "," + item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString());
+                            continue;
+                        }
+                        // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                        try
+                        {
+                            if (sTextoDescarga_CV_VE != "")
                             {
-                                foreach (BsonValue item_CV in consulta_PS_SERVICIO_CLIENTE_CV)
-                                {
-                                    var consulta_PS_SERVICIO_CLIENTE_configuracion_servicio = item_CV.ToBsonDocument().GetElement("configuracion_servicio").Value.AsBsonArray.AsQueryable().ToList();
-                                    if (consulta_PS_SERVICIO_CLIENTE_configuracion_servicio != null && consulta_PS_SERVICIO_CLIENTE_configuracion_servicio.Count() > 0)
-                                    {
-                                        foreach (BsonValue item_configuracion_servicio in consulta_PS_SERVICIO_CLIENTE_configuracion_servicio)
-                                        {
-                                            try
-                                            {
-                                                List<BsonValue> consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion = item_configuracion_servicio.ToBsonDocument().GetElement("valores_elementos_configuracion").Value.AsBsonArray.AsQueryable().ToList();
-                                                if (consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion != null && consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.Count() > 0)
-                                                {
-                                                    // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion 
-                                                    Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion encontrados " + consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion.Count.ToString());
-                                                    foreach (var item_elementos_configuracion in consulta_PS_SERVICIO_CLIENTE_valores_elementos_configuracion)
-                                                    {
-                                                        try
-                                                        { //Extractor_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion(id_mongo, id_control_version, configuracion_servicio);
-                                                            if (idmongo == itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().GetValue("_id").ToString() && id_control_version == item_CV.ToBsonDocument().GetValue("_id").ToString() && configuracion_servicio == item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString())
-                                                            {
-                                                                sTextoDescarga_CV_VE =
-                                                                (itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_CV_VE.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                                "~|" + (item_CV.ToBsonDocument().Contains("_id") && !item_CV.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_CV.ToBsonDocument().GetValue("_id").ToString()) ? (item_CV.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_CV.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_CV.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                                "~|" + (item_configuracion_servicio.ToBsonDocument().Contains("_id") && !item_configuracion_servicio.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString()) ? (item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_configuracion_servicio.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("_id") && !item_elementos_configuracion.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("fecha_creacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString().Substring(0, 30) : item_elementos_configuracion.ToBsonDocument().GetValue("fecha_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("usuario_creacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString().Length > 50 ? item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString().Substring(0, 50) : item_elementos_configuracion.ToBsonDocument().GetValue("usuario_creacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("fecha_actualizacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString().Substring(0, 30) : item_elementos_configuracion.ToBsonDocument().GetValue("fecha_actualizacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("usuario_modificacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString().Length > 50 ? item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString().Substring(0, 50) : item_elementos_configuracion.ToBsonDocument().GetValue("usuario_modificacion").ToString()) : "") + // VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("marca") && !item_elementos_configuracion.ToBsonDocument().GetValue("marca").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("marca").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("referencia") && !item_elementos_configuracion.ToBsonDocument().GetValue("referencia").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("referencia").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                                "~|" + (item_elementos_configuracion.ToBsonDocument().Contains("valor_asignacion") && !item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").IsBsonNull && !string.IsNullOrEmpty(item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString()) ? (item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString().Length > 30 ? item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString().Substring(0, 29) : item_elementos_configuracion.ToBsonDocument().GetValue("valor_asignacion").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                                sTextoDescarga_CV_VE = sTextoDescarga_CV_VE.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                                            }
-                                                            
-                                                        }
-                                                        catch (Exception ex)
-                                                        {
-                                                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                            prcManejoErrores objError = new prcManejoErrores();
-                                                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion Id: " + id_mongo + "," + item_elementos_configuracion.ToBsonDocument().GetValue("_id").ToString());
-                                                            continue;
-                                                        }
-                                                        // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
-                                                        try
-                                                        {
-                                                            if (sTextoDescarga_CV_VE != "")
-                                                            {
-                                                                Archivo_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion.WriteLine(sTextoDescarga_CV_VE);
-                                                                Conteo_PS_SERVICIO_CLIENTE_CV_VE++;
-                                                            }
-                                                            Console.WriteLine("PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion ACTUALIZADA: " + itemPS_SERVICIO_CLIENTE_CV_VE.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion actializadas: " + Conteo_PS_SERVICIO_CLIENTE_CV_VE);
-                                                        }
-                                                        catch (Exception ex)
-                                                        {
-                                                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                            prcManejoErrores objError = new prcManejoErrores();
-                                                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion en mongo Id: " + id_mongo);
-                                                            continue;
-                                                        }
-                                                    }
-                                                }
-
-
-                                            }
-                                            catch (Exception ex)
-                                            {
-                                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                prcManejoErrores objError = new prcManejoErrores();
-                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion para el procesamiento de registros de mongo Id: " + id_mongo);
-                                                continue;
-                                            }
-                                        }
-                                    }
-                                }
+                                Archivo_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion.WriteLine(sTextoDescarga_CV_VE);
+                                Conteo_PS_SERVICIO_CLIENTE_CV_VE++;
                             }
+                            Console.WriteLine("PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion ACTUALIZADA: " + ValidarDatoEnBsonValue(item_elementos_configuracion.ToBsonDocument(), "_id", 30) + "Numero de PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion actializadas: " + Conteo_PS_SERVICIO_CLIENTE_CV_VE);
                             
-
                         }
-
-                        if (Conteo_PS_SERVICIO_CLIENTE_CV_VE > 0)
+                        catch (Exception ex)
                         {
-                            Archivo_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion.Close();
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion en mongo Id: " + id_mongo);
+                            continue;
                         }
                     }
-                    catch (Exception ex)
+                    if (Conteo_PS_SERVICIO_CLIENTE_CV_VE > 0)
                     {
-                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                        prcManejoErrores objError = new prcManejoErrores();
-                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                        Archivo_PS_SERVICIO_CLIENTE_CV_valores_elementos_configuracion.Close();
                     }
-                }
-
+                }                
             }
             catch (Exception ex)
             {
@@ -9279,7 +9777,7 @@ namespace Tier.Cmd.Classes
             return Conteo_PS_SERVICIO_CLIENTE_CV_VE;
         }  //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE_CV_CS()
 
-        internal static int Extractor_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio(string idmongo)
+        internal static int Extractor_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio(string idmongo, string id_control_versiones, List<BsonValue> lista_datos_adicionales_serv)
         {
             string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
             try
@@ -9293,118 +9791,73 @@ namespace Tier.Cmd.Classes
                 string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
                 prcManejoErrores objError = new prcManejoErrores();
                 objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en creacion del directorio del archivo PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio");
-
             }
-
-            //Conexion a DB
-            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
-            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
             StreamWriter Archivo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = null;
             int Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = 0;
-            string sTextoDescarga_CV_datos_adicionales_servicio = "";
-            string id_mongo = "";
+            string sTextoDescarga_CV_datos_adicionales_servicio = string.Empty;
+            string id_mongo = idmongo;
             DateTime fechatemp = DateTime.Now.ToUniversalTime();
-            string archivo_CV_datos_adicionales_servicio = path + "PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
-
+            string archivo_CV_datos_adicionales_servicio = path + "PS_01_04_01_DAT_SERV_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt";
             try
             {
                 // Se abren los archivos para poder escribirlos
                 Archivo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = new StreamWriter(archivo_CV_datos_adicionales_servicio, true, System.Text.Encoding.GetEncoding("iso-8859-1"));
-
-                // FILTRO PARA LAS COLECCION
-                IMongoCollection<BsonDocument> Col_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = db.GetCollection<BsonDocument>("PS_SERVICIO_CLIENTE");
-                FilterDefinitionBuilder<BsonDocument> builderPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = Builders<BsonDocument>.Filter;
-                FilterDefinition<BsonDocument> filterPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = builderPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Empty;
-                filterPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = builderPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.And(
-                builderPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo)),
-                builderPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.SizeGte("control_versiones.datos_adicionales_servicio", 1));
-
-
-                List<BsonDocument> consulta_PS_SERVICIO_CLIENTE_CV_datos = Col_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Find(filterPS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio).ToList();
-
-                if (consulta_PS_SERVICIO_CLIENTE_CV_datos != null && consulta_PS_SERVICIO_CLIENTE_CV_datos.Count() > 0)
+                if (lista_datos_adicionales_serv.Count() > 0)
                 {
-                    try
+                    // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_datos_adicionales_servicio 
+                    Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio encontrados " + lista_datos_adicionales_serv.Count.ToString());
+                    foreach (BsonValue itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio in lista_datos_adicionales_serv)
                     {
-                        foreach (BsonDocument itemPS_SERVICIO_CLIENTE_CV_datos in consulta_PS_SERVICIO_CLIENTE_CV_datos)
+                        try
                         {
-                            id_mongo = itemPS_SERVICIO_CLIENTE_CV_datos.GetValue("_id").ToString();
-                            List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales = itemPS_SERVICIO_CLIENTE_CV_datos.GetElement("control_versiones").Value.AsBsonArray.AsQueryable().ToList();
-                            if (consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales != null && consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales.Count() > 0)
+                            try
                             {
-                                foreach (var item_CV_DAS in consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales)
+                                sTextoDescarga_CV_datos_adicionales_servicio = string.Empty;
+                                sTextoDescarga_CV_datos_adicionales_servicio = string.Format("{0}",id_mongo);
+                                sTextoDescarga_CV_datos_adicionales_servicio += string.Format("~|{0}", id_control_versiones);
+                                sTextoDescarga_CV_datos_adicionales_servicio += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "identificador", 30));
+                                sTextoDescarga_CV_datos_adicionales_servicio += string.Format("~|{0}", ValidarDatoEnBsonValue(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument(), "valor", 30));
+                                sTextoDescarga_CV_datos_adicionales_servicio = sTextoDescarga_CV_datos_adicionales_servicio.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio Id: " + id_mongo + "," + itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().ToString());
+                                continue;
+                            }
+                            // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                            try
+                            {
+                                if (sTextoDescarga_CV_datos_adicionales_servicio != "")
                                 {
-                                    sTextoDescarga_CV_datos_adicionales_servicio = "";
-                                    List<BsonValue> consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio = item_CV_DAS.ToBsonDocument().GetElement("datos_adicionales_servicio").Value.AsBsonArray.AsQueryable().ToList();
-
-                                    if (consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio != null && consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Count() > 0)
-                                    {
-                                        // ESCRIBIR LOS DATOS OBTENIDOS DE LAS CONSULTAS POR REGISTRO DE PS_SERVICIO_CLIENTE_datos_adicionales_servicio 
-                                        Console.WriteLine("Registros en la coleccion de PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio encontrados " + consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Count.ToString());
-                                        foreach (BsonValue itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio in consulta_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio)
-                                        {
-                                            try
-                                            {
-                                                try
-                                                {
-                                                    sTextoDescarga_CV_datos_adicionales_servicio =
-                                                    (itemPS_SERVICIO_CLIENTE_CV_datos.ToBsonDocument().Contains("_id") ? !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_CV_datos.ToBsonDocument().GetValue("_id")?.ToString()) ? (itemPS_SERVICIO_CLIENTE_CV_datos.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_CV_datos.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_CV_datos.ToBsonDocument().GetValue("_id").ToString()) : "" : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
-                                                     "~|" + (item_CV_DAS.ToBsonDocument().Contains("_id") && !item_CV_DAS.ToBsonDocument().GetValue("_id").IsBsonNull && !string.IsNullOrEmpty(item_CV_DAS.ToBsonDocument().GetValue("_id").ToString()) ? (item_CV_DAS.ToBsonDocument().GetValue("_id").ToString().Length > 30 ? item_CV_DAS.ToBsonDocument().GetValue("_id").ToString().Substring(0, 29) : item_CV_DAS.ToBsonDocument().GetValue("_id").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                     "~|" + (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().Contains("identificador") && !itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString()) ? (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("identificador").ToString()) : "") +  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                     "~|" + (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().Contains("valor") && !itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").IsBsonNull && !string.IsNullOrEmpty(itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString()) ? (itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString().Length > 30 ? itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString().Substring(0, 29) : itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().GetValue("valor").ToString()) : "");  //VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,   
-                                                    sTextoDescarga_CV_datos_adicionales_servicio = sTextoDescarga_CV_datos_adicionales_servicio.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                    prcManejoErrores objError = new prcManejoErrores();
-                                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio Id: " + id_mongo + "," + itemPS_SERVICIO_CLIENTE_datos_adicionales_servicio.ToBsonDocument().ToString());
-                                                    continue;
-                                                }
-                                                // TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
-                                                try
-                                                {
-                                                    if (sTextoDescarga_CV_datos_adicionales_servicio != "")
-                                                    {
-                                                        Archivo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.WriteLine(sTextoDescarga_CV_datos_adicionales_servicio);
-                                                        Console.WriteLine(sTextoDescarga_CV_datos_adicionales_servicio);
-                                                        Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio++;
-                                                    }
-                                                    //Console.WriteLine("PS_SERVICIO_CLIENTE_datos_adicionales_servicio ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_datos_adicionales_servicio actializadas: " + Conteo_PS_APROVISIONAMIENTO_Comunicaciones);
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                    prcManejoErrores objError = new prcManejoErrores();
-                                                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio en mongo Id: " + id_mongo);
-                                                    continue;
-                                                }
-                                            }
-                                            catch (Exception ex)
-                                            {
-                                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                                                prcManejoErrores objError = new prcManejoErrores();
-                                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio para el procesamiento de registros de mongo Id: " + id_mongo);
-                                                continue;
-                                            }
-                                        }
-                                        Console.WriteLine("PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio ACTUALIZADA: " + itemPS_SERVICIO_CLIENTE_CV_datos.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio actializadas: " + Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio);
-                                    }
+                                    Archivo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.WriteLine(sTextoDescarga_CV_datos_adicionales_servicio);
+                                    Console.WriteLine(sTextoDescarga_CV_datos_adicionales_servicio);
+                                    Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio++;
                                 }
+                                //Console.WriteLine("PS_SERVICIO_CLIENTE_datos_adicionales_servicio ACTUALIZADA: " + itemPS_APROVISIONAMIENTO.GetValue("_id").ToString() + "Numero de PS_SERVICIO_CLIENTE_datos_adicionales_servicio actializadas: " + Conteo_PS_APROVISIONAMIENTO_Comunicaciones);
+                            }
+                            catch (Exception ex)
+                            {
+                                string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio en mongo Id: " + id_mongo);
+                                continue;
                             }
                         }
-
-                        if (Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio > 0)
+                        catch (Exception ex)
                         {
-                            Archivo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Close();
+                            string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Error en validacion de la bandera de actualizacion PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio para el procesamiento de registros de mongo Id: " + id_mongo);
+                            continue;
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
-                        prcManejoErrores objError = new prcManejoErrores();
-                        objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio entre el modelo de datos y de registros de mongo Id: " + id_mongo);
-                    }
+                    Console.WriteLine("PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio ACTUALIZADA: " + id_control_versiones + "Numero de PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio actializadas: " + Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio);
+                }
+                if (Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio > 0)
+                {
+                    Archivo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio.Close();
                 }
                 return Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio;
             }
@@ -9424,5 +9877,2184 @@ namespace Tier.Cmd.Classes
             }
             return Conteo_PS_SERVICIO_CLIENTE_CV_datos_adicionales_servicio;
         } //Se ejecuta con Extractor_PS_SERVICIO_CLIENTE()
+
+        internal static int Extractor_PS_LISTA(string tipo = "")
+        {
+            DateTime fechaEjecucion = DateTime.Now;
+            string path = ValidarRutaArchivos("PS_LISTA");
+            string archivo_SC = string.Format("{0}PS_LISTA_{1}.txt", path, Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            string id_mongo = string.Empty;
+            string sTextoDescarga_SC = string.Empty;
+
+            int Conteo_PS_LISTA = 0;
+            int ElementosLista = 0;
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_LISTA = new StreamWriter(archivo_SC, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_LISTA = db.GetCollection<BsonDocument>("PS_LISTA");
+                FilterDefinitionBuilder<BsonDocument> builderPS_LISTA = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_LISTA = builderPS_LISTA.Empty;
+
+                if (tipo == "")
+                {
+                    filterPS_LISTA = builderPS_LISTA.Or(builderPS_LISTA.Eq("Actualizacion_Extractor", "1"), !builderPS_LISTA.Exists("Actualizacion_Extractor"));
+                }
+                else if (tipo != "full")
+                {
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+
+                    filterPS_LISTA = builderPS_LISTA.And(builderPS_LISTA.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_LISTA.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
+                }
+
+                List<BsonDocument> consulta_PS_LISTA = Col_PS_LISTA.Find(filterPS_LISTA).ToList();
+
+                if (consulta_PS_LISTA?.Count > 0)
+                {
+                    Console.WriteLine("Registros en la coleccion de PS_LISTA encontrados " + consulta_PS_LISTA.Count.ToString());
+                    try
+                    {
+                        foreach (BsonDocument RegistroLista in consulta_PS_LISTA)
+                        {
+                            id_mongo = RegistroLista.GetValue("_id").ToString();
+                            sTextoDescarga_SC = string.Empty;
+                            if (!string.IsNullOrEmpty(id_mongo) && (!RegistroLista.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || RegistroLista.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || (RegistroLista.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull)))
+                            {
+                                try
+                                {
+                                    sTextoDescarga_SC = ValidarDatoEnBsonValue(RegistroLista, "_id", 30);
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "fecha_creacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "usuario_creacion", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "fecha_actualizacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "usuario_modificacion", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "nombre", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "es_activo", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "id_lista_dependiente", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "descripcion", 300));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroLista, "modulo", 30));
+                                    sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+
+                                    if (RegistroLista.Contains("elementos_lista") && !RegistroLista.GetValue("elementos_lista").IsBsonNull && RegistroLista.GetElement("elementos_lista").Value.AsBsonArray.AsQueryable().ToList().Count() > 0)
+                                    {
+                                        ElementosLista += Extractor_PS_LISTA_CV(id_mongo);
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_LISTA Id: " + id_mongo);
+                                    continue;
+                                }
+                                /// TERMINA DE REALIZAR LA CADENA DEL REGISTRO Y LO INCLUYE DENTRO DEL ARCHIVO, ACTUALIZA EL REGISTRO EN LA BANDERA Y ESCRIBE EN CONSOLA LO QUE SE ESTA CORRIENDO 
+                                try
+                                {
+                                    Conteo_PS_LISTA++;
+                                    Archivo_PS_LISTA.WriteLine(sTextoDescarga_SC);
+                                    Col_PS_LISTA.UpdateOne(Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(id_mongo).ToString()), Builders<BsonDocument>.Update.Set("Actualizacion_Extractor", "0")
+                                                                                                                                           .Set("Fecha_extraccion", fechaEjecucion.ToLocalTime()));
+                                    Console.WriteLine("PS_LISTA ACTUALIZADA: " + RegistroLista.GetValue("_id").ToString() + "Numero de PS_LISTA actializadas: " + Conteo_PS_LISTA);
+                                }
+                                catch (Exception ex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error en la actualizacion de la bandera en PS_LISTA en mongo Id: " + id_mongo);
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_LISTA entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                    }
+                    if (Conteo_PS_LISTA > 0)
+                    {
+                        Archivo_PS_LISTA.Close();
+                        ///PublicarArchivo.PublicarArchivoExtractores("PS_SERVICIO_CLIENTE_" + Convert.ToDateTime(fechatemp.ToLocalTime()).ToString("ddMMyyyy") + ".txt");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString());
+            }
+            finally
+            {
+                Archivo_PS_LISTA.Close();
+            }
+            return Conteo_PS_LISTA;
+        }
+
+        internal static int Extractor_PS_LISTA_CV(string idmongo)
+        {
+
+            string path = ValidarRutaArchivos("PS_LISTA_CV");
+
+            int Conteo__PS_LISTA_CV = 0;
+            string sTextoDescarga_cv = "";
+            string id_mongo = "";
+            DateTime fechaEjecucion = DateTime.Now;
+
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_LISTA_CV", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+
+            ///Se abren los archivos para poder escribirlos
+            StreamWriter Archivo_PS_LISTA_CV = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_LISTA_CV = db.GetCollection<BsonDocument>("PS_LISTA");
+            FilterDefinitionBuilder<BsonDocument> builderPS_LISTA_CV = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_LISTA_CV = builderPS_LISTA_CV.Empty;
+            filterPS_LISTA_CV = builderPS_LISTA_CV.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            List<BsonDocument> Consulta_PS_LISTA_CV = Col_PS_LISTA_CV.Find(filterPS_LISTA_CV).ToList();
+
+
+            if (Consulta_PS_LISTA_CV?.Count > 0)
+            {
+                Console.WriteLine("Registros en la coleccion de PS_LISTA_CV encontrados " + Consulta_PS_LISTA_CV.Count.ToString());
+                try
+                {
+                    foreach (BsonDocument BsonRegistroLista in Consulta_PS_LISTA_CV)
+                    {
+                        id_mongo = BsonRegistroLista.GetValue("_id").ToString();
+                        sTextoDescarga_cv = "";
+
+                        List<BsonValue> ElementosLista = BsonRegistroLista.GetElement("elementos_lista").Value.AsBsonArray.ToList();
+                        if (ElementosLista?.Count > 0)
+                        {
+                            Console.WriteLine("Registros en la coleccion de PS_LISTA_CV encontrados " + ElementosLista.Count.ToString());
+
+                            foreach (BsonValue elementoLista in ElementosLista)
+                            {
+                                sTextoDescarga_cv = string.Format("{0}", id_mongo);
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(elementoLista.ToBsonDocument(), "_id", 30));
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(elementoLista.ToBsonDocument(), "valor", 30));
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(elementoLista.ToBsonDocument(), "texto", 30));
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(elementoLista.ToBsonDocument(), "valor_relacion", 30));
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(elementoLista.ToBsonDocument(), "es_activo", 30));
+                                sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                                Conteo__PS_LISTA_CV++;
+
+                                Archivo_PS_LISTA_CV.WriteLine(sTextoDescarga_cv);
+                                Console.WriteLine("Registros en la coleccion de PS_LISTA_CV Registro Actualizado " + elementoLista.ToBsonDocument().GetValue("_id").ToString());
+                            }
+                        }
+
+                    }
+                    Archivo_PS_LISTA_CV.Close();
+                }
+                catch (Exception ex)
+                {
+                    string sNombreArchivoError = "ErrorBatch_Cargue_DWH";
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, sNombreArchivoError, ex.Message.ToString() + "Inconsistencia en PS_LISTA_CV entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                }
+            }
+
+
+
+            return Conteo__PS_LISTA_CV;
+        }
+
+        internal static int Extractor_PS_TAREA(string tipo = "")
+        {
+            int Conteo_PS_TAREA = 0;
+            int Conteo_PS_TAREA_CV_ValidacionesParametros = 0;
+            int Conteo_PS_TAREA_CV_TareasPredecesoras = 0;
+            int Conteo_PS_TAREA_CV_TareasDependientes = 0;
+            int Conteo_PS_TAREA_CV_CamposDinamicos = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string path = ValidarRutaArchivos("PS_TAREA");
+            string archivo_SC = string.Format("{0}PS_TAREA_{1}.txt", path, Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            string id_mongo = string.Empty;
+            string sTextoDescarga_SC = string.Empty;
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_TAREA = new StreamWriter(archivo_SC, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_TAREA = db.GetCollection<BsonDocument>("PS_TAREA");
+                FilterDefinitionBuilder<BsonDocument> builderPS_TAREA = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_TAREA = builderPS_TAREA.Empty;
+
+                if (tipo == "")
+                {
+                    filterPS_TAREA = builderPS_TAREA.Or(builderPS_TAREA.Eq("Actualizacion_Extractor", "1"), !builderPS_TAREA.Exists("Actualizacion_Extractor"));
+                }
+                else if (tipo != "full")
+                {
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+
+                    filterPS_TAREA = builderPS_TAREA.And(builderPS_TAREA.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_TAREA.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
+                }
+
+                List<BsonDocument> consulta_PS_TAREA = Col_PS_TAREA.Find(filterPS_TAREA).ToList();
+
+                if (consulta_PS_TAREA?.Count > 0)
+                {
+                    Console.WriteLine("Registros en la coleccion de PS_TAREA encontrados " + consulta_PS_TAREA.Count.ToString());
+                    try
+                    {
+                        foreach (BsonDocument RegistroTarea in consulta_PS_TAREA)
+                        {
+                            id_mongo = RegistroTarea.GetValue("_id").ToString();
+                            sTextoDescarga_SC = string.Empty;
+                            if (!string.IsNullOrEmpty(id_mongo) && (!RegistroTarea.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || RegistroTarea.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || (RegistroTarea.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull)))
+                            {
+                                try
+                                {
+                                    sTextoDescarga_SC = ValidarDatoEnBsonValue(RegistroTarea, "_id", 30);
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "fecha_creacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "usuario_creacion", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "fecha_actualizacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "usuario_modificacion", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "id_tarea", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "nombre_tarea", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "id_grupo_asignado", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "grupo_asignado", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "es_creacion_automatica", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "es_activo", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "observaciones", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "ans", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "cambia_fase", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "cambia_estado", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "elementos_cfg_servicio", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "id_cambia_fase", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTarea, "id_cambia_estado", 30));
+                                    sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+
+                                    if (RegistroTarea.Contains("validaciones_parametros") && !RegistroTarea.GetElement("validaciones_parametros").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_TAREA_CV_ValidacionesParametros += Extractor_PS_TAREA_CV_Validaciones_parametros(id_mongo);
+                                    }
+                                    if (RegistroTarea.Contains("tareas_predecesoras") && !RegistroTarea.GetElement("tareas_predecesoras").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_TAREA_CV_TareasPredecesoras += Extractor_PS_TAREA_CV_TareasPredecesoras(id_mongo);
+                                    }
+                                    if (RegistroTarea.Contains("tareas_dependientes") && !RegistroTarea.GetElement("tareas_dependientes").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_TAREA_CV_TareasDependientes = Extractor_PS_TAREA_CV_TareasDependientes(id_mongo);
+                                    }
+                                    if (RegistroTarea.Contains("campos_dinamicos") && !RegistroTarea.GetElement("campos_dinamicos").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_TAREA_CV_CamposDinamicos += Extractor_PS_TAREA_CV_Campos_dinamicos(id_mongo);
+                                    }
+
+                                    Archivo_PS_TAREA.WriteLine(sTextoDescarga_SC);
+                                }
+                                catch (IOException Iex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(Iex, "ErrorBatch_Cargue_DWH", Iex.Message.ToString() + "Error tratando de escribir el archivo PS_TAREA Id: " + id_mongo);
+                                    continue;
+                                }
+                                catch (Exception ex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_TAREA Id: " + id_mongo);
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString());
+            }
+            finally
+            {
+                Archivo_PS_TAREA.Close();
+            }
+
+
+            return Conteo_PS_TAREA;
+        }
+
+        internal static int Extractor_PS_TAREA_CV_Validaciones_parametros(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_TAREA_CV_Validaciones_parametros");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_CV_validaciones_parametros = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_TAREA_CV_Validaciones_parametros", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter PS_TAREA_CV_validaciones_parametros = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_TAREA_CV_ValidacionesParametros = db.GetCollection<BsonDocument>("PS_TAREA");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_CV_ValidacionesParametros = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_CV_ValidacionesParametros = builderPS_TAREA_CV_ValidacionesParametros.Empty;
+            filterPS_TAREA_CV_ValidacionesParametros = builderPS_TAREA_CV_ValidacionesParametros.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_LISTA_CV = Col_PS_TAREA_CV_ValidacionesParametros.Find(filterPS_TAREA_CV_ValidacionesParametros).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_LISTA_CV != null)
+            {
+                try
+                {
+                    List<BsonValue> ValidacionesParametros = ((Consulta_PS_LISTA_CV.Contains("validaciones_parametros") && !Consulta_PS_LISTA_CV.GetElement("validaciones_parametros").Value.IsBsonNull) ? Consulta_PS_LISTA_CV.GetElement("validaciones_parametros").Value.AsBsonArray.ToList() : null);
+                    if (ValidacionesParametros?.Count > 0)
+                    {
+                        foreach (BsonValue ValidacionParametro in ValidacionesParametros)
+                        {
+                            sTextoDescarga_cv = string.Empty;
+                            List<BsonValue> Valores_validacion = ((ValidacionParametro.ToBsonDocument().Contains("valor_validacion") && !ValidacionParametro.ToBsonDocument().GetElement("valor_validacion").Value.IsBsonNull) ? ValidacionParametro.ToBsonDocument().GetElement("valor_validacion").Value.AsBsonArray.ToList() : null);
+
+                            if (Valores_validacion?.Count > 0)
+                            {
+                                foreach (BsonValue valor in Valores_validacion)
+                                {
+                                    sTextoDescarga_cv = string.Format("{0}", idmongo);
+                                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(ValidacionParametro.ToBsonDocument(), "campo_validacion", 30));
+                                    sTextoDescarga_cv += string.Format("~|{0}", (valor.AsString.Length > 30 ? valor.AsString.Substring(0, 29) : valor.AsString));
+                                    sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                    PS_TAREA_CV_validaciones_parametros.WriteLine(sTextoDescarga_cv);
+                                }
+                            }
+                        }
+                        PS_TAREA_CV_validaciones_parametros.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_CV_Validaciones_parametros entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_CV_validaciones_parametros;
+
+        }
+
+        internal static int Extractor_PS_TAREA_CV_TareasPredecesoras(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_TAREA_CV_TareasPredecesoras");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_CV_TareasPredecesoras = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_TAREA_CV_TareasPredecesoras", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter PS_TAREA_CV_TareasPredecesoras = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_TAREA_CV_TareasPredecesoras = db.GetCollection<BsonDocument>("PS_TAREA");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_CV_TareasPredecesoras = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_CV_TareasPredecesoras = builderPS_TAREA_CV_TareasPredecesoras.Empty;
+            filterPS_TAREA_CV_TareasPredecesoras = builderPS_TAREA_CV_TareasPredecesoras.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_LISTA_CV_tareasPredecesoras = Col_PS_TAREA_CV_TareasPredecesoras.Find(filterPS_TAREA_CV_TareasPredecesoras).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_LISTA_CV_tareasPredecesoras != null)
+            {
+                try
+                {
+                    List<BsonValue> IdsTareasPredecesoras = ((Consulta_PS_LISTA_CV_tareasPredecesoras.Contains("tareas_predecesoras") && !Consulta_PS_LISTA_CV_tareasPredecesoras.GetElement("tareas_predecesoras").Value.IsBsonNull) ? Consulta_PS_LISTA_CV_tareasPredecesoras.GetElement("tareas_predecesoras").Value.AsBsonArray.ToList() : null);
+
+                    if (IdsTareasPredecesoras != null)
+                    {
+                        sTextoDescarga_cv = string.Empty;
+                        foreach (BsonValue idTareaPredecesora in IdsTareasPredecesoras)
+                        {
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", (idTareaPredecesora.AsString.Length > 30 ? idTareaPredecesora.AsString.Substring(0, 29) : idTareaPredecesora.AsString));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_TAREA_CV_TareasPredecesoras++;
+                            PS_TAREA_CV_TareasPredecesoras.WriteLine(sTextoDescarga_cv);
+                        }
+                    }
+
+                    PS_TAREA_CV_TareasPredecesoras.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_CV_TareasPredecesoras entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+            return Conteo_PS_TAREA_CV_TareasPredecesoras;
+        }
+
+        internal static int Extractor_PS_TAREA_CV_TareasDependientes(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_TAREA_CV_TareasDependientes");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_CV_TareasPredecesoras = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_TAREA_CV_TareasDependientes", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter PS_TAREA_CV_TareasPredecesoras = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_TAREA_CV_TareasPredecesoras = db.GetCollection<BsonDocument>("PS_TAREA");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_CV_TareasPredecesoras = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_CV_TareasPredecesoras = builderPS_TAREA_CV_TareasPredecesoras.Empty;
+            filterPS_TAREA_CV_TareasPredecesoras = builderPS_TAREA_CV_TareasPredecesoras.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_LISTA_CV_tareasPredecesoras = Col_PS_TAREA_CV_TareasPredecesoras.Find(filterPS_TAREA_CV_TareasPredecesoras).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_LISTA_CV_tareasPredecesoras != null)
+            {
+                try
+                {
+                    List<BsonValue> IdsTareasPredecesoras = ((Consulta_PS_LISTA_CV_tareasPredecesoras.Contains("tareas_dependientes") && !Consulta_PS_LISTA_CV_tareasPredecesoras.GetElement("tareas_dependientes").Value.IsBsonNull) ? Consulta_PS_LISTA_CV_tareasPredecesoras.GetElement("tareas_dependientes").Value.AsBsonArray.ToList() : null);
+
+                    if (IdsTareasPredecesoras != null)
+                    {
+                        sTextoDescarga_cv = string.Empty;
+                        foreach (BsonValue idTareaPredecesora in IdsTareasPredecesoras)
+                        {
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", (idTareaPredecesora.AsString.Length > 30 ? idTareaPredecesora.AsString.Substring(0, 29) : idTareaPredecesora.AsString));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_TAREA_CV_TareasPredecesoras++;
+                            PS_TAREA_CV_TareasPredecesoras.WriteLine(sTextoDescarga_cv);
+                        }
+                    }
+
+                    PS_TAREA_CV_TareasPredecesoras.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_CV_TareasDependientes entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_CV_TareasPredecesoras;
+
+        }
+
+        internal static int Extractor_PS_TAREA_CV_Campos_dinamicos(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_TAREA_CV_Campos_dinamicos");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_CV_Campos_dinamicos = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_TAREA_CV_Campos_dinamicos", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter PS_TAREA_CV_Campos_dinamicos = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_TAREA_CV_Campos_dinamicos = db.GetCollection<BsonDocument>("PS_TAREA");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_CV_Campos_dinamicos = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_CV_Campos_dinamicos = builderPS_TAREA_CV_Campos_dinamicos.Empty;
+            filterPS_TAREA_CV_Campos_dinamicos = builderPS_TAREA_CV_Campos_dinamicos.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_LISTA_CV_tareasPredecesoras = Col_PS_TAREA_CV_Campos_dinamicos.Find(filterPS_TAREA_CV_Campos_dinamicos).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_LISTA_CV_tareasPredecesoras != null)
+            {
+                try
+                {
+                    List<BsonValue> CamposDinamicos = ((Consulta_PS_LISTA_CV_tareasPredecesoras.Contains("campos_dinamicos") && !Consulta_PS_LISTA_CV_tareasPredecesoras.GetElement("campos_dinamicos").Value.IsBsonNull) ? Consulta_PS_LISTA_CV_tareasPredecesoras.GetElement("campos_dinamicos").Value.AsBsonArray.ToList() : null);
+                    if (CamposDinamicos != null)
+                    {
+                        sTextoDescarga_cv = string.Empty;
+                        foreach (BsonValue campoDinamico in CamposDinamicos)
+                        {
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(campoDinamico.ToBsonDocument(), "id_campoDinamico", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(campoDinamico.ToBsonDocument(), "orden", 30));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_TAREA_CV_Campos_dinamicos++;
+                            PS_TAREA_CV_Campos_dinamicos.WriteLine(sTextoDescarga_cv);
+                        }
+                    }
+                    PS_TAREA_CV_Campos_dinamicos.Close();
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_CV_Campos_dinamicos entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_CV_Campos_dinamicos;
+
+        }
+
+        internal static int Extractor_PS_TAREA_SOLICITUD(string tipo = "")
+        {
+
+            int Conteo_PS_TAREA_SOLICTUD = 0;
+            int Conteo_PS_TAREA_SOLICTUD_Valores_campos_dinamicos = 0;
+            int Conteo_PS_TAREA_SOLICTUD_Adjuntos = 0;
+            int Conteo_PS_TAREA_SOLICTUD_Historico_modificaciones = 0;
+            int Conteo_PS_TAREA_SOLICTUD_comunicaciones = 0;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string path = ValidarRutaArchivos("PS_04_00_TAREAS_SOLI_");
+            string archivo_SC = string.Format("{0}PS_04_00_TAREAS_SOLI_{1}.txt", path, Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            string id_mongo = string.Empty;
+            string sTextoDescarga = string.Empty;
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_TAREA_SOLICTUD = new StreamWriter(archivo_SC, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_TAREA_SOLICTUD = db.GetCollection<BsonDocument>("PS_TAREAS_SOLICITUD");
+                FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_SOLICTUD = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_TAREA_SOLICTUD = builderPS_TAREA_SOLICTUD.Empty;
+
+                if (tipo == "")
+                {
+                    filterPS_TAREA_SOLICTUD = builderPS_TAREA_SOLICTUD.Or(builderPS_TAREA_SOLICTUD.Eq("Actualizacion_Extractor", "1"), !builderPS_TAREA_SOLICTUD.Exists("Actualizacion_Extractor"));
+                }
+                else if (tipo != "full")
+                {
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+
+                    filterPS_TAREA_SOLICTUD = builderPS_TAREA_SOLICTUD.And(builderPS_TAREA_SOLICTUD.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_TAREA_SOLICTUD.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
+                }
+
+                List<BsonDocument> consulta_PS_TAREA_SOLICTUD = Col_PS_TAREA_SOLICTUD.Find(filterPS_TAREA_SOLICTUD).ToList();
+
+                if (consulta_PS_TAREA_SOLICTUD?.Count > 0)
+                {
+                    Console.WriteLine("Registros en la coleccion de PS_TAREAS_SOLICITUD encontrados " + consulta_PS_TAREA_SOLICTUD.Count.ToString());
+                    foreach (BsonDocument RegistroTareaSolicitud in consulta_PS_TAREA_SOLICTUD)
+                    {
+                        id_mongo = RegistroTareaSolicitud.GetValue("_id").ToString();
+                        sTextoDescarga = string.Empty;
+                        if (!string.IsNullOrEmpty(id_mongo) && (!RegistroTareaSolicitud.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                            || RegistroTareaSolicitud.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                            || (RegistroTareaSolicitud.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull)))
+                        {
+                            try
+                            {
+                                sTextoDescarga = string.Format("{0}", id_mongo);
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "fecha_creacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "usuario_creacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "fecha_actualizacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "usuario_modificacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "id_solicitud", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "tipo_solicitud", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "numero_solicitud", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "id_tarea", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "id_grupo_asignado", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "grupo_asignado", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "id_usuario_asignado", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "usuario_asignado", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "estado", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "id_estado", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "fecha_asignacion", 30));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "observaciones", 200));
+                                sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroTareaSolicitud, "fecha_finalizacion", 30));
+
+                                if (RegistroTareaSolicitud.Contains("valores_campos_dinamicos") && !RegistroTareaSolicitud.GetElement("valores_campos_dinamicos").Value.IsBsonNull)
+                                {
+                                    Conteo_PS_TAREA_SOLICTUD_Valores_campos_dinamicos = Extractor_PS_TAREA_SOLICITUD_CV_Valores_campos_dinamicos(id_mongo);
+                                }
+                                if (RegistroTareaSolicitud.Contains("adjuntos") && !RegistroTareaSolicitud.GetElement("adjuntos").Value.IsBsonNull)
+                                {
+                                    Conteo_PS_TAREA_SOLICTUD_Adjuntos = Extractor_PS_TAREA_SOLICITUD_CV_Adjuntos(id_mongo);
+                                }
+                                if (RegistroTareaSolicitud.Contains("historico_modificaciones") && !RegistroTareaSolicitud.GetElement("historico_modificaciones").Value.IsBsonNull)
+                                {
+                                    Conteo_PS_TAREA_SOLICTUD_Historico_modificaciones = Extractor_PS_TAREA_SOLICITUD_CV_Historico_modificaciones(id_mongo);
+                                }
+                                if (RegistroTareaSolicitud.Contains("comunicaciones") && !RegistroTareaSolicitud.GetElement("comunicaciones").Value.IsBsonNull)
+                                {
+                                    Conteo_PS_TAREA_SOLICTUD_comunicaciones = Extractor_PS_TAREA_SOLICITUD_CV_Comunicaciones(id_mongo);
+                                }
+                                sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                Archivo_PS_TAREA_SOLICTUD.WriteLine(sTextoDescarga);
+                                Console.WriteLine(string.Format("Registro escrito {0} valores_campos_dinamicos :{1}, adjuntos {2},historico_modificaciones{3},comunicaciones {4}",
+                                                                 id_mongo,
+                                                                 Conteo_PS_TAREA_SOLICTUD_Valores_campos_dinamicos,
+                                                                 Conteo_PS_TAREA_SOLICTUD_Adjuntos,
+                                                                 Conteo_PS_TAREA_SOLICTUD_Historico_modificaciones,
+                                                                 Conteo_PS_TAREA_SOLICTUD_comunicaciones));
+
+                            }
+                            catch (Exception ex)
+                            {
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_TAREA_SOLICITUD Id: " + id_mongo);
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString());
+            }
+            finally
+            {
+                Archivo_PS_TAREA_SOLICTUD.Close();
+            }
+
+
+            return Conteo_PS_TAREA_SOLICTUD;
+        }
+
+        internal static int Extractor_PS_TAREA_SOLICITUD_CV_Valores_campos_dinamicos(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_04_01_TS_VALOR_CD_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_SOLICITUD_CV_VCD = 0;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_04_01_TS_VALOR_CD_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_TAREA_SOLICITUD_CV_VCD = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            IMongoCollection<BsonDocument> Col_PS_TAREA_SOLICITUD_CV_VCD = db.GetCollection<BsonDocument>("PS_TAREAS_SOLICITUD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_SOLICITUD_CV_VCD = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_SOLICITUD_CV_VCD = builderPS_TAREA_SOLICITUD_CV_VCD.Empty;
+            filterPS_TAREA_SOLICITUD_CV_VCD = builderPS_TAREA_SOLICITUD_CV_VCD.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_TAREA_SOLICITUD_CV_VCD = Col_PS_TAREA_SOLICITUD_CV_VCD.Find(filterPS_TAREA_SOLICITUD_CV_VCD).FirstOrDefault<BsonDocument>();
+
+            if (Consulta_PS_TAREA_SOLICITUD_CV_VCD != null)
+            {
+                try
+                {
+                    List<BsonValue> valores_campos_dinamicos = ((Consulta_PS_TAREA_SOLICITUD_CV_VCD.Contains("valores_campos_dinamicos") && !Consulta_PS_TAREA_SOLICITUD_CV_VCD.GetElement("valores_campos_dinamicos").Value.IsBsonNull) ? Consulta_PS_TAREA_SOLICITUD_CV_VCD.GetElement("valores_campos_dinamicos").Value.AsBsonArray.ToList() : null);
+
+                    foreach (BsonValue valor_campo in valores_campos_dinamicos)
+                    {
+
+                        sTextoDescarga_cv = string.Empty;
+                        sTextoDescarga_cv = string.Format("{0}", idmongo);
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "_id", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "nombre", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "tipo", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "es_respuesta", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "es_activo", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "es_inventario", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "id_lista", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "apiname", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "agrupador", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "valor", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "ValorMultiple", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(valor_campo.ToBsonDocument(), "order_visualizacion", 30));
+                        sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                        Archivo_PS_TAREA_SOLICITUD_CV_VCD.WriteLine(sTextoDescarga_cv);
+                        Conteo_PS_TAREA_SOLICITUD_CV_VCD++;
+                    }
+
+                    Archivo_PS_TAREA_SOLICITUD_CV_VCD.Close();
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_SOLICITUD_CV_VCD entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_SOLICITUD_CV_VCD;
+        }
+
+        internal static int Extractor_PS_TAREA_SOLICITUD_CV_Adjuntos(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_04_02_TARSO_ADJUN_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_SOLICITUD_CV_ADJUNTOS = 0;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_04_02_TARSO_ADJUN_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_TAREA_SOLICITUD_CV_ADJUNTOS = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            IMongoCollection<BsonDocument> Col_PS_TAREA_SOLICITUD_CV_ADJUNTOS = db.GetCollection<BsonDocument>("PS_TAREAS_SOLICITUD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_SOLICITUD_CV_ADJUNTOS = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_SOLICITUD_CV_ADJUNTOS = builderPS_TAREA_SOLICITUD_CV_ADJUNTOS.Empty;
+            filterPS_TAREA_SOLICITUD_CV_ADJUNTOS = builderPS_TAREA_SOLICITUD_CV_ADJUNTOS.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_TAREA_SOLICITUD_CV_ADJUNTOS = Col_PS_TAREA_SOLICITUD_CV_ADJUNTOS.Find(filterPS_TAREA_SOLICITUD_CV_ADJUNTOS).FirstOrDefault<BsonDocument>();
+
+            if (Consulta_PS_TAREA_SOLICITUD_CV_ADJUNTOS != null)
+            {
+                try
+                {
+                    List<BsonValue> adjuntos = ((Consulta_PS_TAREA_SOLICITUD_CV_ADJUNTOS.Contains("adjuntos") && !Consulta_PS_TAREA_SOLICITUD_CV_ADJUNTOS.GetElement("adjuntos").Value.IsBsonNull) ? Consulta_PS_TAREA_SOLICITUD_CV_ADJUNTOS.GetElement("adjuntos").Value.AsBsonArray.ToList() : null);
+
+                    foreach (BsonValue adjunto in adjuntos)
+                    {
+                        sTextoDescarga_cv = string.Empty;
+
+                        sTextoDescarga_cv = string.Format("{0}", idmongo);
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "_id", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "ruta", 500));
+                        //sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "tipo", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "fecha_creacion", 50));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "usuario_creacion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "id_tarea_relacionada", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "tarea_relacionada", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "es_publico", 8));
+                        sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                        Archivo_PS_TAREA_SOLICITUD_CV_ADJUNTOS.WriteLine(sTextoDescarga_cv);
+                        Conteo_PS_TAREA_SOLICITUD_CV_ADJUNTOS++;
+                    }
+
+                    Archivo_PS_TAREA_SOLICITUD_CV_ADJUNTOS.Close();
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_SOLICITUD_CV_ADJUNTOS entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_SOLICITUD_CV_ADJUNTOS;
+        }
+
+        internal static int Extractor_PS_TAREA_SOLICITUD_CV_Historico_modificaciones(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_04_03_HIST_MODIFI_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_SOLICITUD_CV_HM = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_04_03_HIST_MODIFI_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_TAREA_SOLICITUD_CV_HM = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_TAREA_SOLICITUD_CV_HM = db.GetCollection<BsonDocument>("PS_TAREAS_SOLICITUD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_SOLICITUD_CV_HM = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_SOLICITUD_CV_HM = builderPS_TAREA_SOLICITUD_CV_HM.Empty;
+            filterPS_TAREA_SOLICITUD_CV_HM = builderPS_TAREA_SOLICITUD_CV_HM.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_TAREA_SOLICITUD_CV_HM = Col_PS_TAREA_SOLICITUD_CV_HM.Find(filterPS_TAREA_SOLICITUD_CV_HM).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_TAREA_SOLICITUD_CV_HM != null)
+            {
+                try
+                {
+                    List<BsonValue> IdsModificaciones = ((Consulta_PS_TAREA_SOLICITUD_CV_HM.Contains("historico_modificaciones") && !Consulta_PS_TAREA_SOLICITUD_CV_HM.GetElement("historico_modificaciones").Value.IsBsonNull) ? Consulta_PS_TAREA_SOLICITUD_CV_HM.GetElement("historico_modificaciones").Value.AsBsonArray.ToList() : null);
+
+                    if (IdsModificaciones != null)
+                    {
+                        foreach (BsonValue idModificacion in IdsModificaciones)
+                        {
+                            sTextoDescarga_cv = string.Empty;
+
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", (idModificacion.AsString.Length > 30 ? idModificacion.AsString.Substring(0, 29) : idModificacion.AsString));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_TAREA_SOLICITUD_CV_HM++;
+                            Archivo_PS_TAREA_SOLICITUD_CV_HM.WriteLine(sTextoDescarga_cv);
+                        }
+                    }
+
+                    Archivo_PS_TAREA_SOLICITUD_CV_HM.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREAS_SOLICITUD_CV_ entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_SOLICITUD_CV_HM;
+
+        }
+
+        internal static int Extractor_PS_TAREA_SOLICITUD_CV_Comunicaciones(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_04_04_TARSO_COMUN_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_TAREA_SOLICITUD_CV_Comunicaciones = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_04_04_TARSO_COMUN_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_TAREA_SOLICITUD_CV_Comunicaciones = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_TAREA_SOLICITUD_CV_Comunicaciones = db.GetCollection<BsonDocument>("PS_TAREAS_SOLICITUD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_TAREA_SOLICITUD_CV_Comunicaciones = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_TAREA_SOLICITUD_CV_Comunicaciones = builderPS_TAREA_SOLICITUD_CV_Comunicaciones.Empty;
+            filterPS_TAREA_SOLICITUD_CV_Comunicaciones = builderPS_TAREA_SOLICITUD_CV_Comunicaciones.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_TAREA_SOLICITUD_CV_HM = Col_PS_TAREA_SOLICITUD_CV_Comunicaciones.Find(filterPS_TAREA_SOLICITUD_CV_Comunicaciones).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_TAREA_SOLICITUD_CV_HM != null)
+            {
+                try
+                {
+                    List<BsonValue> IdsComunicaciones = ((Consulta_PS_TAREA_SOLICITUD_CV_HM.Contains("comunicaciones") && !Consulta_PS_TAREA_SOLICITUD_CV_HM.GetElement("comunicaciones").Value.IsBsonNull) ? Consulta_PS_TAREA_SOLICITUD_CV_HM.GetElement("comunicaciones").Value.AsBsonArray.ToList() : null);
+
+                    if (IdsComunicaciones != null)
+                    {
+                        sTextoDescarga_cv = string.Empty;
+                        foreach (BsonValue idIdsComunicacion in IdsComunicaciones)
+                        {
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", (idIdsComunicacion.AsString.Length > 30 ? idIdsComunicacion.AsString.Substring(0, 29) : idIdsComunicacion.AsString));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_TAREA_SOLICITUD_CV_Comunicaciones++;
+                            Archivo_PS_TAREA_SOLICITUD_CV_Comunicaciones.WriteLine(sTextoDescarga_cv);
+                        }
+                    }
+
+                    Archivo_PS_TAREA_SOLICITUD_CV_Comunicaciones.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREAS_SOLICITUD_CV_HistoricoModificaciones entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_TAREA_SOLICITUD_CV_Comunicaciones;
+
+        }
+
+        internal static int Extractor_PS_UNIDAD_MEDIDA(string tipo = "")
+        {
+            DateTime fechaEjecucion = DateTime.Now;
+            string path = ValidarRutaArchivos("PS_UNIDAD_MEDIDA");
+            string archivo_SC = string.Format("{0}PS_UNIDAD_MEDIDA{1}.txt", path, Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            string id_mongo = string.Empty;
+            string sTextoDescarga_SC = string.Empty;
+
+            int Conteo_PS_UNIDAD_MEDIDA = 0;
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_UNIDAD_MEDIDA = new StreamWriter(archivo_SC, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_UNIDAD_MEDIDA = db.GetCollection<BsonDocument>("PS_UNIDAD_MEDIDA");
+                FilterDefinitionBuilder<BsonDocument> builderPS_UNIDAD_MEDIDA = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_UNIDAD_MEDIDA = builderPS_UNIDAD_MEDIDA.Empty;
+
+                if (tipo == "")
+                {
+                    filterPS_UNIDAD_MEDIDA = builderPS_UNIDAD_MEDIDA.Or(builderPS_UNIDAD_MEDIDA.Eq("Actualizacion_Extractor", "1"), !builderPS_UNIDAD_MEDIDA.Exists("Actualizacion_Extractor"));
+                }
+                else if (tipo != "full")
+                {
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+
+                    filterPS_UNIDAD_MEDIDA = builderPS_UNIDAD_MEDIDA.And(builderPS_UNIDAD_MEDIDA.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_UNIDAD_MEDIDA.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
+                }
+
+                List<BsonDocument> consulta_PS_UNIDAD_MEDIDA = Col_PS_UNIDAD_MEDIDA.Find(filterPS_UNIDAD_MEDIDA).ToList();
+
+                if (consulta_PS_UNIDAD_MEDIDA?.Count > 0)
+                {
+                    Console.WriteLine("Registros en la coleccion de PS_UNIDAD_MEDIDA encontrados " + consulta_PS_UNIDAD_MEDIDA.Count.ToString());
+                    try
+                    {
+                        foreach (BsonDocument RegistroUnidad in consulta_PS_UNIDAD_MEDIDA)
+                        {
+                            id_mongo = RegistroUnidad.GetValue("_id").ToString();
+                            sTextoDescarga_SC = string.Empty;
+                            if (!string.IsNullOrEmpty(id_mongo) && (!RegistroUnidad.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || RegistroUnidad.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || (RegistroUnidad.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull)))
+                            {
+                                try
+                                {
+                                    sTextoDescarga_SC = ValidarDatoEnBsonValue(RegistroUnidad, "_id", 30);
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "nombre", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "sigla", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "tipo", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "id_unidad_medida", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "factor", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "es_activo", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "fecha_creacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "usuario_creacion", 300));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "fecha_actualizacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "usuario_modificacion", 30));
+                                    sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                    Conteo_PS_UNIDAD_MEDIDA++;
+                                    Archivo_PS_UNIDAD_MEDIDA.WriteLine(sTextoDescarga_SC);
+                                }
+                                catch (IOException Iex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(Iex, "ErrorBatch_Cargue_DWH", Iex.Message.ToString() + "Error en la actualizacion de la bandera en PS_UNIDAD_MEDIDA en mongo Id: " + id_mongo);
+                                    continue;
+                                }
+                                catch (Exception ex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_UNIDAD_MEDIDA Id: " + id_mongo);
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_UNIDAD_MEDIDA entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString());
+            }
+            finally
+            {
+                Archivo_PS_UNIDAD_MEDIDA.Close();
+            }
+            return Conteo_PS_UNIDAD_MEDIDA;
+        }
+
+        internal static int Extractor_PS_USUARIO(string tipo = "")
+        {
+            DateTime fechaEjecucion = DateTime.Now;
+            string path = ValidarRutaArchivos("PS_USUARIO");
+            string archivo_SC = string.Format("{0}PS_USUARIO{1}.txt", path, Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            string id_mongo = string.Empty;
+            string sTextoDescarga_SC = string.Empty;
+
+            int Conteo_PS_USUARIO = 0;
+            int Conteo_PS_USUARIO_Grupos_Lider = 0;
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_USUARIO = new StreamWriter(archivo_SC, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_USUARIO = db.GetCollection<BsonDocument>("PS_USUARIO");
+                FilterDefinitionBuilder<BsonDocument> builderPS_USUARIO = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_USUARIO = builderPS_USUARIO.Empty;
+
+                if (tipo == "")
+                {
+                    filterPS_USUARIO = builderPS_USUARIO.Or(builderPS_USUARIO.Eq("Actualizacion_Extractor", "1"), !builderPS_USUARIO.Exists("Actualizacion_Extractor"));
+                }
+                else if (tipo != "full")
+                {
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+
+                    filterPS_USUARIO = builderPS_USUARIO.And(builderPS_USUARIO.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_USUARIO.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
+                }
+
+                List<BsonDocument> consulta_PS_UNIDAD_MEDIDA = Col_PS_USUARIO.Find(filterPS_USUARIO).ToList();
+
+                if (consulta_PS_UNIDAD_MEDIDA?.Count > 0)
+                {
+                    Console.WriteLine("Registros en la coleccion de PS_USUARIO encontrados " + consulta_PS_UNIDAD_MEDIDA.Count.ToString());
+                    try
+                    {
+                        foreach (BsonDocument RegistroUnidad in consulta_PS_UNIDAD_MEDIDA)
+                        {
+                            id_mongo = RegistroUnidad.GetValue("_id").ToString();
+                            sTextoDescarga_SC = string.Empty;
+                            if (!string.IsNullOrEmpty(id_mongo) && (!RegistroUnidad.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || RegistroUnidad.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || (RegistroUnidad.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull)))
+                            {
+                                try
+                                {
+                                    sTextoDescarga_SC = ValidarDatoEnBsonValue(RegistroUnidad, "_id", 30);
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "fecha_creacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "usuario_creacion", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "fecha_actualizacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "usuario_modificacion", 50));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "username", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "id_rol", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "rol", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "id_tipo_identificacion", 300));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "tipo_identificacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "identificacion", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "nombres", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "apellidos", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "id_division", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "division", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "correo_electronico", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "telefono_fijo", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "telefono_celular", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "es_activo", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "id_tipo_contrato", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "tipo_contrato", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "id_empresa", 30));
+                                    sTextoDescarga_SC += string.Format("~|{0}", ValidarDatoEnBsonValue(RegistroUnidad, "empresa", 30));
+                                    if (RegistroUnidad.Contains("grupos_lider") && !RegistroUnidad.GetElement("grupos_lider").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_USUARIO_Grupos_Lider = Extractor_PS_USUARIO_CV_Grupos_lider(id_mongo);
+                                    }
+
+                                    sTextoDescarga_SC = sTextoDescarga_SC.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                    Conteo_PS_USUARIO++;
+                                    Archivo_PS_USUARIO.WriteLine(sTextoDescarga_SC);
+                                    Console.WriteLine(string.Format("ID Registro escrito {0} , Grupos Lider {1}", id_mongo, Conteo_PS_USUARIO_Grupos_Lider));
+
+                                }
+                                catch (IOException Iex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(Iex, "ErrorBatch_Cargue_DWH", Iex.Message.ToString() + "Error en la actualizacion de la bandera en PS_USUARIO en mongo Id: " + id_mongo);
+                                    continue;
+                                }
+                                catch (Exception ex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_USUARIO Id: " + id_mongo);
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_USUARIO entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString());
+            }
+            finally
+            {
+                Archivo_PS_USUARIO.Close();
+            }
+            return Conteo_PS_USUARIO;
+        }
+
+        internal static int Extractor_PS_USUARIO_CV_Grupos_lider(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_USUARIO_CV_Grupos_lider");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_USUARIO_CV_Grupos_lider = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_USUARIO_CV_Grupos_lider", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_USUARIO_CV_Grupos_lider = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_USUARIO_CV_Grupos_lider = db.GetCollection<BsonDocument>("PS_USUARIO");
+            FilterDefinitionBuilder<BsonDocument> builderPS_USUARIO_CV_Grupos_lider = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_USUARIO_CV_Grupos_lider = builderPS_USUARIO_CV_Grupos_lider.Empty;
+            filterPS_USUARIO_CV_Grupos_lider = builderPS_USUARIO_CV_Grupos_lider.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_TAREA_SOLICITUD_CV_HM = Col_PS_USUARIO_CV_Grupos_lider.Find(filterPS_USUARIO_CV_Grupos_lider).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_TAREA_SOLICITUD_CV_HM != null)
+            {
+                try
+                {
+                    List<BsonValue> IdsGrupos = ((Consulta_PS_TAREA_SOLICITUD_CV_HM.Contains("grupos_lider") && !Consulta_PS_TAREA_SOLICITUD_CV_HM.GetElement("grupos_lider").Value.IsBsonNull) ? Consulta_PS_TAREA_SOLICITUD_CV_HM.GetElement("grupos_lider").Value.AsBsonArray.ToList() : null);
+
+                    if (IdsGrupos?.Count > 0)
+                    {
+                        foreach (BsonValue idGrupo in IdsGrupos)
+                        {
+                            sTextoDescarga_cv = string.Empty;
+
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", (idGrupo.AsString.Length > 30 ? idGrupo.AsString.Substring(0, 29) : idGrupo.AsString));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_USUARIO_CV_Grupos_lider++;
+                            Archivo_PS_USUARIO_CV_Grupos_lider.WriteLine(sTextoDescarga_cv);
+                        }
+                    }
+
+                    Archivo_PS_USUARIO_CV_Grupos_lider.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREAS_SOLICITUD_CV_ entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_USUARIO_CV_Grupos_lider;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD(string tipo = "")
+        {
+            int Conteo_PS_VIABILIDAD = 0;
+            int Conteo_PS_VIABILIDAD_CV_contactos = 0;
+            int Conteo_PS_VIABILIDAD_CV_servicios_adicionales = 0;
+            int Conteo_PS_VIABILIDAD_CV_datos_adicionales = 0;
+            int Conteo_PS_VIABILIDAD_CV_comunicaciones = 0;
+            int Conteo_PS_VIABILIDAD_CV_adjuntos = 0;
+            int Conteo_PS_VIABILIDAD_CV_historico_estados = 0;
+            int Conteo_PS_VIABILIDAD_CV_tiempos_solicitud = 0;
+            int Conteo_PS_VIABILIDAD_CV_respuesta = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string path = ValidarRutaArchivos("PPS_03_00_VIABILIDAD_");
+            string archivo_SC = string.Format("{0}PPS_03_00_VIABILIDAD_{1}.txt", path, Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            string id_mongo = string.Empty;
+            string sTextoDescarga = string.Empty;
+
+            //Conexion a DB
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            StreamWriter Archivo_PS_VIABILIDAD = new StreamWriter(archivo_SC, false, System.Text.Encoding.GetEncoding("iso-8859-1"));
+
+            try
+            {
+                // FILTRO PARA LAS COLECCION
+                IMongoCollection<BsonDocument> Col_PS_VIABILIDAD = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+                FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD = Builders<BsonDocument>.Filter;
+                FilterDefinition<BsonDocument> filterPS_VIABILIDAD = builderPS_VIABILIDAD.Empty;
+
+                if (tipo == "")
+                {
+                    filterPS_VIABILIDAD = builderPS_VIABILIDAD.Or(builderPS_VIABILIDAD.Eq("Actualizacion_Extractor", "1"), !builderPS_VIABILIDAD.Exists("Actualizacion_Extractor"));
+                }
+                else if (tipo != "full")
+                {
+                    DateTime fechaconsulta = DateTime.Parse(tipo);
+
+                    filterPS_VIABILIDAD = builderPS_VIABILIDAD.And(builderPS_VIABILIDAD.Gte("Fecha_extraccion", fechaconsulta.Date), builderPS_VIABILIDAD.Lt("Fecha_extraccion", fechaconsulta.Date.AddDays(1).AddSeconds(-1)));
+                }
+
+                List<BsonDocument> consulta_PS_VIABILIDAD = Col_PS_VIABILIDAD.Find(filterPS_VIABILIDAD).ToList();
+
+                if (consulta_PS_VIABILIDAD?.Count > 0)
+                {
+                    Console.WriteLine("Registros en la coleccion de PS_VIABILIDAD encontrados " + consulta_PS_VIABILIDAD.Count.ToString());
+                    try
+                    {
+                        foreach (BsonDocument Registro in consulta_PS_VIABILIDAD)
+                        {
+                            id_mongo = Registro.GetValue("_id").ToString();
+                            sTextoDescarga = string.Empty;
+                            if (!string.IsNullOrEmpty(id_mongo) && (!Registro.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || Registro.ToBsonDocument().Contains("Actualizacion_Extractor")
+                                                                || (Registro.ToBsonDocument().GetValue("Actualizacion_Extractor").IsBsonNull)))
+                            {
+                                try
+                                {
+                                    sTextoDescarga = ValidarDatoEnBsonValue(Registro, "_id", 30);
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "fecha_creacion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "usuario_creacion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "fecha_actualizacion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "usuario_modificacion", 50));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "id_viabilidad", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "usuariocreacionsalesforce", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tipo_solicitud", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tipo_oportunidad", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "numero_oportunidad", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "nombre_oportunidad", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "numero_caso", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "indicador_agrupacion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "nombre_operacion_comercial", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "segmento", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "cuenta_cliente", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "nit", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "cliente_valor", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "asesor_comercial", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "ejecutivo_experiencia", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tipo_operacion_plan", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "nombre_producto", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "codigo_producto", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "sucursal_instalcion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "direccion_principal", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "ciudad_instalacion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tipologia_venta", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "comentarios", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "duracion_servicio_meses", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "duracion_servicio_dias", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tipo_instalacion", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "viabilidad_relacionada", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "id_usuario_asignado", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "usuario_asignado", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "id_grupo_asignado", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "grupo_asignado", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "id_fase", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "fase_actual", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "id_estado", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "estado", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "fecha_respuesta", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tiempo_ans", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "id_tipo_proceso", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "tipo_proceso", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "es_visible", 30));
+                                    sTextoDescarga += string.Format("~|{0}", ValidarDatoEnBsonValue(Registro, "fecha_finalizacion", 30));
+                                    sTextoDescarga = sTextoDescarga.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                    Archivo_PS_VIABILIDAD.WriteLine(sTextoDescarga);
+                                    Conteo_PS_VIABILIDAD++;
+
+                                    if (Registro.Contains("contactos") && !Registro.GetElement("contactos").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_contactos = Extractor_PS_VIABILIDAD_CV_contactos(id_mongo);
+                                    }
+                                    if (Registro.Contains("servicios_adicionales") && !Registro.GetElement("servicios_adicionales").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_servicios_adicionales = Extractor_PS_VIABILIDAD_CV_servicios_adicionales(id_mongo);
+                                    }
+                                    if (Registro.Contains("datos_adicionales_viabilidad") && !Registro.GetElement("datos_adicionales_viabilidad").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_datos_adicionales = Extractor_PS_VIABILIDAD_CV_datos_adicionales_viabilidad(id_mongo);
+                                    }
+                                    if (Registro.Contains("comunicaciones") && !Registro.GetElement("comunicaciones").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_comunicaciones = Extractor_PS_VIABILIDAD_CV_comunicaciones(id_mongo);
+                                    }
+                                    if (Registro.Contains("adjuntos") && !Registro.GetElement("adjuntos").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_adjuntos = Extractor_PS_VIABILIDAD_CV_Adjuntos(id_mongo);
+                                    }
+                                    if (Registro.Contains("historico_estados") && !Registro.GetElement("historico_estados").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_historico_estados = Extractor_PS_VIABILIDAD_CV_historico_estados(id_mongo);
+                                    }
+                                    if (Registro.Contains("tiempos_solicitud") && !Registro.GetElement("tiempos_solicitud").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_tiempos_solicitud = Extractor_PS_VIABILIDAD_CV_tiempos_solicitud(id_mongo);
+                                    }
+                                    if (Registro.Contains("respuesta") && !Registro.GetElement("respuesta").Value.IsBsonNull)
+                                    {
+                                        Conteo_PS_VIABILIDAD_CV_respuesta = Extractor_PS_VIABILIDAD_CV_respuesta(id_mongo);
+                                    }
+
+                                }
+                                catch (IOException Iex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(Iex, "ErrorBatch_Cargue_DWH", Iex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD Id: " + id_mongo);
+                                    continue;
+                                }
+                                catch (Exception ex)
+                                {
+                                    prcManejoErrores objError = new prcManejoErrores();
+                                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia entre la validacion y el tipo de datos de PS_VIABILIDAD Id: " + id_mongo);
+                                    continue;
+                                }
+                            }
+                        }
+                        Archivo_PS_VIABILIDAD.Flush();
+                        Archivo_PS_VIABILIDAD.Close();
+                        Archivo_PS_VIABILIDAD.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD entre el modelo de datos y de registros de mongo Id: " + id_mongo);
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.StackTrace.ToString());
+                //Enviar a Archivo de Log Errores
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString());
+            }
+
+            Console.WriteLine("Registros en la coleccion de PS_VIABILIDAD procesados " + Conteo_PS_VIABILIDAD);
+            return Conteo_PS_VIABILIDAD;
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_contactos(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_01_VIAB_CONTAC_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_contactos = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_01_VIAB_CONTAC_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter PS_VIABILIDAD_CV_contactos = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_contactos = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_contactos = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_contactos = builderPS_VIABILIDAD_CV_contactos.Empty;
+            filterPS_VIABILIDAD_CV_contactos = builderPS_VIABILIDAD_CV_contactos.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_LISTA_CV = Col_PS_VIABILIDAD_CV_contactos.Find(filterPS_VIABILIDAD_CV_contactos).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_LISTA_CV != null)
+            {
+                try
+                {
+                    List<BsonValue> contactos = ((Consulta_PS_LISTA_CV.Contains("contactos") && !Consulta_PS_LISTA_CV.GetElement("contactos").Value.IsBsonNull) ? Consulta_PS_LISTA_CV.GetElement("contactos").Value.AsBsonArray.ToList() : null);
+                    if (contactos?.Count > 0)
+                    {
+                        foreach (BsonValue contacto in contactos)
+                        {
+                            sTextoDescarga_cv = string.Empty;
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(contacto.ToBsonDocument(), "tipo_contacto", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(contacto.ToBsonDocument(), "nombres", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(contacto.ToBsonDocument(), "apellidos", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(contacto.ToBsonDocument(), "telefono", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(contacto.ToBsonDocument(), "movil", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(contacto.ToBsonDocument(), "correo", 30));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+                            Conteo_PS_VIABILIDAD_CV_contactos++;
+                            PS_VIABILIDAD_CV_contactos.WriteLine(sTextoDescarga_cv);
+
+                        }
+                        PS_VIABILIDAD_CV_contactos.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_TAREA_CV_Validaciones_parametros entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_contactos;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_servicios_adicionales(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_02_SERV_ADICIO_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_servicios_adicionales = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_02_SERV_ADICIO_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_servicios_adicionales = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_servicios_adicionales = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_servicios_adicionales = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_servicios_adicionales = builderPS_VIABILIDAD_CV_servicios_adicionales.Empty;
+            filterPS_VIABILIDAD_CV_servicios_adicionales = builderPS_VIABILIDAD_CV_servicios_adicionales.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_servicios_adicionales = Col_PS_VIABILIDAD_CV_servicios_adicionales.Find(filterPS_VIABILIDAD_CV_servicios_adicionales).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_VIABILIDAD_CV_servicios_adicionales != null)
+            {
+                try
+                {
+                    List<BsonValue> servicios_adicionales = ((Consulta_PS_VIABILIDAD_CV_servicios_adicionales.Contains("servicios_adicionales") && !Consulta_PS_VIABILIDAD_CV_servicios_adicionales.GetElement("servicios_adicionales").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_servicios_adicionales.GetElement("servicios_adicionales").Value.AsBsonArray.ToList() : null);
+
+                    if (servicios_adicionales?.Count > 0)
+                    {
+                        foreach (BsonValue servicio in servicios_adicionales)
+                        {
+                            try
+                            {
+                                sTextoDescarga_cv = string.Empty;
+
+                                sTextoDescarga_cv = string.Format("{0}", idmongo);
+                                sTextoDescarga_cv += string.Format("~|{0}", (servicio.AsString.Length > 30 ? servicio.AsString.Substring(0, 29) : servicio.AsString));
+                                sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                Conteo_PS_VIABILIDAD_CV_servicios_adicionales++;
+                                Archivo_PS_VIABILIDAD_CV_servicios_adicionales.WriteLine(sTextoDescarga_cv);
+                            }
+                            catch (Exception ex)
+                            {
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_servicios_adicionales Id: " + idmongo);
+                                continue;
+                            }
+                        }
+                    }
+                    Archivo_PS_VIABILIDAD_CV_servicios_adicionales.Flush();
+                    Archivo_PS_VIABILIDAD_CV_servicios_adicionales.Close();
+                    Archivo_PS_VIABILIDAD_CV_servicios_adicionales.Dispose();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_servicios_adicionales entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_servicios_adicionales;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_datos_adicionales_viabilidad(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_03_DAT_ADI_VIA_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_03_DAT_ADI_VIA_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_datos_adicionales_viabilidad = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_datos_adicionales_viabilidad = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_datos_adicionales_viabilidad = builderPS_VIABILIDAD_CV_datos_adicionales_viabilidad.Empty;
+            filterPS_VIABILIDAD_CV_datos_adicionales_viabilidad = builderPS_VIABILIDAD_CV_datos_adicionales_viabilidad.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_datos_adicionales_viabilidad = Col_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.Find(filterPS_VIABILIDAD_CV_datos_adicionales_viabilidad).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_VIABILIDAD_CV_datos_adicionales_viabilidad != null)
+            {
+                try
+                {
+                    List<BsonValue> datos_adicionales = ((Consulta_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.Contains("datos_adicionales_viabilidad") && !Consulta_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.GetElement("datos_adicionales_viabilidad").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.GetElement("datos_adicionales_viabilidad").Value.AsBsonArray.ToList() : null);
+
+                    if (datos_adicionales?.Count > 0)
+                    {
+                        foreach (BsonValue dato in datos_adicionales)
+                        {
+                            try
+                            {
+                                sTextoDescarga_cv = string.Empty;
+
+                                sTextoDescarga_cv = string.Format("{0}", idmongo);
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(dato.ToBsonDocument(), "identificador", 30));
+                                sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(dato.ToBsonDocument(), "valor", 30));
+                                sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                Conteo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad++;
+                                Archivo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.WriteLine(sTextoDescarga_cv);
+                            }
+                            catch (Exception ex)
+                            {
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_datos_adicionales_viabilidad Id: " + idmongo);
+                                continue;
+                            }
+                        }
+                    }
+
+                    Archivo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.Flush();
+                    Archivo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.Close();
+                    Archivo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad.Dispose();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_servicios_adicionales entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_datos_adicionales_viabilidad;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_comunicaciones(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_04_VIABI_COMUN_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_comunicaciones = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_04_VIABI_COMUN_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_comunicaciones = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_comunicaciones = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_comunicaciones = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_comunicaciones = builderPS_VIABILIDAD_CV_comunicaciones.Empty;
+            filterPS_VIABILIDAD_CV_comunicaciones = builderPS_VIABILIDAD_CV_comunicaciones.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_comunicaciones = Col_PS_VIABILIDAD_CV_comunicaciones.Find(filterPS_VIABILIDAD_CV_comunicaciones).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_VIABILIDAD_CV_comunicaciones != null)
+            {
+                try
+                {
+                    List<BsonValue> servicios_adicionales = ((Consulta_PS_VIABILIDAD_CV_comunicaciones.Contains("servicios_adicionales") && !Consulta_PS_VIABILIDAD_CV_comunicaciones.GetElement("servicios_adicionales").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_comunicaciones.GetElement("servicios_adicionales").Value.AsBsonArray.ToList() : null);
+
+                    if (servicios_adicionales?.Count > 0)
+                    {
+                        foreach (BsonValue servicio in servicios_adicionales)
+                        {
+                            try
+                            {
+                                sTextoDescarga_cv = string.Empty;
+
+                                sTextoDescarga_cv = string.Format("{0}", idmongo);
+                                sTextoDescarga_cv += string.Format("~|{0}", (servicio.AsString.Length > 30 ? servicio.AsString.Substring(0, 29) : servicio.AsString));
+                                sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                Conteo_PS_VIABILIDAD_CV_comunicaciones++;
+                                Archivo_PS_VIABILIDAD_CV_comunicaciones.WriteLine(sTextoDescarga_cv);
+                            }
+                            catch (Exception ex)
+                            {
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_comunicaciones Id: " + idmongo);
+                                continue;
+                            }
+                        }
+                    }
+                    Archivo_PS_VIABILIDAD_CV_comunicaciones.Flush();
+                    Archivo_PS_VIABILIDAD_CV_comunicaciones.Close();
+                    Archivo_PS_VIABILIDAD_CV_comunicaciones.Dispose();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_servicios_adicionales entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_comunicaciones;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_Adjuntos(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_05_VIABI_ADJUN_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_Adjuntos = 0;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_05_VIABI_ADJUN_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_Adjuntos = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_Adjuntos = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_Adjuntos = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_Adjuntos = builderPS_VIABILIDAD_CV_Adjuntos.Empty;
+            filterPS_VIABILIDAD_CV_Adjuntos = builderPS_VIABILIDAD_CV_Adjuntos.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_Adjuntos = Col_PS_VIABILIDAD_CV_Adjuntos.Find(filterPS_VIABILIDAD_CV_Adjuntos).FirstOrDefault<BsonDocument>();
+
+            if (Consulta_PS_VIABILIDAD_CV_Adjuntos != null)
+            {
+                try
+                {
+                    List<BsonValue> adjuntos = ((Consulta_PS_VIABILIDAD_CV_Adjuntos.Contains("adjuntos") && !Consulta_PS_VIABILIDAD_CV_Adjuntos.GetElement("adjuntos").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_Adjuntos.GetElement("adjuntos").Value.AsBsonArray.ToList() : null);
+
+                    foreach (BsonValue adjunto in adjuntos)
+                    {
+                        try
+                        {
+                            sTextoDescarga_cv = string.Empty;
+
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "_id", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "ruta", 500));
+                            //sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "tipo", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "fecha_creacion", 50));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "usuario_creacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "id_tarea_relacionada", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "tarea_relacionada", 100));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(adjunto.ToBsonDocument(), "es_publico", 8));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_VIABILIDAD_CV_Adjuntos++;
+                            Archivo_PS_VIABILIDAD_CV_Adjuntos.WriteLine(sTextoDescarga_cv);
+                        }
+                        catch (Exception ex)
+                        {
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_comunicaciones Id: " + idmongo);
+                            continue;
+                        }
+
+                    }
+
+                    Archivo_PS_VIABILIDAD_CV_Adjuntos.Flush();
+                    Archivo_PS_VIABILIDAD_CV_Adjuntos.Close();
+                    Archivo_PS_VIABILIDAD_CV_Adjuntos.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_Adjuntos entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+            return Conteo_PS_VIABILIDAD_CV_Adjuntos;
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_historico_estados(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_06_HIST_ESTADO_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_historico_estados = 0;
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_06_HIST_ESTADO_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_historico_estados = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            /// FILTRO PARA LAS COLECCION
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_historico_estados = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_historico_estados = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_comunicaciones = builderPS_VIABILIDAD_CV_historico_estados.Empty;
+            filterPS_VIABILIDAD_CV_comunicaciones = builderPS_VIABILIDAD_CV_historico_estados.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_comunicaciones = Col_PS_VIABILIDAD_CV_historico_estados.Find(filterPS_VIABILIDAD_CV_comunicaciones).FirstOrDefault<BsonDocument>();
+            if (Consulta_PS_VIABILIDAD_CV_comunicaciones != null)
+            {
+                try
+                {
+                    List<BsonValue> servicios_adicionales = ((Consulta_PS_VIABILIDAD_CV_comunicaciones.Contains("historico_estados") && !Consulta_PS_VIABILIDAD_CV_comunicaciones.GetElement("historico_estados").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_comunicaciones.GetElement("historico_estados").Value.AsBsonArray.ToList() : null);
+
+                    if (servicios_adicionales?.Count > 0)
+                    {
+                        foreach (BsonValue servicio in servicios_adicionales)
+                        {
+                            try
+                            {
+                                sTextoDescarga_cv = string.Empty;
+
+                                sTextoDescarga_cv = string.Format("{0}", idmongo);
+                                sTextoDescarga_cv += string.Format("~|{0}", (servicio.AsString.Length > 30 ? servicio.AsString.Substring(0, 29) : servicio.AsString));
+                                sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                                Conteo_PS_VIABILIDAD_CV_historico_estados++;
+                                Archivo_PS_VIABILIDAD_CV_historico_estados.WriteLine(sTextoDescarga_cv);
+                            }
+                            catch (Exception ex)
+                            {
+                                prcManejoErrores objError = new prcManejoErrores();
+                                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_historico_estados Id: " + idmongo);
+                                continue;
+                            }
+                        }
+                    }
+                    Archivo_PS_VIABILIDAD_CV_historico_estados.Flush();
+                    Archivo_PS_VIABILIDAD_CV_historico_estados.Close();
+                    Archivo_PS_VIABILIDAD_CV_historico_estados.Dispose();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_historico_estados entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_historico_estados;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_tiempos_solicitud(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_07_VIABI_TIEMS_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_tiempos_solicitud = 0;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_07_VIABI_TIEMS_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_tiempos_solicitud = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_tiempos_solicitud = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_tiempos_solicitud = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_tiempos_solicitud = builderPS_VIABILIDAD_CV_tiempos_solicitud.Empty;
+            filterPS_VIABILIDAD_CV_tiempos_solicitud = builderPS_VIABILIDAD_CV_tiempos_solicitud.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_Adjuntos = Col_PS_VIABILIDAD_CV_tiempos_solicitud.Find(filterPS_VIABILIDAD_CV_tiempos_solicitud).FirstOrDefault<BsonDocument>();
+
+            if (Consulta_PS_VIABILIDAD_CV_Adjuntos != null)
+            {
+                try
+                {
+                    List<BsonValue> tiempos = ((Consulta_PS_VIABILIDAD_CV_Adjuntos.Contains("tiempos_solicitud") && !Consulta_PS_VIABILIDAD_CV_Adjuntos.GetElement("tiempos_solicitud").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_Adjuntos.GetElement("tiempos_solicitud").Value.AsBsonArray.ToList() : null);
+
+                    foreach (BsonValue tiempo in tiempos)
+                    {
+                        try
+                        {
+                            sTextoDescarga_cv = string.Empty;
+
+                            sTextoDescarga_cv = string.Format("{0}", idmongo);
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "_id", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "fecha_creacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "usuario_creacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "fecha_actualizacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "usuario_modificacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "nombre", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "descripcion", 80));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "es_activo", 8));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "color", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "fechainicio", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "Fechafin", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "tiempoTranscurrido", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(tiempo.ToBsonDocument(), "en_ejecucion", 8));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Conteo_PS_VIABILIDAD_CV_tiempos_solicitud++;
+                            Archivo_PS_VIABILIDAD_CV_tiempos_solicitud.WriteLine(sTextoDescarga_cv);
+                        }
+                        catch (Exception ex)
+                        {
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_tiempos_solicitud Id: " + idmongo);
+                            continue;
+                        }
+
+                    }
+                    Archivo_PS_VIABILIDAD_CV_tiempos_solicitud.Flush();
+                    Archivo_PS_VIABILIDAD_CV_tiempos_solicitud.Close();
+                    Archivo_PS_VIABILIDAD_CV_tiempos_solicitud.Dispose();
+
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_tiempos_solicitud entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+            return Conteo_PS_VIABILIDAD_CV_tiempos_solicitud;
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_respuesta(string idmongo)
+        {
+            string path = ValidarRutaArchivos("PS_03_08_VIABIL_RESP_");
+            string sTextoDescarga_cv = string.Empty;
+            int Conteo_PS_VIABILIDAD_CV_respuesta = 0;
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones = 0;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_08_VIABIL_RESP_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_respuesta = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            MongoClient client = new MongoClient(ConfigurationManager.ConnectionStrings["ConexionMongo"].ToString());
+            IMongoDatabase db = client.GetDatabase(ConfigurationManager.AppSettings["BaseDatosMongo"].ToString());
+
+            IMongoCollection<BsonDocument> Col_PS_VIABILIDAD_CV_respuesta = db.GetCollection<BsonDocument>("PS_VIABILIDAD");
+            FilterDefinitionBuilder<BsonDocument> builderPS_VIABILIDAD_CV_respuesta = Builders<BsonDocument>.Filter;
+            FilterDefinition<BsonDocument> filterPS_VIABILIDAD_CV_respuesta = builderPS_VIABILIDAD_CV_respuesta.Empty;
+            filterPS_VIABILIDAD_CV_respuesta = builderPS_VIABILIDAD_CV_respuesta.Eq("_id", MongoDB.Bson.ObjectId.Parse(idmongo));
+
+            BsonDocument Consulta_PS_VIABILIDAD_CV_respuesta = Col_PS_VIABILIDAD_CV_respuesta.Find(filterPS_VIABILIDAD_CV_respuesta).FirstOrDefault<BsonDocument>();
+
+            if (Consulta_PS_VIABILIDAD_CV_respuesta != null)
+            {
+                try
+                {
+                    BsonDocument respuesta = ((Consulta_PS_VIABILIDAD_CV_respuesta.Contains("respuesta") && !Consulta_PS_VIABILIDAD_CV_respuesta.GetElement("respuesta").Value.IsBsonNull) ? Consulta_PS_VIABILIDAD_CV_respuesta.GetElement("respuesta").Value.AsBsonDocument : null);
+
+
+                    sTextoDescarga_cv = string.Empty;
+
+                    sTextoDescarga_cv = string.Format("{0}", idmongo);
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "fecha_creacion", 30));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "usuario_creacion", 30));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "fecha_actualizacion", 30));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "usuario_modificacion", 30));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "id_respuesta_viabilidad", 30));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "respuesta_viabilidad", 80));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "id_causal_respuesta_viabilidad", 30));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "causal_respuesta_viabilidad", 200));
+                    sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(respuesta, "respuesta_comercial", 200));
+
+                    if (respuesta.ToBsonDocument().Contains("opciones") && respuesta.GetElement("opciones").Value.AsBsonArray.Count > 0)
+                    {
+                        Conteo_PS_VIABILIDAD_CV_respuesta_opciones = Extractor_PS_VIABILIDAD_CV_respuesta_opciones(idmongo, respuesta.GetElement("opciones").Value.AsBsonArray.ToList());
+                    }
+
+                    sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                    Conteo_PS_VIABILIDAD_CV_respuesta++;
+                    Archivo_PS_VIABILIDAD_CV_respuesta.WriteLine(sTextoDescarga_cv);
+
+                    Archivo_PS_VIABILIDAD_CV_respuesta.Flush();
+                    Archivo_PS_VIABILIDAD_CV_respuesta.Close();
+                }
+                catch (Exception ex)
+                {
+                    prcManejoErrores objError = new prcManejoErrores();
+                    objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Inconsistencia en PS_VIABILIDAD_CV_respuesta entre el modelo de datos y de registros de mongo Id: " + idmongo);
+                }
+            }
+
+            return Conteo_PS_VIABILIDAD_CV_respuesta;
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_respuesta_opciones(string idmongo, List<BsonValue> listaOpciones)
+        {
+            string path = ValidarRutaArchivos("PS_03_08_01_VIAB_ROP_");
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones = 0;
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones_detalle = 0;
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones_configuracion_servicio = 0;
+            string sTextoDescarga_cv = string.Empty;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_08_01_VIAB_ROP_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_respuesta_opciones = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            if (listaOpciones?.Count > 0)
+            {
+                Console.WriteLine(string.Format("ID Registro {0} Cantidad de registros encontrados en respuesta_opciones {1}", idmongo, listaOpciones.Count));
+                foreach (BsonValue opcion in listaOpciones)
+                {
+                    try
+                    {
+                        sTextoDescarga_cv = string.Empty;
+                        sTextoDescarga_cv += string.Format("{0}", idmongo);
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "_id", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "fecha_creacion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "usuario_creacion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "fecha_actualizacion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "usuario_modificacion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "nombre_opcion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "observaciones", 200));
+                        sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                        Archivo_PS_VIABILIDAD_CV_respuesta_opciones.WriteLine(sTextoDescarga_cv);
+                        Conteo_PS_VIABILIDAD_CV_respuesta_opciones++;
+                        if (opcion.ToBsonDocument().Contains("configuracion_servicio") && !opcion.ToBsonDocument().GetElement("configuracion_servicio").Value.IsBsonNull)
+                        {
+                            Conteo_PS_VIABILIDAD_CV_respuesta_opciones_configuracion_servicio = Extractor_PS_VIABILIDAD_CV_respuesta_opciones_CS(idmongo, ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "_id", 30), opcion.ToBsonDocument().GetElement("configuracion_servicio").Value.AsBsonArray.ToList());
+                        }
+                        if (opcion.ToBsonDocument().Contains("detalle_opcion") && !opcion.ToBsonDocument().GetElement("detalle_opcion").Value.IsBsonNull)
+                        {
+                            Conteo_PS_VIABILIDAD_CV_respuesta_opciones_detalle = Extractor_PS_VIABILIDAD_CV_respuesta_opciones_detalles(ValidarDatoEnBsonValue(opcion.ToBsonDocument(), "_id", 30), opcion.ToBsonDocument().GetElement("detalle_opcion").Value.AsBsonArray.ToList());
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_respuesta_opciones Id: " + idmongo);
+                        continue;
+                    }
+
+                }
+                Archivo_PS_VIABILIDAD_CV_respuesta_opciones.Flush();
+                Archivo_PS_VIABILIDAD_CV_respuesta_opciones.Close();
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_respuesta_opciones;
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_respuesta_opciones_CS(string idmonogoRegistro, string idmongoOpcion, List<BsonValue> listaConfiguracionServicios)
+        {
+            string path = ValidarRutaArchivos("PS_03_08_01_01_CFGSE_");
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS = 0;
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC = 0;
+
+            string sTextoDescarga_cv = string.Empty;
+
+            try
+            {
+                DateTime fechaEjecucion = DateTime.Now;
+                string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_08_01_01_CFGSE_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+                StreamWriter Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+                if (listaConfiguracionServicios?.Count > 0)
+                {
+                    Console.WriteLine(string.Format("ID {0} Registro respuesta {1} Cantidad de registros encontrados en respuesta_opciones_consiguracion_servicio {2}", idmonogoRegistro, idmongoOpcion, listaConfiguracionServicios.Count));
+                    foreach (BsonDocument servicio in listaConfiguracionServicios)
+                    {
+                        try
+                        {
+
+                            sTextoDescarga_cv = string.Empty;
+                            sTextoDescarga_cv += string.Format("{0}", idmongoOpcion);
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "_id", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "fecha_creacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "usuario_creacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "fecha_actualizacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "usuario_modificacion", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "id_agrupador", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "nombre_agrupador", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "nombre_elemento", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "cantidad", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "tipo_elemento", 30));
+                            sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(servicio, "inventario_etb", 8));
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS.WriteLine(sTextoDescarga_cv);
+                            Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS++;
+
+                            if (servicio.Contains("valores_elementos_configuracion") && !servicio.GetElement("valores_elementos_configuracion").Value.IsBsonNull)
+                            {
+                                Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC = Extractor_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC(idmonogoRegistro, idmongoOpcion, ValidarDatoEnBsonValue(servicio, "_id", 30), servicio.GetElement("valores_elementos_configuracion").Value.AsBsonArray.ToList());
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_respuesta_opciones_CS Id: " + idmonogoRegistro);
+                            continue;
+                        }
+                        
+                    }
+                    
+                }
+                
+                Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS.Flush();
+                Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS.Close();
+            }
+            catch (Exception ex)
+            {
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_respuesta_opciones_CS Id: " + idmonogoRegistro + "Opcion :" + idmongoOpcion);
+            }
+            
+
+            return Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS;
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC(string idmonogoRegistro, string idmongoOpcion, string idmongoCS, List<BsonValue> listaConfiguracionServicios_VEC)
+        {
+
+            string path = ValidarRutaArchivos("PS_03_08_01_01_01_VE_");
+            int Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC = 0;
+
+            string sTextoDescarga_cv = string.Empty;
+
+            try
+            {
+                DateTime fechaEjecucion = DateTime.Now;
+                string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_08_01_01_01_VE_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+                StreamWriter Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+                if (listaConfiguracionServicios_VEC?.Count > 0)
+                {
+                    Console.WriteLine(string.Format("ID Registro respuesta {0} Cantidad de registros encontrados en respuesta_opciones_consiguracion_servicio_VEC {1}", idmongoOpcion, listaConfiguracionServicios_VEC.Count));
+                    foreach (BsonDocument servicio_VEC in listaConfiguracionServicios_VEC)
+                    {
+                        try
+                        {
+                            sTextoDescarga_cv = string.Empty;
+                            sTextoDescarga_cv = string.Format("{0}", idmonogoRegistro);
+                            sTextoDescarga_cv = string.Format("~|{0}", idmongoOpcion);
+                            sTextoDescarga_cv = string.Format("~|{0}", idmongoCS);
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "_id", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "fecha_creacion", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "usuario_creacion", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "fecha_actualizacion", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "usuario_modificacion", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "id_Inventario", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "marca", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "referencia", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "valor_asignacion", 30));
+                            sTextoDescarga_cv = string.Format("~|{0}", ValidarDatoEnBsonValue(servicio_VEC, "en_aprovacion", 8));
+
+                            sTextoDescarga_cv = sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+                            Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC.WriteLine(sTextoDescarga_cv);
+                            Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC++;
+                        }
+                        catch (Exception ex)
+                        {
+                            prcManejoErrores objError = new prcManejoErrores();
+                            objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC Id Registro :" + idmonogoRegistro + "ID Opcion : " + idmongoOpcion + " ID CS : " + idmongoCS);
+                            continue;
+                        }
+                        finally
+                        {
+                            Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC.Flush();
+                            Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC.Close();
+                        }
+                    }
+                    Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC.Flush();
+                    Archivo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC Id: " + idmonogoRegistro);
+            }
+            
+            return Conteo_PS_VIABILIDAD_CV_respuesta_opciones_CS_VEC;
+
+        }
+
+        internal static int Extractor_PS_VIABILIDAD_CV_respuesta_opciones_detalles(string idmongoOpcion, List<BsonValue> listaDetalles)
+        {
+            string path = ValidarRutaArchivos("PS_03_08_02_DET_OPCI_");
+            int Conteo_PS_VIABILIDAD_CV_respuesta_OD = 0;
+
+            string sTextoDescarga_cv = string.Empty;
+
+            DateTime fechaEjecucion = DateTime.Now;
+            string archivo_CV = string.Format("{0}{1}{2}.txt", path, "PS_03_08_02_DET_OPCI_", Convert.ToDateTime(fechaEjecucion.ToLocalTime()).ToString("ddMMyyyy"));
+            StreamWriter Archivo_PS_VIABILIDAD_CV_respuesta_opciones = new StreamWriter(archivo_CV, true, Encoding.GetEncoding("iso-8859-1"));
+
+            if (listaDetalles?.Count > 0)
+            {
+                Console.WriteLine(string.Format("ID Registro respuesta {0} Cantidad de registros encontrados en respuesta_detalles {1}", idmongoOpcion, listaDetalles.Count));
+                foreach (BsonValue detalle in listaDetalles)
+                {
+                    try
+                    {
+                        sTextoDescarga_cv = string.Empty;
+                        sTextoDescarga_cv += string.Format("{0}", idmongoOpcion);
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "_id", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "nombre", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "tipo", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "es_respuesta", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "es_activo", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "es_inventario", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "id_lista", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "apiname", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "agrupador", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "valor", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "ValorMultiple", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "orden_visualizacion", 30));
+                        sTextoDescarga_cv += string.Format("~|{0}", ValidarDatoEnBsonValue(detalle.ToBsonDocument(), "fila_registro", 30));
+                        sTextoDescarga_cv += sTextoDescarga_cv.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ").Replace("\v", " ").Replace("\tCL", " ");
+
+
+                        Archivo_PS_VIABILIDAD_CV_respuesta_opciones.WriteLine(sTextoDescarga_cv);
+                        Conteo_PS_VIABILIDAD_CV_respuesta_OD++;
+                    }
+                    catch (Exception ex)
+                    {
+                        prcManejoErrores objError = new prcManejoErrores();
+                        objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + "Error tratando de escribir el archivo PS_VIABILIDAD_CV_respuesta_OD Id opcion: " + idmongoOpcion);
+                        continue;
+                    }
+
+                }
+                Archivo_PS_VIABILIDAD_CV_respuesta_opciones.Flush();
+                Archivo_PS_VIABILIDAD_CV_respuesta_opciones.Close();
+            }
+
+
+            return Conteo_PS_VIABILIDAD_CV_respuesta_OD;
+        }
+
+        private static string ValidarDatoEnBsonValue(BsonDocument Objeto, string nombreCampo, int logitudCampo)
+        {
+            if (Objeto.Contains(nombreCampo))
+            {
+
+                if (!Objeto.GetValue(nombreCampo).IsBsonNull && Objeto.GetValue(nombreCampo).IsValidDateTime)
+                {
+                    DateTime fecha = Objeto.GetValue(nombreCampo).ToUniversalTime();
+                    return fecha.ToLocalTime().ToString("dd/MM/yyyy hh:mm:ss tt", new System.Globalization.CultureInfo("en-US"));
+                }
+
+                return (Objeto.GetValue(nombreCampo).IsBsonNull) ? string.Empty : (Objeto.GetValue(nombreCampo).ToString().Length > logitudCampo ? Objeto.GetValue(nombreCampo).ToString().Substring(0, (logitudCampo - 1)) : Objeto.GetValue(nombreCampo).ToString());
+            }
+            else
+            {
+                return "";
+            }
+
+        }
+
+        private static string ValidarRutaArchivos(string Archivo)
+        {
+            string path = ConfigurationManager.AppSettings["RutaArchivosExtractores"];
+            try
+            {
+                if (!Directory.Exists(path))
+                    System.IO.Directory.CreateDirectory(path);
+            }
+            catch (Exception ex)
+            {
+                prcManejoErrores objError = new prcManejoErrores();
+                objError.ErroresGeneral(ex, "ErrorBatch_Cargue_DWH", ex.Message.ToString() + string.Format("Error en creacion del directorio del archivo {0}", Archivo));
+            }
+
+            return path;
+        }
     }
 }
